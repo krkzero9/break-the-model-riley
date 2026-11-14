@@ -40,7 +40,7 @@ for record in data["reports"]["records"]:
     reference = references.setdefault(record["turn"], {"turn_id": record["turn"]})
     reference["teammate_report"] = {"status_as_reviewed": record["status"], "cohort": record["cohort"], "sources": record["sources"]}
 incoming_ids = set()
-for name in ["docs/LEAK_REPORT.md", "docs/very-large-model-leaks.md", "logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md", "docs/OBSERVATIONS.md", "leaks/umair-claude-haiku-5-leak.md"]:
+for name in ["docs/LEAK_REPORT.md", "docs/very-large-model-leaks.md", "logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md", "docs/OBSERVATIONS.md", "leaks/umair-claude-haiku-5-leak.md", "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md", "leaks/karthik-claude-opus-5-5-leak.md"]:
     for line,text in enumerate((ROOT/name).read_text(encoding="utf-8").splitlines(),1):
         for turn in set(re.findall(r"\b[0-9a-f]{32}\b",text)):
             incoming_ids.add(turn)
@@ -54,6 +54,7 @@ for turn, reference in references.items():
     reference["raw_trace_locations"] = trace_index.get(turn, [])
 
 files = []
+files.extend(ROOT / name for name in ["hunt_oneshot.py", "opus_hunt.py"])
 for name in ["README.md", "docs/FINAL_SUBMISSION.md", ".gitignore", ".gitattributes", "AGENTS.md", "docs/FINDINGS.md", "docs/LEAK_REPORT.md", "docs/PROMPTS.md", "docs/OBSERVATIONS.md", "injection_probe.py", "attack.py", "probe.py", "secret_probe.py", "docs/very-large-model-leaks.md", "btm.py", "chat.py", "setup.py", "example_attack.py", "requirements.txt", "presentation.html", "financial_prompts.txt", "reproduce.py", "reproduce-cases.json"]:
     files.append(ROOT / name)
 for directory in ["presentation", "database", "tests", "tools", "logs", "leaks", "docs"]:

@@ -2,9 +2,11 @@
 
 ## Current submission state — 14 November 2026
 
-Use `docs/FINAL_SUBMISSION.md`, `docs/FINDINGS.md` and `logs/evidence-index.json` for reviewed claims. The merged archive contains 1,415 records and 300 referenced IDs, 294 with raw matches. Session 2 is mixed-model: GPT-OSS 321, DeepSeek 260, Qwen 235B 15 and Qwen 30B 3 records. Raw records do not identify a guard/deployment revision, so a controlled model-only comparison is not established. Email-tool arguments establish invocation, not mailbox delivery; SSN counts do not recover digits.
+Use `docs/FINAL_SUBMISSION.md`, `docs/FINDINGS.md` and `logs/evidence-index.json` for reviewed claims. The merged archive contains 1,506 records and 393 referenced IDs, 385 with raw matches. Session 2 is mixed-model: GPT-OSS 321, DeepSeek 260, Qwen 235B 15 and Qwen 30B 3 records. Raw records do not identify a guard/deployment revision, so a controlled model-only comparison is not established. Email-tool arguments establish invocation, not mailbox delivery; SSN counts do not recover digits.
 
 The working notes below preserve earlier participant observations, candidate probes and reported rates. They contain superseded claims about model availability, reachable tables and guards. Treat them as historical context rather than verified current-server facts. No new live probing is part of submission preparation unless Sparsh requests it.
+
+Latest continuation: use the corrected packet for Opus scope/rules disclosure. Raw text is established; complete backend-prompt recovery is not verified. Kartik reference-output IDs remain report-only.
 
 ## Project Overview
 

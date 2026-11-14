@@ -236,7 +236,7 @@
       "bytes_at_import": 11782
     }
   ],
-  "incoming_commit": "f4212793912f96cab439138feecc456b9efeea81",
+  "incoming_commit": "06d75dc7524373c0fb02de9f4694cad96cc59e60",
   "incoming_files_sha256": {
     "AGENTS.md": "b6ea0c3ede5d74f5a51af05be13922ce92ef67c1a0c8a396e4a940fb11596798",
     "FINDINGS.md": "c701d8b0e0130fa76cc2f15ab5f7dc71d017f18f63a2c1f1790181ba4a9aef4c",
@@ -408,5 +408,14 @@
       "path": "logs/stage3/sparsh-haiku-5-5.jsonl",
       "sha256": "19de2aae19cca3516568015ef77b1bb9c2d269da853b73581ae56bebed6fd559"
     }
-  ]
+  ],
+  "late_additions_review": "logs/stage3/late-additions-review.json",
+  "late_incoming_git_bytes_sha256": {
+    "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md": "949c9c25e5511fb8d6cca99411243ac2a53e22af6b80a8d8cbfa29f8c071177d",
+    "leaks/karthik-claude-opus-5-5-leak.md": "ba7f961d6e9c06ca10da0dbf0d9bb7437dfccd681940f0eab8b236d84ca533c9",
+    "logs/my_attempts.jsonl": "a34673020437df4fdfdaadbaa5c0fdcfde512f3b594318f97254b403f9d8e5ad",
+    "hunt_oneshot.py": "a5bdc14887573231d9775ceb8e76e37a5f7c7086985460ea81898fefb70d5767",
+    "opus_hunt.py": "54d12d577edcd8f0dd178de9e12fdef94f578b0fb75fe1dd493bf4efba36a82e",
+    "tools/build_disclosure_doc.py": "330bfecc139be587a1f2bd49259ac33a2f8f6dd0fd4c990c7003359031739fe2"
+  }
 }

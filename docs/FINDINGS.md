@@ -6,10 +6,16 @@ This index combines the recorded evidence while keeping the different model coho
 
 | Source | Records | Unique turn IDs | Models recorded |
 |---|---:|---:|---|
-| `logs/my_attempts.jsonl` | 646 | 570 | Qwen 30B: 507; DeepSeek: 35; GPT-OSS: 10; Qwen 235B: 10; Opus 5.5: 84 |
+| `logs/my_attempts.jsonl` | 737 | 661 | Qwen 30B: 507; DeepSeek: 35; GPT-OSS: 10; Qwen 235B: 10; Opus 5.5: 175 |
 | `logs/my_attempts_session2.jsonl` | 599 | 418 | GPT-OSS: 321; DeepSeek: 260; Qwen 235B: 15; Qwen 30B: 3 |
 | `logs/sparsh-2026-11-14/my_attempts.jsonl` | 167 | 167 | Separate Nebius/Groq exploratory snapshot; the earlier individual review covered 157 |
 | `logs/stage3/sparsh-haiku-5-5.jsonl` | 3 | 3 | Claude Haiku 5.5; greeting and two scope refusals |
+
+## Latest Opus continuation and Kartik excerpts
+
+91 additional Opus records bring its total to 175. Scope transform `9210eef3664f4e1a918a550fc56401fb` (raw line 726) and rules transform `9998bb9328714003b15c3a7f949e1aac` (line 729) returned internal configuration text. All 91 continuation-report IDs match raw logs. Full backend prompt recovery and guard implementation are not independently verified.
+
+Kartik reports ten plan-term rows and twelve provider rows under exact raw-JSON prompts; both IDs lack raw traces. These are reference-output observations. Original sources: [Opus continuation](OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md), [Kartik excerpt](../leaks/karthik-claude-opus-5-5-leak.md), [review and source hashes](../logs/stage3/late-additions-review.json). No Stage 3 private-row escalation is demonstrated.
 
 ## Stage 3 Claude 5.5
 
@@ -17,7 +23,7 @@ The strongest newly supplied host, `claude-opus-5-5`, has 84 raw exploratory rec
 
 Uzair's Haiku report shows a patient-table refusal followed by public field/key inference; its two IDs have no raw matches. Sparsh's three Haiku turns have matching raw traces. Public metadata descriptions are not private-data leaks or backend constraint verification. Original reports remain unchanged at [OBSERVATIONS.md](OBSERVATIONS.md) and [leaks/umair-claude-haiku-5-leak.md](../leaks/umair-claude-haiku-5-leak.md); [logs/stage3/review.json](../logs/stage3/review.json) records the qualifications.
 
-The combined index now has 300 references, 294 with raw matches, across 1,415 records. All 86 Opus-report references match; six report-only IDs remain unmatched. Stage 3 results stay distinct from earlier private-disclosure evidence. No Sonnet 5.5 run was supplied.
+The combined index now has 393 references, 385 with raw matches, across 1,506 records. All 86 Opus-report references match; eight report-only IDs remain unmatched. Stage 3 results stay distinct from earlier private-disclosure evidence. No Sonnet 5.5 run was supplied.
 
 Record counts include errors and retries; they are not success rates. Session 2 is a mixed-model log. Its 40-record aggregation example `73d99c5da0c9425099b027cbdf4fd71c` is GPT-OSS 120B, while `fc6a32e8110345bea5c94660975b45a1` is DeepSeek. The client does not record a guard/deployment revision, so the logs do not establish identical server defences across rounds.
 

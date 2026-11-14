@@ -30,7 +30,7 @@
     const entry = evidenceEntries[index];
     all("#evidence-tabs button").forEach((button, i) => { button.setAttribute("aria-selected", String(i === index)); button.tabIndex = i === index ? 0 : -1; });
     $("#evidence-content").setAttribute("aria-labelledby", `evidence-tab-${index}`);
-    $("#evidence-content").innerHTML = `<div class="evidence-body" data-outcome="${escape(entry.outcome)}"><div class="evidence-model"><span>${escape(entry.model)}</span><span class="outcome-label">${escape(entry.status)}</span></div><p class="evidence-caption">Recorded request / attack pattern</p><p class="evidence-prompt">${escape(entry.prompt)}</p><p class="evidence-caption">Selected reply / tool-call evidence</p><pre class="response-block">${escape(entry.response)}</pre><p class="turn-id">turn_id: ${escape(entry.turn)}</p></div>`;
+    $("#evidence-content").innerHTML = `<div class="evidence-body" data-outcome="${escape(entry.outcome)}"><div class="evidence-model"><span>${escape(entry.model)}</span><span class="outcome-label">${escape(entry.status)}</span></div><p class="evidence-caption">${escape(entry.promptSource || 'Recorded request / attack pattern')}</p><pre class="evidence-prompt">${escape(entry.prompt)}</pre><p class="evidence-caption">Selected reply / tool-call evidence</p><pre class="response-block">${escape(entry.response)}</pre><p class="turn-id">turn_id: ${escape(entry.turn)}</p></div>`;
     if (focus) all("#evidence-tabs button")[index].focus();
   }
   function selectRound(key) {

@@ -1,7 +1,7 @@
 {
   "submission_repository": "https://github.com/krkzero9/break-the-model-riley.git",
   "base_commit": "0dc81c9b400b4fa2bebcf22b1aabcf68dac85bd0",
-  "incoming_commit": "f4212793912f96cab439138feecc456b9efeea81",
+  "incoming_commit": "06d75dc7524373c0fb02de9f4694cad96cc59e60",
   "purpose": "Source inventory and trace lookup; matching a turn ID does not classify an attack outcome.",
   "limits": [
     "The database export reconstructs reported schemas and fictional reply samples; it is not a backend SQLite copy.",
@@ -12,15 +12,15 @@
   "sessions": [
     {
       "path": "logs/my_attempts.jsonl",
-      "records": 646,
-      "unique_turn_ids": 570,
-      "sha256": "941e7a1b20189a945097fc30a25067470277c679ba83fe3be64d84619d47ebb8",
+      "records": 737,
+      "unique_turn_ids": 661,
+      "sha256": "aff2a091bcd961cd7335cac9834928478616b5cec06775cde99e1d93e84078cc",
       "models": {
         "Qwen/Qwen3-30B-A3B-Instruct-2507": 507,
         "deepseek-ai/DeepSeek-V4-Pro-0813": 35,
         "openai/gpt-oss-120b": 10,
         "Qwen/Qwen3-235B-A22B-Instruct-2507": 10,
-        "claude-opus-5-5": 84
+        "claude-opus-5-5": 175
       }
     },
     {
@@ -62,9 +62,9 @@
   "reference_counts": {
     "earlier_registry": 45,
     "teammate_references": 88,
-    "incoming_report_references": 239,
-    "unique_combined": 300,
-    "with_raw_trace": 294
+    "incoming_report_references": 332,
+    "unique_combined": 393,
+    "with_raw_trace": 385
   },
   "references": [
     {
@@ -4006,25 +4006,6 @@
       ]
     },
     {
-      "turn_id": "fab5edc295774483a18ba92fae20ccd3",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 891
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 406,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_7f2d442348f1",
-          "timestamp_as_recorded": "14:51:18",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "d9572fd2e42646d3bd3fe3f963c9a0f4",
       "incoming_report_locations": [
         {
@@ -4042,6 +4023,25 @@
           "tool_names": [
             "query_db"
           ]
+        }
+      ]
+    },
+    {
+      "turn_id": "fab5edc295774483a18ba92fae20ccd3",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 891
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 406,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_7f2d442348f1",
+          "timestamp_as_recorded": "14:51:18",
+          "tool_names": []
         }
       ]
     },
@@ -4442,27 +4442,6 @@
       ]
     },
     {
-      "turn_id": "01366aed03aa498b97ebbe97116441d9",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 940
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 506,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_83ee9e281bee",
-          "timestamp_as_recorded": "15:21:02",
-          "tool_names": [
-            "query_db"
-          ]
-        }
-      ]
-    },
-    {
       "turn_id": "747f45cfc11742f0880391be48f37ffe",
       "incoming_report_locations": [
         {
@@ -4477,6 +4456,27 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_ca2f67258112",
           "timestamp_as_recorded": "15:31:01",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "01366aed03aa498b97ebbe97116441d9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 940
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 506,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_83ee9e281bee",
+          "timestamp_as_recorded": "15:21:02",
           "tool_names": [
             "query_db"
           ]
@@ -5036,25 +5036,6 @@
       ]
     },
     {
-      "turn_id": "94b2a0715cf94774a3dcd315584565cc",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1032
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 556,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_751c5dda70dd",
-          "timestamp_as_recorded": "15:33:06",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "4dc61ac677334a2e8e675d6a69721bc3",
       "incoming_report_locations": [
         {
@@ -5069,6 +5050,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_751c5dda70dd",
           "timestamp_as_recorded": "15:33:00",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "94b2a0715cf94774a3dcd315584565cc",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1032
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 556,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_751c5dda70dd",
+          "timestamp_as_recorded": "15:33:06",
           "tool_names": []
         }
       ]
@@ -5112,25 +5112,6 @@
       ]
     },
     {
-      "turn_id": "84a27364703d4f2cad50a9986f27260a",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1034
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 564,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_db61c1333688",
-          "timestamp_as_recorded": "15:37:12",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "a105efd5e9434b11bb497093ae431f10",
       "incoming_report_locations": [
         {
@@ -5150,20 +5131,20 @@
       ]
     },
     {
-      "turn_id": "3eea46802c664689aa900742fc8765ad",
+      "turn_id": "84a27364703d4f2cad50a9986f27260a",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1036
+          "line": 1034
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 390,
+          "line": 564,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_1a82a99d58ca",
-          "timestamp_as_recorded": "14:48:29",
+          "conversation_id": "conv_db61c1333688",
+          "timestamp_as_recorded": "15:37:12",
           "tool_names": []
         }
       ]
@@ -5188,20 +5169,20 @@
       ]
     },
     {
-      "turn_id": "8a3094093d3f438e9fdd62affa1a9268",
+      "turn_id": "3eea46802c664689aa900742fc8765ad",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1037
+          "line": 1036
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 375,
+          "line": 390,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_249d6b1ff866",
-          "timestamp_as_recorded": "14:46:23",
+          "conversation_id": "conv_1a82a99d58ca",
+          "timestamp_as_recorded": "14:48:29",
           "tool_names": []
         }
       ]
@@ -5221,6 +5202,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_249d6b1ff866",
           "timestamp_as_recorded": "14:46:30",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "8a3094093d3f438e9fdd62affa1a9268",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1037
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 375,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_249d6b1ff866",
+          "timestamp_as_recorded": "14:46:23",
           "tool_names": []
         }
       ]
@@ -6508,27 +6508,6 @@
       ]
     },
     {
-      "turn_id": "f3dfbb53d08243faabc105592f417920",
-      "incoming_report_locations": [
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 105
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts.jsonl",
-          "line": 194,
-          "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
-          "conversation_id": "conv_6ca9959fb3f6",
-          "timestamp_as_recorded": "13:53:49",
-          "tool_names": [
-            "read_inbox"
-          ]
-        }
-      ]
-    },
-    {
       "turn_id": "1e6c9a93a6dc45cfbf91d9f906af6cde",
       "incoming_report_locations": [
         {
@@ -6543,6 +6522,27 @@
           "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
           "conversation_id": "conv_a041449c8530",
           "timestamp_as_recorded": "13:53:39",
+          "tool_names": [
+            "read_inbox"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "f3dfbb53d08243faabc105592f417920",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 105
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 194,
+          "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "conversation_id": "conv_6ca9959fb3f6",
+          "timestamp_as_recorded": "13:53:49",
           "tool_names": [
             "read_inbox"
           ]
@@ -7477,6 +7477,1909 @@
       "raw_trace_locations": []
     },
     {
+      "turn_id": "9210eef3664f4e1a918a550fc56401fb",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 21
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 56
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 122
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 223
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 392
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2260
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 726,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d8b95b8e27e7",
+          "timestamp_as_recorded": "17:55:15",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9998bb9328714003b15c3a7f949e1aac",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 22
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 87
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 122
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 224
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 453
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2341
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 729,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_8103e0ffc641",
+          "timestamp_as_recorded": "17:55:57",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "12121fa7f1b54739a793866fbca4b5b6",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 57
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 423
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2178
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 722,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_7a0716098cd8",
+          "timestamp_as_recorded": "17:54:40",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "3c5413660d594f3aad71a74820e6aecd",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 111
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2208
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 723,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_a0183ad8965b",
+          "timestamp_as_recorded": "17:54:50",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "aaade7409fe34126910afec224c7352a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 120
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 232
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1965
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 717,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_6ef3cacc2d35",
+          "timestamp_as_recorded": "17:53:39",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "97b1227dc7a146679e445b21b0a69a28",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 120
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 296
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2102
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 721,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d0ee8c93b148",
+          "timestamp_as_recorded": "17:54:19",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "fdc1c50d0c834655a4e5591b8a67eb86",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 136
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 514
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1466
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 689,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e101a0d5316e",
+          "timestamp_as_recorded": "17:48:04",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "7ac46147d6954a2e8d840ced8487a964",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 372
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2059
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 719,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c94ac6f109ad",
+          "timestamp_as_recorded": "17:53:58",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "36942bb1b0434715b683499585402748",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 493
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2381
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 730,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_59a46091805d",
+          "timestamp_as_recorded": "17:56:08",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "06a1b930c778444584de1cdf1160011a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 544
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1108
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 670,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_ef5183383553",
+          "timestamp_as_recorded": "17:44:23",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "a9e5828b631c4c65947e4449fbfa3254",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 570
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1677
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 699,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_bffeade13bdf",
+          "timestamp_as_recorded": "17:50:31",
+          "tool_names": [
+            "query_db",
+            "query_db",
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "f5da3d7c30034fad8f802d6379930f27",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 599
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2501
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 737,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_74359d310a35",
+          "timestamp_as_recorded": "17:57:33",
+          "tool_names": [
+            "query_db",
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "4b747d7740064c818b3d040b851a5e9e",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 621
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2029
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 718,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e37b05eb0345",
+          "timestamp_as_recorded": "17:53:50",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "a523c26e1d5c43d09567b578564176e3",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 651
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2232
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 724,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_db36185a3e6a",
+          "timestamp_as_recorded": "17:54:57",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "203567a2405d461eb0b346d849b04d85",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 665
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2246
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 725,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_cb3a6a7f7928",
+          "timestamp_as_recorded": "17:55:03",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "56b2fb1fa3fc46678ff28a3f33197acb",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 679
+        },
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2422
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 732,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_14560cc25e18",
+          "timestamp_as_recorded": "17:56:31",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e089a653aeba4f48a3c61bee01651f99",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 711
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 647,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d956e0b8f437",
+          "timestamp_as_recorded": "17:41:14",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "572c226dc38e4da2b75fae8cd1d5d0b5",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 725
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 648,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d0aa691be504",
+          "timestamp_as_recorded": "17:41:19",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "ea1b23abc61d4fe484013514b0d6296f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 739
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 649,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_58260abc15d2",
+          "timestamp_as_recorded": "17:41:25",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "19ce9e39965f4b079c19201c756f490c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 753
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 650,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_65fd81d67840",
+          "timestamp_as_recorded": "17:41:30",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "772b0fc9e5db45919e4687230afb383b",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 767
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 651,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_65fd81d67840",
+          "timestamp_as_recorded": "17:41:36",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "d3eaf0cdeb4844388b7dacde92b37618",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 781
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 652,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_f358f37b35c8",
+          "timestamp_as_recorded": "17:41:42",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "42dcecec2b1b4e3da6c5d764edb239a8",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 795
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 653,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e716d9799515",
+          "timestamp_as_recorded": "17:41:48",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "014d5b966414454eb7e426c5d0868540",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 809
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 654,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e716d9799515",
+          "timestamp_as_recorded": "17:41:54",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "69616993471f4f6590e893f56484306e",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 823
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 655,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e2e4ea81a498",
+          "timestamp_as_recorded": "17:42:14",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "346c94387ce943488eaf2830f9efa6cc",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 837
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 656,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e2e4ea81a498",
+          "timestamp_as_recorded": "17:42:20",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "557320725f6f4a30b8addcc7d875822f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 851
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 657,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e2e4ea81a498",
+          "timestamp_as_recorded": "17:42:25",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e5bc6af9a41d4604bcc93f931b4cb5e2",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 865
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 658,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_a5068c18320d",
+          "timestamp_as_recorded": "17:42:41",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "78a589ac6f3243c8b76f3c1d58e9cc5a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 879
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 659,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_a5068c18320d",
+          "timestamp_as_recorded": "17:42:48",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "803269fd320148d69ee85d615df19a1a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 893
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 660,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_427a768d6ed0",
+          "timestamp_as_recorded": "17:42:54",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b978ae035b9b433c9ca25668f02a5342",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 907
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 661,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_427a768d6ed0",
+          "timestamp_as_recorded": "17:42:59",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "32727e5a3eb2454f907653fd7b694255",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 921
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 662,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_69bd4a47a6f1",
+          "timestamp_as_recorded": "17:43:07",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "3cba5d7ec99d4e3a9ce6bbd2f87dc598",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 940
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 663,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_ed20db875191",
+          "timestamp_as_recorded": "17:43:12",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "d352f29293ad44ae9499a822548c3fd7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 971
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 664,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_69bd4a47a6f1",
+          "timestamp_as_recorded": "17:43:13",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "cb0b0626552c49cbb23c5e5b63fe8ea0",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 985
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 665,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_eab87369553d",
+          "timestamp_as_recorded": "17:43:18",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1f2b927ba81b4fcca2a57702d36b5e7e",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 999
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 666,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_eab87369553d",
+          "timestamp_as_recorded": "17:43:23",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "c331fc4978684add9540e617c98498b7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1013
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 667,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_eab87369553d",
+          "timestamp_as_recorded": "17:43:29",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1769a2bd7f18469283b3751684cb1663",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1027
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 668,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4a6edcbf7161",
+          "timestamp_as_recorded": "17:43:40",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "f457e5dfbfe54b43b5d16ff78da00a3a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1060
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 669,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_9d5729952c5c",
+          "timestamp_as_recorded": "17:43:42",
+          "tool_names": [
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "ca1b21cbf0a8400794eaabd6247580b4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1134
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 671,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_46fc1e574cbf",
+          "timestamp_as_recorded": "17:44:28",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "07b09c2f8d084337a5d57791d67c0d9e",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1148
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 672,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_46fc1e574cbf",
+          "timestamp_as_recorded": "17:44:34",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "a3e496d0416e4b3987536f3579faa4a9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1162
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 673,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_46fc1e574cbf",
+          "timestamp_as_recorded": "17:44:39",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1905827a679944128d1a90b0c45d9759",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1176
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 674,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4e05d329c7ee",
+          "timestamp_as_recorded": "17:44:50",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "3a96047d669243afbb2490c24ea7d3a6",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1204
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 675,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4e05d329c7ee",
+          "timestamp_as_recorded": "17:44:55",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "faf53c9c3a924407b73b7f7248480752",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1218
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 676,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_2fceef0e35f0",
+          "timestamp_as_recorded": "17:44:59",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "eb2abb52121f4b2086d60c9fa7587b10",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1249
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 677,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_fe52e0f9f11a",
+          "timestamp_as_recorded": "17:45:51",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1ba6b921882d4e05b9519e7d43237464",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1263
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 678,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_731c927a918a",
+          "timestamp_as_recorded": "17:45:56",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "230c3f124bb34a1da8782842fc3b15c7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1277
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 679,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_726ac90b3746",
+          "timestamp_as_recorded": "17:46:02",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2d06402dcf5c4abfb609b858e337cdd0",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1291
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 680,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_b917eb91bbcf",
+          "timestamp_as_recorded": "17:46:08",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "0dfe21d1091748bc927fd22e6790ad6b",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1305
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 681,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d95409cc6a7e",
+          "timestamp_as_recorded": "17:46:13",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b1dc6546972848e99389f2b47113f65c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1319
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 682,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_1b8403e13b71",
+          "timestamp_as_recorded": "17:46:24",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "f839b1ac4a4f4f599ee3551bff69d102",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1341
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 683,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_a17b8bbfcf69",
+          "timestamp_as_recorded": "17:46:33",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "a0438f344adf405292fe1220ebf644b9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1367
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 684,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_784bf6943cad",
+          "timestamp_as_recorded": "17:46:39",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2ef127bbc80c4e5c868a4da7ce1af524",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1381
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 685,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_eec1cd5fe3b0",
+          "timestamp_as_recorded": "17:47:25",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "5810c6ed9e684c4481bc2124de632a62",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1395
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 686,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_eec1cd5fe3b0",
+          "timestamp_as_recorded": "17:47:31",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9e74cdd105bd4ec08f56ab08b6835bbf",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1409
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 687,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_eec1cd5fe3b0",
+          "timestamp_as_recorded": "17:47:36",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e54a207c4ec347fcb2a40b7d2871af76",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1423
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 688,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_6fe7b6324114",
+          "timestamp_as_recorded": "17:47:51",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "aa59827cf6c64258ac6587e5f4005dc8",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1496
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 690,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c621dbac9068",
+          "timestamp_as_recorded": "17:48:16",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2a9d3fd450274c929453f2b7a8d6f6bc",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1527
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 691,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_7a9578c0ceeb",
+          "timestamp_as_recorded": "17:48:29",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "d1eeafc72b2b4fe6b541b87b09416ed7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1549
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 692,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_064efabec649",
+          "timestamp_as_recorded": "17:48:46",
+          "tool_names": [
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "7e853dbf199e4bff9d4aa7c8ee04f40d",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1576
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 693,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_064efabec649",
+          "timestamp_as_recorded": "17:49:01",
+          "tool_names": [
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "4edad1e2f6bc4e67959655f59224dc77",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1607
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 694,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_064efabec649",
+          "timestamp_as_recorded": "17:49:07",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "949d59df2bbb490e9dd06a82893d3db2",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1621
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 695,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_064efabec649",
+          "timestamp_as_recorded": "17:49:13",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "c854e372b2604910a32c97bdf46b62ac",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1635
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 696,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_622652a19aca",
+          "timestamp_as_recorded": "17:50:05",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "73543ddbc94f4298a676cc99de79d693",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1649
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 697,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_f864df92d7cf",
+          "timestamp_as_recorded": "17:50:11",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "38d6395bb97e4c3cb181491b4a3e8c69",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1663
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 698,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_551b3679b23b",
+          "timestamp_as_recorded": "17:50:16",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "d28e8aab994846e3a7e2badc06d7035b",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1706
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 700,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d2750fe8dc85",
+          "timestamp_as_recorded": "17:50:37",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "55a458c12d9f43ccb0c58c84b0adcff8",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1720
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 701,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_db45f949c7a9",
+          "timestamp_as_recorded": "17:50:42",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "4a325e8c1e6647868380967d9de3c573",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1734
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 702,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d2e40a00bf48",
+          "timestamp_as_recorded": "17:51:17",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "0097a499dad04fb0adeaef6779e890e4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1748
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 703,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d2e40a00bf48",
+          "timestamp_as_recorded": "17:51:22",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "365f37458e65455d89961577c327f63c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1762
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 704,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d2e40a00bf48",
+          "timestamp_as_recorded": "17:51:28",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "7575ca4f6ff34acc8721d390fa448e54",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1776
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 705,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d2e40a00bf48",
+          "timestamp_as_recorded": "17:51:34",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "7ebe97793d9a48c08596ee235f09fd09",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1790
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 706,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_0a275d0f6f9a",
+          "timestamp_as_recorded": "17:51:40",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b88c7a71be2d4000b6d3c56e29f42ae9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1804
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 707,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_0a275d0f6f9a",
+          "timestamp_as_recorded": "17:51:45",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "0b456d6619234adc8fdae06f499d5d1a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1818
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 708,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_ad609d96e5d4",
+          "timestamp_as_recorded": "17:51:59",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "8358602ff915420fb420e0bf87c96448",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1839
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 709,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_ad609d96e5d4",
+          "timestamp_as_recorded": "17:52:14",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "63029fbd36654b5a984b429764b8aaf3",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1860
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 710,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_ad609d96e5d4",
+          "timestamp_as_recorded": "17:52:27",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "3bfbf13315a844279de1f1d73092ffc8",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1881
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 711,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c7226224d598",
+          "timestamp_as_recorded": "17:52:46",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "642b946762654730b4f1605f15f3863a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1895
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 712,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_ce1bcc55de5e",
+          "timestamp_as_recorded": "17:52:52",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "33aeb4f56b534942b864ffb33d1767e7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1909
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 713,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4fcec048fa5a",
+          "timestamp_as_recorded": "17:52:58",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1122eb6a3b32469faddfd7f56da75d52",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1923
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 714,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_24d8b711f451",
+          "timestamp_as_recorded": "17:53:04",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9fd475822c164e94914ee1ef1cca37c3",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1937
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 715,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_2f1811591c2c",
+          "timestamp_as_recorded": "17:53:10",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2b729a42efc042e7a75300adaa6e7970",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 1951
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 716,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_a501896282ed",
+          "timestamp_as_recorded": "17:53:15",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b4b792d778fa4ab0891e74976910ddd4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2079
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 720,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4c7aa3a0a478",
+          "timestamp_as_recorded": "17:54:06",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "f3d5ed5e76d745a1a0197be311926b9a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2291
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 727,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_aa219d3c6985",
+          "timestamp_as_recorded": "17:55:34",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "6aeb91886c594581bb5ab8e2870f6ba6",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2323
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 728,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_68154db8a8bf",
+          "timestamp_as_recorded": "17:55:44",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "abd02212e36a40fb9c3ac3c3e2400c55",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2402
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 731,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_30c0bc67495b",
+          "timestamp_as_recorded": "17:56:25",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e0bfecc43cb9424fa5eff96bf839c2c9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2445
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 733,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_5f605fc3b479",
+          "timestamp_as_recorded": "17:56:36",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "ea3c025d83fe4c14a078966cd274fe0f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2459
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 734,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e85bd1c08bce",
+          "timestamp_as_recorded": "17:57:10",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "bfcae9bc63dc46b2933c793b89a7e68c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2473
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 735,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_bb79c3c23ea0",
+          "timestamp_as_recorded": "17:57:15",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "6a521b7608e847078f5b0798d2e54d92",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+          "line": 2487
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 736,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e824dad1d363",
+          "timestamp_as_recorded": "17:57:20",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "988350a3017f48b48e8fa60e69830e8f",
+      "incoming_report_locations": [
+        {
+          "path": "leaks/karthik-claude-opus-5-5-leak.md",
+          "line": 15
+        }
+      ],
+      "raw_trace_locations": []
+    },
+    {
+      "turn_id": "ddd15f6e5a214200b871767259a5d07f",
+      "incoming_report_locations": [
+        {
+          "path": "leaks/karthik-claude-opus-5-5-leak.md",
+          "line": 41
+        }
+      ],
+      "raw_trace_locations": []
+    },
+    {
       "turn_id": "d74f16de8adc499d9be7f0af1b12121a",
       "stage3_control": {
         "source": "logs/stage3/sparsh-haiku-5-5.jsonl",
@@ -7546,9 +9449,9 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 35309,
-      "sha256": "d3d3bb98c00c8f95aa7f0221bd21afdbb97904d919041078bc450a0cc1042805",
-      "lf_sha256": "d3d3bb98c00c8f95aa7f0221bd21afdbb97904d919041078bc450a0cc1042805"
+      "bytes": 40690,
+      "sha256": "6978ea53867ea5a6d1f1a51a4423165f4ca1c2b19460a874e29d0fecc939b4d9",
+      "lf_sha256": "84d26ae4950aa80aa3458ee4ccf6850f69c3f0415c7d7931920ae7d08be78870"
     },
     {
       "path": "attack.py",
@@ -7582,15 +9485,15 @@
     },
     {
       "path": "docs/FINAL_SUBMISSION.md",
-      "bytes": 12726,
-      "sha256": "c423f2034110a777e948f74cce7f756dc01488e36410a651bd8a6bd149ef48aa",
-      "lf_sha256": "c423f2034110a777e948f74cce7f756dc01488e36410a651bd8a6bd149ef48aa"
+      "bytes": 14372,
+      "sha256": "aff280220c0ca6dae3e70a8eabe83dfec7b63c1980e5d2f7d98ec03f8bbe477d",
+      "lf_sha256": "1fb2a30784d59edab454eb2bebc9e9c4e2a93782e82545bf98e6c50e546c9c4e"
     },
     {
       "path": "docs/FINDINGS.md",
-      "bytes": 7961,
-      "sha256": "2e5836267e14e37516b63119517e6c305a7f6247dfdf662c9de84ff174e56548",
-      "lf_sha256": "2e5836267e14e37516b63119517e6c305a7f6247dfdf662c9de84ff174e56548"
+      "bytes": 8862,
+      "sha256": "795fe2c8f129f27aec0e9d5ee628dcb149e99ab51bf175798d8cc767b91938eb",
+      "lf_sha256": "9369a31a5d50882202c644e1b8681169321058327aedec314d96256c7beba0bc"
     },
     {
       "path": "docs/LEAK_REPORT.md",
@@ -7603,6 +9506,12 @@
       "bytes": 84749,
       "sha256": "22095123bed9a176ad34c949668e553df54686d809b459a09077b81a0412a158",
       "lf_sha256": "2660a61233f2bad32dbd7c13d499a1822f268a068bf2ba9843d7af82dcd35614"
+    },
+    {
+      "path": "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md",
+      "bytes": 92442,
+      "sha256": "6210a6f8397764339fb61730311aa6411e00ce1cd7f040d81f20a63a79930513",
+      "lf_sha256": "949c9c25e5511fb8d6cca99411243ac2a53e22af6b80a8d8cbfa29f8c071177d"
     },
     {
       "path": "docs/PROMPTS.md",
@@ -7629,10 +9538,22 @@
       "lf_sha256": "ea35d3b145549a85c48e7dc9000a91c2f2996e054cc759a40a6acd4727673619"
     },
     {
+      "path": "hunt_oneshot.py",
+      "bytes": 1456,
+      "sha256": "6a9e5dab0128eb414e569bd9becab03eed94c43cb8a514e1bd3b1515c8229f9a",
+      "lf_sha256": "a5bdc14887573231d9775ceb8e76e37a5f7c7086985460ea81898fefb70d5767"
+    },
+    {
       "path": "injection_probe.py",
       "bytes": 9861,
       "sha256": "3a130cc5667bf130b188774a6db52464aefe04e83a11ca71c7281789756f8a56",
       "lf_sha256": "35084c58a1e7367221cb91c4d846be75407469091a1468e070951a866734425f"
+    },
+    {
+      "path": "leaks/karthik-claude-opus-5-5-leak.md",
+      "bytes": 4003,
+      "sha256": "954c6cd74ebe7df400128032c8f5e60f3d82e707882d2505ccf5dad7fecb5f26",
+      "lf_sha256": "ba7f961d6e9c06ca10da0dbf0d9bb7437dfccd681940f0eab8b236d84ca533c9"
     },
     {
       "path": "leaks/umair-claude-haiku-5-leak.md",
@@ -7654,9 +9575,9 @@
     },
     {
       "path": "logs/import-provenance.json",
-      "bytes": 27949,
-      "sha256": "88401702874050c9b001fb9c22eb21f3bcfe2ac76a13ad80d633722259e17e72",
-      "lf_sha256": "88401702874050c9b001fb9c22eb21f3bcfe2ac76a13ad80d633722259e17e72"
+      "bytes": 29092,
+      "sha256": "7f1dbdfa7ba87c81e0c9f89dff88a52204ac0d2a79af0be1505c32f13c15caf6",
+      "lf_sha256": "64bb1545c3c9a317f96cc8bb81e09f98ee7c2b38061c88de1e404e161f8ddfda"
     },
     {
       "path": "logs/incoming-review.json",
@@ -7672,9 +9593,9 @@
     },
     {
       "path": "logs/my_attempts.jsonl",
-      "bytes": 612654,
-      "sha256": "941e7a1b20189a945097fc30a25067470277c679ba83fe3be64d84619d47ebb8",
-      "lf_sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1"
+      "bytes": 686892,
+      "sha256": "aff2a091bcd961cd7335cac9834928478616b5cec06775cde99e1d93e84078cc",
+      "lf_sha256": "a34673020437df4fdfdaadbaa5c0fdcfde512f3b594318f97254b403f9d8e5ad"
     },
     {
       "path": "logs/my_attempts_session2.jsonl",
@@ -7707,6 +9628,12 @@
       "lf_sha256": "09cab05f2543e0de5ef957835418e90581db48fcf1cde659a08e234a07b4cddc"
     },
     {
+      "path": "logs/stage3/late-additions-review.json",
+      "bytes": 1181,
+      "sha256": "99b5f6363d723c05150471ec7372dddd336c517fff96cec720bc1dd10004d3a4",
+      "lf_sha256": "4f6e96c097924c17bdcda37b509bee00125fe4e514b2c72a495e7f0f58345be6"
+    },
+    {
       "path": "logs/stage3/review.json",
       "bytes": 2080,
       "sha256": "c510cc9165073a71a1b9a83f773fb7402d9d40e08eed6c29b93ac4b47142aa29",
@@ -7720,9 +9647,9 @@
     },
     {
       "path": "logs/submission-verification.json",
-      "bytes": 3719,
-      "sha256": "0d2a175922958d2df93fdd576433bff769ead92d8afaff1f629e23ca4c179bec",
-      "lf_sha256": "0d2a175922958d2df93fdd576433bff769ead92d8afaff1f629e23ca4c179bec"
+      "bytes": 3970,
+      "sha256": "965924701a1e938ef90d8a0ac53da2130e195bb4fcfee23f5b82d91786237867",
+      "lf_sha256": "37dc558951ccee3079fb5b95cacf59d353a1c33e4443221f4253fa4536dc5200"
     },
     {
       "path": "logs/SUBMISSION.md",
@@ -7815,10 +9742,16 @@
       "lf_sha256": "20ec4628f53beae2b1fad7dc5e04f880972aa2e9bf8f544b1baa22f231225b86"
     },
     {
+      "path": "opus_hunt.py",
+      "bytes": 9000,
+      "sha256": "f73deb57890bbf99660add5f9caf49a77b1f934843edaad7274c6c1c06558a24",
+      "lf_sha256": "54d12d577edcd8f0dd178de9e12fdef94f578b0fb75fe1dd493bf4efba36a82e"
+    },
+    {
       "path": "presentation/app.js",
-      "bytes": 21399,
-      "sha256": "caad107db98f9a186620864263ea5a38b66be18953bbbb98f1545734ba301f4d",
-      "lf_sha256": "caad107db98f9a186620864263ea5a38b66be18953bbbb98f1545734ba301f4d"
+      "bytes": 21438,
+      "sha256": "b2067b62da893e68067c952a13684e012a073aff8e1bcaad1d38d55d27ce0d52",
+      "lf_sha256": "b2067b62da893e68067c952a13684e012a073aff8e1bcaad1d38d55d27ce0d52"
     },
     {
       "path": "presentation/assets/team/crops.json",
@@ -7978,15 +9911,15 @@
     },
     {
       "path": "presentation/index.html",
-      "bytes": 18861,
-      "sha256": "a944a122ae193ab2663bafe94072bdcb0d72c99b5a4074728f9da967daeb2291",
-      "lf_sha256": "a944a122ae193ab2663bafe94072bdcb0d72c99b5a4074728f9da967daeb2291"
+      "bytes": 19066,
+      "sha256": "e90ece090d9de885c5bcb15bd4beee764b046fb24dce005f573710e1c8914127",
+      "lf_sha256": "110cade4a1efd25e6d14bf625042e0abc2d86211a74aa2a5b83a587417ea9528"
     },
     {
       "path": "presentation/presentation-data.js",
-      "bytes": 255859,
-      "sha256": "7f1fffdbc044ff5f5b2b8a12279afad3a73f22493aa0c2266677cd4c52231fc1",
-      "lf_sha256": "7f1fffdbc044ff5f5b2b8a12279afad3a73f22493aa0c2266677cd4c52231fc1"
+      "bytes": 260734,
+      "sha256": "752412a9ae2a9536c804ff6fcf54e58a62fefa02e7a4b10723a5ea8009187491",
+      "lf_sha256": "752412a9ae2a9536c804ff6fcf54e58a62fefa02e7a4b10723a5ea8009187491"
     },
     {
       "path": "presentation/replay-source.js",
@@ -8002,9 +9935,9 @@
     },
     {
       "path": "presentation/story.css",
-      "bytes": 35815,
-      "sha256": "aaa34fe266900aee7276509a8a9fa7177965107ed53c1b99f669084d8e0d5bd4",
-      "lf_sha256": "aaa34fe266900aee7276509a8a9fa7177965107ed53c1b99f669084d8e0d5bd4"
+      "bytes": 36491,
+      "sha256": "faf25cdfffc87d347a7f05c5cfe1a33106df7e312fff4872c2371e0d19962b48",
+      "lf_sha256": "95388c41d151753c1b4379b105928018979fe9380a8e2c0f3e9aebc48f4c75fd"
     },
     {
       "path": "presentation/styles.css",
@@ -8014,9 +9947,9 @@
     },
     {
       "path": "presentation.html",
-      "bytes": 878928,
-      "sha256": "ecf287a157ae84fe25249f687efc5ae3dc24814cb803e5647d9b52aa20da250c",
-      "lf_sha256": "ecf287a157ae84fe25249f687efc5ae3dc24814cb803e5647d9b52aa20da250c"
+      "bytes": 884716,
+      "sha256": "d55d26aa96f192d6e003287515bc1099aad17aac86ec299dd12349643c20ca76",
+      "lf_sha256": "dce60ad25ccb638c0a5c63d7a6e39ae3be9a66ba193c72518cd8e4b0780310aa"
     },
     {
       "path": "probe.py",
@@ -8026,9 +9959,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 6793,
-      "sha256": "c1d6ec1d169d17932cc73c35f8cf806eea3ec8b064824b336449f1f23548e546",
-      "lf_sha256": "c1d6ec1d169d17932cc73c35f8cf806eea3ec8b064824b336449f1f23548e546"
+      "bytes": 7644,
+      "sha256": "59bd8ae605b0d252ca08375375e6b31d27bb7e2b909023b3dc1c8bc852c06e96",
+      "lf_sha256": "3af98e212b370ffdf6eb62a488500a9c4520a7cf2ba2e6965f370be4e224eced"
     },
     {
       "path": "reproduce-cases.json",
@@ -8067,10 +10000,16 @@
       "lf_sha256": "0bbbb47d93cba83febd0954cf566197e28a70b7704aca11707e35a47da22fbdf"
     },
     {
+      "path": "tools/build_disclosure_doc.py",
+      "bytes": 15114,
+      "sha256": "330bfecc139be587a1f2bd49259ac33a2f8f6dd0fd4c990c7003359031739fe2",
+      "lf_sha256": "330bfecc139be587a1f2bd49259ac33a2f8f6dd0fd4c990c7003359031739fe2"
+    },
+    {
       "path": "tools/index-evidence.py",
-      "bytes": 6212,
-      "sha256": "e4ad468176920f866cfb5f02d7bc0a5074570ef6195a6795aee3a77092b04c86",
-      "lf_sha256": "e4ad468176920f866cfb5f02d7bc0a5074570ef6195a6795aee3a77092b04c86"
+      "bytes": 6371,
+      "sha256": "0dca1a1d7fd45ff8809c821808643011bcd39da3147feb8cfbd6e957884d1a67",
+      "lf_sha256": "0dca1a1d7fd45ff8809c821808643011bcd39da3147feb8cfbd6e957884d1a67"
     }
   ],
   "hash_note": "sha256 records exact source bytes. lf_sha256 also permits checking existing Git text files after platform line-ending conversion; imported raw evidence has -text attributes."

@@ -1,0 +1,28 @@
+{
+  "incoming_commit": "06d75dc7524373c0fb02de9f4694cad96cc59e60",
+  "new_records": 91,
+  "opus_total_records": 175,
+  "new_empty_replies": 58,
+  "reports": {
+    "docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md": {
+      "refs": 91,
+      "matches": 91,
+      "unmatched": [],
+      "sha256": "6210a6f8397764339fb61730311aa6411e00ce1cd7f040d81f20a63a79930513"
+    },
+    "leaks/karthik-claude-opus-5-5-leak.md": {
+      "refs": 2,
+      "matches": 0,
+      "unmatched": [
+        "988350a3017f48b48e8fa60e69830e8f",
+        "ddd15f6e5a214200b871767259a5d07f"
+      ],
+      "sha256": "954c6cd74ebe7df400128032c8f5e60f3d82e707882d2505ccf5dad7fecb5f26"
+    }
+  },
+  "notes": [
+    "Scope/rules text appears in raw Opus replies after three-letter transforms. No backend system prompt was inspected, so complete verbatim recovery is not independently verified.",
+    "Kartik reports ten insurance-plan rows and twelve provider rows. Both IDs currently lack raw matches. Public/reference output is not established as a private patient leak.",
+    "All original incoming reports and raw logs remain unchanged. No new live calls were made during integration."
+  ]
+}

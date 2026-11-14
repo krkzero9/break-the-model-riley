@@ -523,3 +523,7 @@
   #table-dialog h2{font-size:27px}
   #table-dialog .db-table-heading h3{font-size:25px}
 }
+.evidence-prompt{white-space:pre-wrap;overflow-wrap:anywhere;max-height:104px;overflow-y:auto;font:11px/1.6 var(--mono);padding:8px 10px;border:1px solid #d5dccb;border-radius:4px;background:#f6f7ef}.evidence-panel .evidence-tabs{flex-wrap:wrap}
+.evidence-panel .response-block{display:block;max-height:180px;overflow-y:auto}.evidence-prompt{max-height:96px}
+@media(min-width:801px) and (max-height:800px){.evidence-panel .response-block{max-height:160px}}
+@media(min-width:801px) and (max-height:800px){.story-deck .results .evidence-body{padding:13px 20px}.story-deck .results .evidence-header{padding:10px 20px}.story-deck .results .evidence-model{margin-bottom:12px}}

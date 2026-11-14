@@ -4,7 +4,11 @@ Sparsh, Uzair, Kartik (Karthikeyan Rajendran), Imran and Ganesh designed, tested
 
 Open [presentation.html](presentation.html) in a browser for the complete offline story, clickable database map, evidence, replay protocol, proposed fixes and team photos. Editable sources are in [presentation/](presentation/); the earlier team deck remains in [presentation/deck/](presentation/deck/).
 
-Use [docs/FINAL_SUBMISSION.md](docs/FINAL_SUBMISSION.md) for the current submission description, selected proof, rubric coverage and three-minute narration. The merged archive has 1,415 records; 294 of 300 referenced turns have raw matches. These are inventory counts, not success rates. The presentation opens Results on **Stage 3 / Claude 5.5**; switch to Earlier models for the private-disclosure evidence.
+Use [docs/FINAL_SUBMISSION.md](docs/FINAL_SUBMISSION.md) for the current submission description, selected proof, rubric coverage and three-minute narration. The merged archive has 1,506 records; 385 of 393 referenced turns have raw matches. These are inventory counts, not success rates. The presentation opens Results on **Stage 3 / Claude 5.5**; switch to Earlier models for the private-disclosure evidence.
+
+Latest additions: [Opus scope/rules disclosure](docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md), [Kartik reference-output report](leaks/karthik-claude-opus-5-5-leak.md), and [review/source hashes](logs/stage3/late-additions-review.json). Results now show exact successful prompts.
+
+Latest additions: [Opus scope/rules disclosure](docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md), [Kartik reference-output report](leaks/karthik-claude-opus-5-5-leak.md), and [review/source hashes](logs/stage3/late-additions-review.json). Results now show exact successful prompts.
 
 All written reports live in [docs/](docs/); the root retains the README, agent notes and code. The Opus 5.5 observations are in [docs/OBSERVATIONS.md](docs/OBSERVATIONS.md) and the system-prompt disclosure in [docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md](docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md).
 
@@ -13,7 +17,7 @@ All written reports live in [docs/](docs/); the root retains the README, agent n
 | Material | Location |
 |---|---|
 | Repository's original proof and submission writeups | [logs/SUBMISSION.md](logs/SUBMISSION.md), [logs/proof_leaks.md](logs/proof_leaks.md), [logs/FORM_SUBMISSIONS.md](logs/FORM_SUBMISSIONS.md) |
-| Repository's shared raw log | [logs/my_attempts.jsonl](logs/my_attempts.jsonl): 646 records, 570 unique turn IDs; includes 84 Opus 5.5 records |
+| Repository's shared raw log | [logs/my_attempts.jsonl](logs/my_attempts.jsonl): 737 records, 661 unique turn IDs; includes 175 Opus 5.5 records |
 | Stage 3 Claude evidence | [docs/OBSERVATIONS.md](docs/OBSERVATIONS.md), [Haiku report](leaks/umair-claude-haiku-5-leak.md), [Sparsh's three raw Haiku controls](logs/stage3/sparsh-haiku-5-5.jsonl), [review and source hashes](logs/stage3/review.json) |
 | Sparsh's separate raw session snapshot | [logs/sparsh-2026-11-14/my_attempts.jsonl](logs/sparsh-2026-11-14/my_attempts.jsonl): 167 records; the earlier individual review covered 157 |
 | Original transcripts, exports and review corrections | [logs/user-transcripts-2026-11-14.txt](logs/user-transcripts-2026-11-14.txt), [logs/user-database-export-2026-11-14.json](logs/user-database-export-2026-11-14.json), [logs/presentation-evidence-audit-2026-11-14.json](logs/presentation-evidence-audit-2026-11-14.json) |
