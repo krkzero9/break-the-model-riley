@@ -1,2 +1,6 @@
 .env
 __pycache__/
+
+# local red-team logs — contains extracted data, never commit
+logs/
+.idea/
