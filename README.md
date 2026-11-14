@@ -1,10 +1,19 @@
 # Break the Model
 
-> **Team note (private repo):** our red-team results live here —
-> - [`logs/SUBMISSION.md`](logs/SUBMISSION.md) — findings summary, techniques, measured success rates, fixes (read this first)
+> **Team note (private repo):** two red-team runs are merged here. Start at
+> [`FINDINGS.md`](FINDINGS.md) — consolidated index + reconciliation of both runs.
+>
+> Session 1 (`krkzero9/break-the-model-riley`, weak Qwen3-30B — the exploit host):
+> - [`logs/SUBMISSION.md`](logs/SUBMISSION.md) — findings summary, techniques, measured success rates, fixes
 > - [`logs/proof_leaks.md`](logs/proof_leaks.md) — full evidence with `turn_id`s
+> - [`logs/FORM_SUBMISSIONS.md`](logs/FORM_SUBMISSIONS.md) — form-ready writeup per `turn_id`
 > - [`logs/success_rates.json`](logs/success_rates.json), [`model_matrix.json`](logs/model_matrix.json) — measured numbers across 4 models
 > - [`presentation/deck/`](presentation/deck/) — 10-slide pitch deck source · [live deck](https://claude.ai/artifact/4WFAyqDPbkxHDz6iLndWg6)
+>
+> Session 2 (strong DeepSeek-V4-Pro — guard internals):
+> - [`LEAK_REPORT.md`](LEAK_REPORT.md) — full write-up + verbatim leaked rows
+> - [`PROMPTS.md`](PROMPTS.md) — verified prompt set for both sessions
+> - `logs/my_attempts.jsonl` (Session 1) · `logs/my_attempts_session2.jsonl` (Session 2) — raw request/response logs
 >
 > Data here is the challenge's synthetic data. Keep this repo private; `.env` (API key) is git-ignored.
 
