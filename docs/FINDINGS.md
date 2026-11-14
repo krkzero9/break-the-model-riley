@@ -64,10 +64,10 @@ An authorized event-funded run can add `--live`; it records each fresh conversat
 
 ## Proposed solutions
 
-- Use deterministic forms and workflows for routine private-data tasks.
-- Keep sensitive databases, credentials and network access outside the language model's reach.
-- Enforce trusted table, row, field, predicate/function and aggregate-content permissions at the tool boundary.
-- Bind the requested record to the authenticated user and approved recipient before sending.
-- Replay the same attacks against the defence while checking that permitted workflows still work.
+- Replace simple flows with pre-LLM rule-based chatbots, forms and state machines. Avoid low-quality models in sensitive workflows; use capable models only when language reasoning adds value.
+- Isolate sensitive databases, credentials and network access; least privilege limits tools, records, fields, recipients, request rates and result volume.
+- Filter and validate structured inputs. Treat retrieved and other-agent instructions as untrusted; check sensitive predicates, aggregate contents, outgoing data and recipients before dispatch.
+- Consider a bounded validation loop or separate decision model for risky actions when measured benefit justifies latency, cost and operating complexity. Keep system permissions independent of model approval.
+- Replay the same attacks against the proposed defence while checking that permitted workflows still work; defence validation remains pending.
 
 The five-person team designed, tested and reviewed together throughout. Open [presentation.html](../presentation.html) for the complete story, interactive database map, evidence and team.

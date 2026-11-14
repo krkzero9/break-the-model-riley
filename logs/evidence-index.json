@@ -4006,6 +4006,25 @@
       ]
     },
     {
+      "turn_id": "fab5edc295774483a18ba92fae20ccd3",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 891
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 406,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_7f2d442348f1",
+          "timestamp_as_recorded": "14:51:18",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "d9572fd2e42646d3bd3fe3f963c9a0f4",
       "incoming_report_locations": [
         {
@@ -4023,25 +4042,6 @@
           "tool_names": [
             "query_db"
           ]
-        }
-      ]
-    },
-    {
-      "turn_id": "fab5edc295774483a18ba92fae20ccd3",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 891
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 406,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_7f2d442348f1",
-          "timestamp_as_recorded": "14:51:18",
-          "tool_names": []
         }
       ]
     },
@@ -4859,25 +4859,6 @@
       ]
     },
     {
-      "turn_id": "49471e6851d74e82a2547b0f521479de",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1011
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 572,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_54e5af0931d2",
-          "timestamp_as_recorded": "15:38:27",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "306d7aa90fc241fe98918e703cfed0e2",
       "incoming_report_locations": [
         {
@@ -4895,6 +4876,25 @@
           "tool_names": [
             "query_db"
           ]
+        }
+      ]
+    },
+    {
+      "turn_id": "49471e6851d74e82a2547b0f521479de",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1011
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 572,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_54e5af0931d2",
+          "timestamp_as_recorded": "15:38:27",
+          "tool_names": []
         }
       ]
     },
@@ -4996,6 +4996,25 @@
       ]
     },
     {
+      "turn_id": "6b47cc47acae4259b777853a185f18e2",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1025
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 569,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_ca1067cc028b",
+          "timestamp_as_recorded": "15:37:53",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "047c25f21cc9435282f99fc4ebda47d1",
       "incoming_report_locations": [
         {
@@ -5013,25 +5032,6 @@
           "tool_names": [
             "query_db"
           ]
-        }
-      ]
-    },
-    {
-      "turn_id": "6b47cc47acae4259b777853a185f18e2",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1025
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 569,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_ca1067cc028b",
-          "timestamp_as_recorded": "15:37:53",
-          "tool_names": []
         }
       ]
     },
@@ -5074,25 +5074,6 @@
       ]
     },
     {
-      "turn_id": "532e67cff6f5493dafae92d4f33b0099",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1033
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 558,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_dcb756039c43",
-          "timestamp_as_recorded": "15:34:53",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "0e7e04e325a643e88198b5d0140db13c",
       "incoming_report_locations": [
         {
@@ -5107,6 +5088,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_dcb756039c43",
           "timestamp_as_recorded": "15:34:47",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "532e67cff6f5493dafae92d4f33b0099",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1033
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 558,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_dcb756039c43",
+          "timestamp_as_recorded": "15:34:53",
           "tool_names": []
         }
       ]
@@ -5150,25 +5150,6 @@
       ]
     },
     {
-      "turn_id": "c1a866f47fd54628a28bbe4978dffadb",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1036
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 391,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_1a82a99d58ca",
-          "timestamp_as_recorded": "14:48:37",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "3eea46802c664689aa900742fc8765ad",
       "incoming_report_locations": [
         {
@@ -5188,20 +5169,20 @@
       ]
     },
     {
-      "turn_id": "89106e0b094a4f6fbbab756077163893",
+      "turn_id": "c1a866f47fd54628a28bbe4978dffadb",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1037
+          "line": 1036
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 376,
+          "line": 391,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_249d6b1ff866",
-          "timestamp_as_recorded": "14:46:30",
+          "conversation_id": "conv_1a82a99d58ca",
+          "timestamp_as_recorded": "14:48:37",
           "tool_names": []
         }
       ]
@@ -5226,6 +5207,25 @@
       ]
     },
     {
+      "turn_id": "89106e0b094a4f6fbbab756077163893",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1037
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 376,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_249d6b1ff866",
+          "timestamp_as_recorded": "14:46:30",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "5f6787f561a7450d93c868e1215c44ab",
       "incoming_report_locations": [
         {
@@ -5245,25 +5245,6 @@
       ]
     },
     {
-      "turn_id": "df1626449dee4c79b334feb9f95870cd",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1039
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 380,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_a1d3e7e184a4",
-          "timestamp_as_recorded": "14:47:04",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "42275866a15f4c1b8c513f0f20b37cb8",
       "incoming_report_locations": [
         {
@@ -5278,6 +5259,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_a1d3e7e184a4",
           "timestamp_as_recorded": "14:47:11",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "df1626449dee4c79b334feb9f95870cd",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1039
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 380,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_a1d3e7e184a4",
+          "timestamp_as_recorded": "14:47:04",
           "tool_names": []
         }
       ]
@@ -5359,25 +5359,6 @@
       ]
     },
     {
-      "turn_id": "596add6354e64dd38e9dc036d7e71e49",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1042
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 377,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_2fe9956d9e7d",
-          "timestamp_as_recorded": "14:46:41",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "20d5783183be4d24b179b1113fcdc1db",
       "incoming_report_locations": [
         {
@@ -5392,6 +5373,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_2fe9956d9e7d",
           "timestamp_as_recorded": "14:46:57",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "596add6354e64dd38e9dc036d7e71e49",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1042
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 377,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_2fe9956d9e7d",
+          "timestamp_as_recorded": "14:46:41",
           "tool_names": []
         }
       ]
@@ -5817,6 +5817,35 @@
       ]
     },
     {
+      "turn_id": "8f43fff06680450785ec71a55967acb0",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 52
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 236
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1873
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 634,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_454a257cd221",
+          "timestamp_as_recorded": "17:16:26",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
       "turn_id": "6f00f838b21844169c8f44612c5f7911",
       "incoming_report_locations": [
         {
@@ -5868,35 +5897,6 @@
           "model": "claude-opus-5-5",
           "conversation_id": "conv_2d9585feb0b8",
           "timestamp_as_recorded": "17:16:05",
-          "tool_names": [
-            "query_db"
-          ]
-        }
-      ]
-    },
-    {
-      "turn_id": "8f43fff06680450785ec71a55967acb0",
-      "incoming_report_locations": [
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 52
-        },
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 236
-        },
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 1873
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts.jsonl",
-          "line": 634,
-          "model": "claude-opus-5-5",
-          "conversation_id": "conv_454a257cd221",
-          "timestamp_as_recorded": "17:16:26",
           "tool_names": [
             "query_db"
           ]
@@ -6508,27 +6508,6 @@
       ]
     },
     {
-      "turn_id": "1e6c9a93a6dc45cfbf91d9f906af6cde",
-      "incoming_report_locations": [
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 105
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts.jsonl",
-          "line": 191,
-          "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
-          "conversation_id": "conv_a041449c8530",
-          "timestamp_as_recorded": "13:53:39",
-          "tool_names": [
-            "read_inbox"
-          ]
-        }
-      ]
-    },
-    {
       "turn_id": "f3dfbb53d08243faabc105592f417920",
       "incoming_report_locations": [
         {
@@ -6543,6 +6522,27 @@
           "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
           "conversation_id": "conv_6ca9959fb3f6",
           "timestamp_as_recorded": "13:53:49",
+          "tool_names": [
+            "read_inbox"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "1e6c9a93a6dc45cfbf91d9f906af6cde",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 105
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 191,
+          "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "conversation_id": "conv_a041449c8530",
+          "timestamp_as_recorded": "13:53:39",
           "tool_names": [
             "read_inbox"
           ]
@@ -6699,32 +6699,6 @@
       ]
     },
     {
-      "turn_id": "7e607a8b26b048c28798b230600b5c12",
-      "incoming_report_locations": [
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 351
-        },
-        {
-          "path": "docs/OBSERVATIONS.md",
-          "line": 1074
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts.jsonl",
-          "line": 599,
-          "model": "claude-opus-5-5",
-          "conversation_id": "conv_7986941d10d7",
-          "timestamp_as_recorded": "17:08:57",
-          "tool_names": [
-            "read_file",
-            "read_file"
-          ]
-        }
-      ]
-    },
-    {
       "turn_id": "56b52318f8ce41fc99d8bdfa28517766",
       "incoming_report_locations": [
         {
@@ -6743,6 +6717,32 @@
           "model": "claude-opus-5-5",
           "conversation_id": "conv_abf321fa4e89",
           "timestamp_as_recorded": "17:09:09",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "7e607a8b26b048c28798b230600b5c12",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 351
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1074
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 599,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_7986941d10d7",
+          "timestamp_as_recorded": "17:08:57",
           "tool_names": [
             "read_file",
             "read_file"
@@ -7582,15 +7582,15 @@
     },
     {
       "path": "docs/FINAL_SUBMISSION.md",
-      "bytes": 11851,
-      "sha256": "4c60b774292699841b57958a58c89882dceaa25833c79043cde79656afda956b",
-      "lf_sha256": "4c60b774292699841b57958a58c89882dceaa25833c79043cde79656afda956b"
+      "bytes": 12726,
+      "sha256": "c423f2034110a777e948f74cce7f756dc01488e36410a651bd8a6bd149ef48aa",
+      "lf_sha256": "c423f2034110a777e948f74cce7f756dc01488e36410a651bd8a6bd149ef48aa"
     },
     {
       "path": "docs/FINDINGS.md",
-      "bytes": 7538,
-      "sha256": "a8d0215d25c6902d1b81f94c2aa2343872a3847981548b2f73bc6bc3b6835efd",
-      "lf_sha256": "a8d0215d25c6902d1b81f94c2aa2343872a3847981548b2f73bc6bc3b6835efd"
+      "bytes": 7961,
+      "sha256": "2e5836267e14e37516b63119517e6c305a7f6247dfdf662c9de84ff174e56548",
+      "lf_sha256": "2e5836267e14e37516b63119517e6c305a7f6247dfdf662c9de84ff174e56548"
     },
     {
       "path": "docs/LEAK_REPORT.md",
@@ -7720,9 +7720,9 @@
     },
     {
       "path": "logs/submission-verification.json",
-      "bytes": 3348,
-      "sha256": "270f59d653b6172e7f00defc0cfff54c0d4c47a4ca57c8ebe2876e9254c66ae9",
-      "lf_sha256": "270f59d653b6172e7f00defc0cfff54c0d4c47a4ca57c8ebe2876e9254c66ae9"
+      "bytes": 3719,
+      "sha256": "0d2a175922958d2df93fdd576433bff769ead92d8afaff1f629e23ca4c179bec",
+      "lf_sha256": "0d2a175922958d2df93fdd576433bff769ead92d8afaff1f629e23ca4c179bec"
     },
     {
       "path": "logs/SUBMISSION.md",
@@ -7816,9 +7816,9 @@
     },
     {
       "path": "presentation/app.js",
-      "bytes": 21276,
-      "sha256": "40291ce7f1ee6b71f30b3924997ff20debb94041c269c34c0df256901afadb31",
-      "lf_sha256": "40291ce7f1ee6b71f30b3924997ff20debb94041c269c34c0df256901afadb31"
+      "bytes": 21399,
+      "sha256": "caad107db98f9a186620864263ea5a38b66be18953bbbb98f1545734ba301f4d",
+      "lf_sha256": "caad107db98f9a186620864263ea5a38b66be18953bbbb98f1545734ba301f4d"
     },
     {
       "path": "presentation/assets/team/crops.json",
@@ -7978,15 +7978,15 @@
     },
     {
       "path": "presentation/index.html",
-      "bytes": 18795,
-      "sha256": "741902b627a8b181cb9796a1e31dce1720f1bbcaab049e26dbe7b517bedb1025",
-      "lf_sha256": "741902b627a8b181cb9796a1e31dce1720f1bbcaab049e26dbe7b517bedb1025"
+      "bytes": 18861,
+      "sha256": "a944a122ae193ab2663bafe94072bdcb0d72c99b5a4074728f9da967daeb2291",
+      "lf_sha256": "a944a122ae193ab2663bafe94072bdcb0d72c99b5a4074728f9da967daeb2291"
     },
     {
       "path": "presentation/presentation-data.js",
-      "bytes": 253727,
-      "sha256": "9fb53cb57f8f80049915db1704c6c0d9525fde69ba18e8b5ef3f7c658d95023d",
-      "lf_sha256": "9fb53cb57f8f80049915db1704c6c0d9525fde69ba18e8b5ef3f7c658d95023d"
+      "bytes": 255859,
+      "sha256": "7f1fffdbc044ff5f5b2b8a12279afad3a73f22493aa0c2266677cd4c52231fc1",
+      "lf_sha256": "7f1fffdbc044ff5f5b2b8a12279afad3a73f22493aa0c2266677cd4c52231fc1"
     },
     {
       "path": "presentation/replay-source.js",
@@ -8014,9 +8014,9 @@
     },
     {
       "path": "presentation.html",
-      "bytes": 876607,
-      "sha256": "1b8f1c8a5eef5aad61d9087a6edf1a6842ca404a7c3411a643096e35dcfd7ba7",
-      "lf_sha256": "1b8f1c8a5eef5aad61d9087a6edf1a6842ca404a7c3411a643096e35dcfd7ba7"
+      "bytes": 878928,
+      "sha256": "ecf287a157ae84fe25249f687efc5ae3dc24814cb803e5647d9b52aa20da250c",
+      "lf_sha256": "ecf287a157ae84fe25249f687efc5ae3dc24814cb803e5647d9b52aa20da250c"
     },
     {
       "path": "probe.py",
@@ -8026,9 +8026,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 6512,
-      "sha256": "393c1eb432e9a07198ff9bbe4976384e68c7e7e37fe1be64796c1b81ada261df",
-      "lf_sha256": "393c1eb432e9a07198ff9bbe4976384e68c7e7e37fe1be64796c1b81ada261df"
+      "bytes": 6793,
+      "sha256": "c1d6ec1d169d17932cc73c35f8cf806eea3ec8b064824b336449f1f23548e546",
+      "lf_sha256": "c1d6ec1d169d17932cc73c35f8cf806eea3ec8b064824b336449f1f23548e546"
     },
     {
       "path": "reproduce-cases.json",

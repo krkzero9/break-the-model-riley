@@ -27,6 +27,8 @@ The database export contains reconstructed schema information and the challenge'
 
 The presentation distinguishes visible disclosure, tool invocation and confirmed delivery. Email-tool use alone does not prove external delivery, and reported SSN properties do not recover SSN digits. Proposed fixes still need an attack-versus-defence replay.
 
+The solutions recommend rule-based chatbots for simple flows, isolation and least-privilege access, input filtration and action checks. Optional decision-model validation is conditional on measured benefit, latency and cost; low-quality models are avoided in sensitive workflows.
+
 ## Rebuild and replay
 
 Build the self-contained presentation, export the current database map and refresh the evidence index:

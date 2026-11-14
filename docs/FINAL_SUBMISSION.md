@@ -30,7 +30,11 @@ Uzair's Haiku excerpt shows a `patient_contacts` refusal, then inferred keys and
 
 The Opus survey has 50 empty replies and 29 records with tool calls. Neither count is an attack success rate or proof of which server layer produced the empty replies. [Stage 3 review](../logs/stage3/review.json) preserves source hashes and qualifications; [Sparsh's Haiku log](../logs/stage3/sparsh-haiku-5-5.jsonl) preserves his three matching records. All 86 IDs mentioned in the Opus report resolve to raw traces, including two older payload-source turns.
 
-Our proposed solution gives routine private tasks to deterministic workflows. Sensitive databases and credentials remain in a separate trusted service; the model receives only the permitted result. System permissions bind the authenticated user, requested record, fields and recipient. Tool checks must cover sensitive predicates and functions, records hidden inside aggregate cells, untrusted retrieved instructions and outgoing message arguments. A stronger model alone cannot enforce those permissions.
+Our proposed solution gives simple tasks to pre-LLM rule-based chatbots, forms and deterministic workflows. Avoid low-quality models in sensitive tool workflows; reserve capable models for tasks that benefit from language reasoning. Sensitive databases and credentials remain in a separate trusted service. Private results go directly to the authenticated interface; the model receives only authorized public or minimized information.
+
+Least-privilege permissions limit tools, records, fields, recipients, request rates and result volume. Input filtering validates structured fields and treats retrieved files, inbox messages and other agents' instructions as untrusted data. Tool checks cover sensitive predicates and functions, records hidden inside aggregate cells, outgoing data and destinations. Filters supplement authorization; they do not grant it.
+
+For risky actions, an optional validation loop or separate decision model can review the proposed tool call before dispatch. Adopt this only if measured security gains justify latency, operating complexity and event or deployment budgets. Keep hard permissions outside that model, reject unapproved actions and bound retries so review cannot become an endless loop. A stronger model or a second model alone cannot enforce system permissions. These are proposed safeguards; attack-versus-defence validation remains pending.
 
 ## Selected proof for judges
 

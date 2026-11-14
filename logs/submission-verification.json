@@ -1,6 +1,6 @@
 {
   "date": "2026-11-14",
-  "scope": "Final Stage 3 integration after incoming docs reorganization at f421279; commit/push authorized. No new live model calls.",
+  "scope": "Final Stage 3 integration and safeguards polish after incoming docs reorganization at f421279; commit/push authorized. No new live model calls.",
   "checks": [
     "Three offline replay tests passed: no client access by default, fresh conversations and error accounting, original raw snapshot preserved, unavailable model rejected.",
     "Source and offline bundle passed all 24 story beats, actor/file ownership, bubble bounds, 30 database nodes and 54 links, nested dialogs and state preservation.",
@@ -16,7 +16,8 @@
     "Caption centered under the story player. Playback, reading holds and settling run at 1.2x speed; all 24 beats rewatched in about 60.5 seconds with speech absent during motion/settling. Source/bundle desktop/mobile layout checks passed.",
     "Stage 3 and earlier result views passed 64 source/bundle layouts across 1280x720, 1440x900, 1907x880 and 390x844; keyboard evidence switching and default Stage 3 selection passed. Opus/public observations are separate from earlier private disclosures.",
     "Incoming docs move integrated by fast-forward; original Opus and Haiku reports retained. Three raw Haiku controls imported separately; combined inventory is 1,415 records and 300 references, 294 with raw matches.",
-    "Stage 3 review rechecked: 64 source/bundle layouts and three offline replay tests passed; all 90 indexed file hashes and local documentation links verified. Structured raw-log scan found no nonempty credential fields."
+    "Stage 3 review rechecked: 64 source/bundle layouts and three offline replay tests passed; all 90 indexed file hashes and local documentation links verified. Structured raw-log scan found no nonempty credential fields.",
+    "Final safeguards passed 10 source/bundle layouts from 390px mobile to 1907px desktop, including 1280x720 and 1536x704. All requested recommendations are visible; optional validator limits and current six unmatched references are readable in the appendix. Screenshots inspected; no horizontal overflow, external requests or JavaScript errors."
   ],
   "evidence_index": "logs/evidence-index.json",
   "limits": "Trace matching locates records without reclassifying reported outcomes. Success-rate trial selection and guard attribution remain unaudited. Proposed defences still need replay."

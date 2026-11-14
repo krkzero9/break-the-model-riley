@@ -1,4 +1,3 @@
-/* Preserved source reports; no live target calls. */
 window.PRESENTATION_DATA = {
   "project": "Scioto Ridge Health / Break the Model",
   "event": "Nebius security hackathon / Berlin",
@@ -800,12 +799,12 @@ window.PRESENTATION_DATA = {
     {
       "title": "Final evidence packet",
       "status": "Prepared / team review",
-      "detail": "Use docs/FINAL_SUBMISSION.md and docs/FINDINGS.md for current claims. The earlier registry stays separate; 205 of 209 combined references have raw traces. Four missing references remain report-based. Select disclosure evidence rather than controls when submitting turn IDs."
+      "detail": "Use docs/FINAL_SUBMISSION.md and docs/FINDINGS.md for current claims. Of 300 combined references, 294 have raw traces; six remain report-based. The final form asks for the public repository, links and one upload, with selected proof IDs inside the packet."
     },
     {
-      "title": "Demonstrate the two-stage proxy",
+      "title": "Validate the proposed system boundary",
       "status": "Pending / defence",
-      "detail": "Implement rewrite_and_validate_sql + enforce_output_policy; replay leak payloads across all four models and legitimate scheduling lookups. Record the corpus, tool calls, allowed-workflow results and measured leak rate before claiming 0%."
+      "detail": "Build fixed private workflows and a trusted permissions broker. Validate inputs and outgoing actions, then replay disclosures and legitimate tasks. Measure leaks, false refusals, latency and cost before adopting an optional decision-model review; the historical regex sample is not a validated gateway."
     },
     {
       "title": "Deliver the three-minute pitch",
@@ -815,7 +814,7 @@ window.PRESENTATION_DATA = {
     {
       "title": "Replay the refreshed deployment",
       "status": "Pending / after evidence work",
-      "detail": "Record deployment/guard version, exact provider and model. Establish the current baseline before comparing old prompts. Claude is event-funded but deferred by Sparsh; do not claim Anthropic results."
+      "detail": "Stage 3 supplied 84 Opus records, three raw Haiku controls and two report-only Haiku turns. No further live requests were made during submission preparation. Future repeat measurements need exact deployment context and completed/error counts; historical and Stage 3 outcomes stay separate."
     }
   ],
   "completedProbes": [
@@ -859,7 +858,7 @@ window.PRESENTATION_DATA = {
     ],
     [
       "Proposed solutions",
-      "Routine private tasks can use fixed workflows. Keep credentials and sensitive records outside the model runtime. Bind each operation to the authenticated user, record and recipient. Validate reads, aggregate limits and outgoing actions before dispatch. We still need defence replay."
+      "Simple tasks can use the rule-based chatbots we had before LLMs. Avoid low-quality models in sensitive workflows. Keep private databases outside model reach and limit every read and send. Filter inputs and validate actions. A separate decision model is optional only when the extra latency and cost make sense. We still need defence replay."
     ],
     [
       "Team",
@@ -881,7 +880,7 @@ window.PRESENTATION_DATA = {
     "The raw trace for c9ab6a025bb94034bd0318dbeffc2e8b contains Amy Singh's clinical note in send_email arguments addressed to Amanda Lewis. This establishes a cross-patient tool-call mismatch and motivates binding record and recipient permissions. Mailbox delivery is not verified.",
     "Three formerly unprobed tables now have reported fields: immunizations, screenings and vitals. Clinical notes has ten observed field names. Complete leading JSON objects were extracted from truncated excerpts without repairing the missing tails. Types/FKs are inferred where labelled; no backend DDL was inspected.",
     "Sparsh reports that refreshing the server makes even the weakest model harder to query. Exact deployment revision and a controlled before/after comparison are unknown. Replaying old prompts against the refreshed service remains pending.",
-    "Sparsh confirms that Claude access is event-funded and explicitly defers Anthropic work until the other tasks are finished. No Claude key was collected, stored or used. Routing, exact models and current guard version remain to be established later.",
+    "Sparsh confirmed event-funded Claude access and initially deferred live work. The later supplied Stage 3 logs now record exact Haiku 5.5 and Opus 5.5 hosts; no Claude key was collected or used by this submission review. Guard/deployment revisions and controlled repeat rates remain unknown.",
     "Team confirmed by Sparsh: Sparsh, Uzair, Kartik (Karthikeyan Rajendran), Imran and Ganesh. Sparsh says all five designed, tested and reviewed together throughout. Report author names preserve source provenance and do not indicate separate workstreams.",
     "Stage 3: 84 Opus records, including 50 empty replies and 29 records with tools. These do not identify the server layer that produced an empty reply. Marker following from pasted text and permitted public queries do not establish private-data escalation or an authority bypass; the direct marker control also succeeds.",
     "Stage 3 Haiku: Uzair reports a private-table refusal then inferred public keys; the two IDs lack raw matches. Sparsh's three pasted turns have exact raw matches in the separately preserved Haiku log. Sonnet 5.5 is in the listed lineup but has no supplied run."
@@ -902,7 +901,7 @@ window.PRESENTATION_DATA = {
       [
         "Mitigation / fix",
         20,
-        "Deterministic workflows, model/database segregation, system permissions and pre-dispatch safeguards. Design proposed; own-attack defence replay remains pending."
+        "Rule-based simple flows, model/database isolation, access limits, input filtration and pre-dispatch checks. Optional decision-model review only when latency/cost justify it. Proposed design; own-attack defence replay remains pending."
       ],
       [
         "Technical execution",
@@ -3186,5 +3185,27 @@ window.PRESENTATION_DATA = {
         "No Stage 3 private-row escalation shown"
       ]
     ]
-  }
+  },
+  "solutionDetails": [
+    [
+      "Simple flows without an LLM",
+      "Use pre-LLM rule-based chatbots, validated forms and explicit state machines for bookings and contact updates. Avoid low-quality models in sensitive workflows. Use a capable model only when language reasoning provides a clear benefit; other agents cannot grant authority."
+    ],
+    [
+      "Access limiting and isolation",
+      "Keep private databases, credentials and network routes in a separate trusted service. Least-privilege permissions bind the authenticated user, record, fields and recipient. Set request-rate and result-volume limits, including records packed into aggregate cells. Private results go directly to the authorized interface."
+    ],
+    [
+      "Input filtration and action checks",
+      "Validate structured inputs with schemas and permitted values. Treat retrieved text and other-agent messages as untrusted data. Check sensitive predicates/functions, aggregate contents, outgoing data and destinations before dispatch. Injection filters supplement system permissions; matching a filter is never authorization."
+    ],
+    [
+      "Optional validation loop",
+      "For risky actions, a separate validator or decision model may review the proposed operation against trusted policy before dispatch. Adopt it only when measured benefit justifies latency, cost and operating complexity. Keep hard permissions outside the model, reject unapproved actions and bound retries. This review is a proposed extra layer, not an implemented defence."
+    ],
+    [
+      "Measure the tradeoff",
+      "Replay the same attack corpus and legitimate workflows against the defence. Measure leaks, false refusals, latency and per-request cost. Select the simplest design that meets the task and budget; defence replay and current-server repeat measurements remain pending."
+    ]
+  ]
 };
