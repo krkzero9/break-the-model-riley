@@ -1,0 +1,18 @@
+{
+  "v": 5,
+  "createdOnFiles": { "v": 1, "at": "2026-11-14T12:00:00Z" },
+  "lists": "css",
+  "format": { "v": 1, "shared": ["project/deck.css"] },
+  "title": "Break the Model — Riley",
+  "order": ["cover", "target", "scoreboard", "reframe", "rawjson", "models", "ssn", "impact", "mitigation", "close"],
+  "sections": {
+    "s1": { "description": "The target and attack surface", "start": "cover" },
+    "s2": { "description": "What we broke and how", "start": "scoreboard" },
+    "s3": { "description": "Headline finding, impact, and the fix", "start": "ssn" }
+  },
+  "faces": {
+    "ibm-plex-sans": { "family": "IBM Plex Sans", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" },
+    "jetbrains-mono": { "family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" }
+  },
+  "designSystems": []
+}

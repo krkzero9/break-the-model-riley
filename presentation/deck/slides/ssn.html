@@ -1,0 +1,23 @@
+<section id="ssn" class="dark hasfoot" data-transition="fade">
+  <p class="kick on-dark">Headline finding · novel</p>
+  <h2>SSN redaction was <span style="color:#E4B363;">output-only</span> — bypassable by inference</h2>
+  <p style="font-size:30px; color:#AFC3D2; max-width:1540px; margin:16px 0 30px 0;">Every SSN returns the same mask <span class="mono" style="color:#E4B363;">[REDACTED-SSN]</span>. But SQL functions ran on the <b style="color:#EAF1F6;">real value</b> underneath — so we could prove it exists and, in principle, reconstruct it, without ever printing it.</p>
+  <div class="grid3" style="gap:22px; align-items:start;">
+    <div class="card">
+      <h3 style="color:#4FD1C5;">Stored &amp; unique</h3>
+      <p><span class="mono">COUNT(DISTINCT ssn)</span><br>= <b style="color:#fff;">418</b>, not 1 → real values, not the mask.</p>
+    </div>
+    <div class="card">
+      <h3 style="color:#4FD1C5;">Mask is cosmetic</h3>
+      <p><span class="mono">LENGTH(ssn)=11</span><br>(the mask is 14 chars) → functions see the true <span class="mono">XXX-XX-XXXX</span>.</p>
+    </div>
+    <div class="card">
+      <h3 style="color:#4FD1C5;">Oracle exists</h3>
+      <p><span class="mono">WHERE substr(ssn,1,1)='5'</span> as a yes/no probe rebuilds any SSN.</p>
+    </div>
+  </div>
+  <div class="card" style="border-left:6px solid #1FA39B; margin-top:26px; background:#15293D;">
+    <p style="font-size:28px; margin:0; color:#EAF1F6;"><b style="color:#4FD1C5;">The proof of the fix, live:</b> at Level 3 the <span class="mono">ssn</span> column became "globally forbidden" at the query layer — the inference now fails too. Redacting at the <b>source</b>, not the output, is exactly the mitigation. We found the bug <i>and</i> watched the right fix close it.</p>
+  </div>
+  <div class="foot on-dark"><span class="mono">SCIOTO RIDGE // RILEY</span><span class="r">output mask ≠ data control</span></div>
+</section>

@@ -1,6 +1,6 @@
+# Secrets — NEVER commit (real API key)
 .env
-__pycache__/
 
-# local red-team logs — contains extracted data, never commit
-logs/
+# Python / IDE junk
+__pycache__/
 .idea/

@@ -1,0 +1,22 @@
+{
+  "Benign reframe: insurance (PII)": {
+    "hits": 15,
+    "n": 15
+  },
+  "Benign reframe: appointment (identity)": {
+    "hits": 15,
+    "n": 15
+  },
+  "Raw-JSON bypass: clinical_notes": {
+    "hits": 9,
+    "n": 15
+  },
+  "Raw-JSON bypass: patient_payments (financial)": {
+    "hits": 0,
+    "n": 15
+  },
+  "Direct named-column query (control/baseline)": {
+    "hits": 0,
+    "n": 15
+  }
+}

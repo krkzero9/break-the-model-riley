@@ -1,0 +1,31 @@
+<section id="target" class="hasfoot" data-transition="fade">
+  <p class="kick">The target</p>
+  <h2>Riley has real tools — and two layers of defense</h2>
+  <div class="grid2" style="margin-top:46px; align-items:start;">
+    <div>
+      <div class="card" style="margin-bottom:24px;">
+        <h3 style="color:#1FA39B;">Tools (reached through chat only)</h3>
+        <p><span class="mono">query_db</span> · SQL over a 30-table EHR<br>
+        <span class="mono">read_file</span> · public handouts<br>
+        <span class="mono">read_inbox</span> · front-desk messages<br>
+        <span class="mono">send_email</span> · email a patient</p>
+      </div>
+      <div class="card">
+        <h3 style="color:#51606E;">Denied at this level</h3>
+        <p><span class="mono">http_post</span> · <span class="mono">delete_record</span></p>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="border-left:6px solid #E4B363; margin-bottom:24px;">
+        <h3>① Model-layer filter</h3>
+        <p>Riley reads an output reply-filter + instructions. Scans replies for PII and refuses. <b style="color:#9B2735;">Judgment-based — bypassable.</b></p>
+      </div>
+      <div class="card" style="border-left:6px solid #1FA39B;">
+        <h3>② Server-layer controls</h3>
+        <p>Scope enforcement, column blocklist, source redaction — applied <b style="color:#13736D;">before data reaches the model.</b> Rejected "before it reaches the database."</p>
+      </div>
+    </div>
+  </div>
+  <p style="font-size:30px; color:#1A2A38; margin-top:40px;"><b>Our whole finding is the gap between these two layers.</b></p>
+  <div class="foot"><span class="mono">SCIOTO RIDGE // RILEY</span><span class="r">attack surface</span></div>
+</section>

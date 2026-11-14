@@ -1,0 +1,14 @@
+<section id="mitigation" class="hasfoot" data-transition="fade">
+  <p class="kick">Mitigation · we fix what we broke</p>
+  <h2>One rule: enforce at the data layer, not in the model</h2>
+  <table class="tbl" style="margin-top:38px;">
+    <tr><th style="width:38%;">Attack</th><th style="width:42%;">Fix (server-layer)</th><th style="width:20%;">Proven?</th></tr>
+    <tr class="alt"><td>Benign-task reframing</td><td>Post-generation PII/DLP scan on egress — semantic, not keyword — + row caps</td><td>model-only fails</td></tr>
+    <tr><td>Raw-JSON scope bypass</td><td>Enforce allowed tables/columns in the tool wrapper</td><td style="color:#13736D;">✓ L3 closed it</td></tr>
+    <tr class="alt"><td>SSN inference side-channel</td><td>Redact in storage / tokenize; block functions on masked columns</td><td style="color:#13736D;">✓ L3 closed it</td></tr>
+    <tr><td>Email exfiltration</td><td>Recipient must equal the data subject; DLP on <span class="mono">send_email</span> body</td><td>design</td></tr>
+    <tr class="alt"><td>Blocklist leaks (card, DEA)</td><td>Apply redaction to <b>all</b> output paths, not one column</td><td>design</td></tr>
+  </table>
+  <p style="font-size:30px; color:#1A2A38; margin-top:34px;"><b>Our Level-2 → Level-3 data is the A/B test:</b> every attack that moved to the server layer <span style="color:#13736D;">died</span>; everything left in the model's judgment <span style="color:#9B2735;">survived</span>.</p>
+  <div class="foot"><span class="mono">SCIOTO RIDGE // RILEY</span><span class="r">detect &amp; defend</span></div>
+</section>

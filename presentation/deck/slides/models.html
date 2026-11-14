@@ -1,0 +1,38 @@
+<section id="models" class="hasfoot" data-transition="fade">
+  <p class="kick">Across models &amp; time</p>
+  <h2>The defense adapted — and model size compounds it</h2>
+  <p style="font-size:29px; max-width:1560px; margin:16px 0 30px 0;">Same reframe attack, measured over 10–15 fresh conversations each. Two forces closed the window: the harness <b>escalated its enforcement</b> during the session, and <b>bigger models never fell</b> in the first place.</p>
+
+  <div class="grid2" style="align-items:start; gap:46px;">
+    <div>
+      <h3 style="font-size:28px; color:#13736D; margin:0 0 18px 0;">Same model (Qwen-30B), defense escalating →</h3>
+      <div style="margin-bottom:16px;">
+        <div style="font-size:24px; color:#1A2A38; margin-bottom:6px;">Level 2 (early) · <b>100%</b> leak</div>
+        <div style="height:34px; width:100%; background:#D1495B; border-radius:6px;"></div>
+      </div>
+      <div style="margin-bottom:16px;">
+        <div style="font-size:24px; color:#1A2A38; margin-bottom:6px;">Level 3 (mid) · <b>80%</b> leak</div>
+        <div style="height:34px; width:80%; background:#E4885B; border-radius:6px;"></div>
+      </div>
+      <div>
+        <div style="font-size:24px; color:#1A2A38; margin-bottom:6px;">Hardened (late) · <b>0%</b></div>
+        <div style="height:34px; width:3%; background:#1FA39B; border-radius:6px;"></div>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-size:28px; color:#13736D; margin:0 0 18px 0;">Same moment (hardened), by model size ↓</h3>
+      <table class="tbl" style="font-size:25px;">
+        <tr><th style="width:62%;">Model</th><th style="width:38%;">Reframe leak</th></tr>
+        <tr class="alt"><td>Qwen-30B · small</td><td>0/10</td></tr>
+        <tr><td>gpt-oss-120b · medium</td><td>0/10</td></tr>
+        <tr class="alt"><td>Qwen3-235B · large</td><td>0/10</td></tr>
+        <tr><td>DeepSeek-V4-Pro · largest</td><td>0/10 · +14 techniques held</td></tr>
+      </table>
+      <p style="font-size:24px; color:#51606E; margin-top:16px;">DeepSeek never leaked at <i>any</i> point — multi-turn rapport, fiction, authority, dev-mode all failed.</p>
+    </div>
+  </div>
+
+  <p style="font-size:29px; color:#1A2A38; margin-top:34px;"><b>Takeaway:</b> the model-layer attack has a shrinking window — it needs a <b>weak model</b> <i>and</i> a <b>low enforcement level</b>. Remove either and it closes.</p>
+  <div class="foot"><span class="mono">SCIOTO RIDGE // RILEY</span><span class="r">measured · 4 models</span></div>
+</section>

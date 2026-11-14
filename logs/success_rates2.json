@@ -1,0 +1,14 @@
+{
+  "employees (staff PII)": {
+    "hits": 0,
+    "n": 10
+  },
+  "app_users (accounts)": {
+    "hits": 0,
+    "n": 10
+  },
+  "SSN inference (COUNT DISTINCT)": {
+    "hits": 0,
+    "n": 10
+  }
+}
