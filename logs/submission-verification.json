@@ -18,7 +18,8 @@
     "Incoming docs move integrated by fast-forward; original Opus and Haiku reports retained. Three raw Haiku controls imported separately; combined inventory is 1,415 records and 300 references, 294 with raw matches.",
     "Stage 3 review rechecked: 64 source/bundle layouts and three offline replay tests passed; all 90 indexed file hashes and local documentation links verified. Structured raw-log scan found no nonempty credential fields.",
     "Final safeguards passed 10 source/bundle layouts from 390px mobile to 1907px desktop, including 1280x720 and 1536x704. All requested recommendations are visible; optional validator limits and current six unmatched references are readable in the appendix. Screenshots inspected; no horizontal overflow, external requests or JavaScript errors.",
-    "Latest Results: 88 source/bundle layouts passed across desktop/mobile; exact recorded successful prompts shown with source labels and turn IDs. All 91 Opus continuation IDs match raw logs; two Kartik IDs remain report-only."
+    "Latest Results: 88 source/bundle layouts passed across desktop/mobile; exact recorded successful prompts shown with source labels and turn IDs. All 91 Opus continuation IDs match raw logs; two Kartik IDs remain report-only.",
+    "Kartik replacement photo imported byte-identically from Kartik 2.jpeg; old original retained. Centered head-and-shoulders circular crop inspected. Source and offline bundle passed all five portraits, desktop/mobile layouts and embedded replay equality, with no JavaScript errors or external requests."
   ],
   "evidence_index": "logs/evidence-index.json",
   "limits": "Trace matching locates records without reclassifying reported outcomes. Success-rate trial selection and guard attribution remain unaudited. Proposed defences still need replay."

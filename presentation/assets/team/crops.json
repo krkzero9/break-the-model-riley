@@ -29,17 +29,18 @@
   },
   {
     "name": "Kartik",
-    "source": "presentation/assets/team/kartik.jpeg",
+    "source": "presentation/assets/team/kartik-new.jpeg",
     "crop_box": [
-      33,
       0,
-      173,
-      140
+      0,
+      853,
+      853
     ],
     "output": "presentation/assets/team/kartik-portrait.jpeg",
-    "source_sha256": "57a4d63b372e1e20ac382cece1c693010164da96ea5242892ceb82b1388ad2a4",
-    "output_sha256": "149ef7251070bc0e9158f3236f94cea792fb5145e7537ae96a068a8e1b4a9f6d",
-    "display": "Circular CSS mask; crop removes LinkedIn badge."
+    "source_sha256": "92a86867638f7bd60c0a37f49ecd483e1671a9af1f19f1ae8271de3416e6903d",
+    "output_sha256": "ca522bffa36af6926393ab121f5a4da4f2dbc0e9ae731ab21df94d1dd6c253e6",
+    "display": "Circular CSS mask; square head-and-shoulders crop from replacement photo.",
+    "source_note": "Kartik 2.jpeg supplied by Sparsh; previous original retained as kartik.jpeg."
   },
   {
     "name": "Imran",

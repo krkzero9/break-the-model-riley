@@ -9454,6 +9454,12 @@
       "lf_sha256": "84d26ae4950aa80aa3458ee4ccf6850f69c3f0415c7d7931920ae7d08be78870"
     },
     {
+      "path": "README.md",
+      "bytes": 7644,
+      "sha256": "59bd8ae605b0d252ca08375375e6b31d27bb7e2b909023b3dc1c8bc852c06e96",
+      "lf_sha256": "3af98e212b370ffdf6eb62a488500a9c4520a7cf2ba2e6965f370be4e224eced"
+    },
+    {
       "path": "attack.py",
       "bytes": 4531,
       "sha256": "8b005b65a830ec19c3daba3922f43ce7b18bddfaecf480918ba6d54de43d3a49",
@@ -9551,9 +9557,9 @@
     },
     {
       "path": "leaks/karthik-claude-opus-5-5-leak.md",
-      "bytes": 4003,
-      "sha256": "954c6cd74ebe7df400128032c8f5e60f3d82e707882d2505ccf5dad7fecb5f26",
-      "lf_sha256": "ba7f961d6e9c06ca10da0dbf0d9bb7437dfccd681940f0eab8b236d84ca533c9"
+      "bytes": 6645,
+      "sha256": "57638063fa2fa86198e6331419d8ad81dd5e701dcc4f646181515196406db3ae",
+      "lf_sha256": "291d27c511fa90f867382aeba4860957403243a9959917dbe7d58ea87ed7d6dc"
     },
     {
       "path": "leaks/umair-claude-haiku-5-leak.md",
@@ -9572,6 +9578,12 @@
       "bytes": 6359,
       "sha256": "8c4ed9cc596073a04a5c36ac8094e0dfd945c83316df5c55b6de19ab3f1f9daa",
       "lf_sha256": "18da924013d0bcf696d2805c59c5e52c4d935ae82258a6687c95f11f18905e21"
+    },
+    {
+      "path": "logs/SUBMISSION.md",
+      "bytes": 5785,
+      "sha256": "a32e0d341363fe70f98663234d992b4c1fbf1e90ce137e6df8b63895a62bf3df",
+      "lf_sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca"
     },
     {
       "path": "logs/import-provenance.json",
@@ -9647,15 +9659,9 @@
     },
     {
       "path": "logs/submission-verification.json",
-      "bytes": 3970,
-      "sha256": "965924701a1e938ef90d8a0ac53da2130e195bb4fcfee23f5b82d91786237867",
-      "lf_sha256": "37dc558951ccee3079fb5b95cacf59d353a1c33e4443221f4253fa4536dc5200"
-    },
-    {
-      "path": "logs/SUBMISSION.md",
-      "bytes": 5785,
-      "sha256": "a32e0d341363fe70f98663234d992b4c1fbf1e90ce137e6df8b63895a62bf3df",
-      "lf_sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca"
+      "bytes": 4279,
+      "sha256": "fed65452208598b974d7a697048646a7abf1e8037704b3f0740444ba879e067a",
+      "lf_sha256": "05cf4985801e7a1130e2911fb5dd2905201e4941a90979a681c62d86dd82eba4"
     },
     {
       "path": "logs/success_rates.json",
@@ -9688,18 +9694,6 @@
       "lf_sha256": "beafc1bfc2fb003944446a76c8d4b796eb33567baa8c875b94ded13695c6c507"
     },
     {
-      "path": "logs/teammate-sessions/2026-11-14-reports/manifest.json",
-      "bytes": 7872,
-      "sha256": "6e0bf98fe2806270e52c35423fdeadfa9f62272f0916e4a891dd7d79043df5bc",
-      "lf_sha256": "22d04e2c7674a2488b3443085ef2232b9806023ed3757853ab9101f724a9a65d"
-    },
-    {
-      "path": "logs/teammate-sessions/2026-11-14-reports/proof_leaks Kartik.md",
-      "bytes": 38064,
-      "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
-      "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
-    },
-    {
       "path": "logs/teammate-sessions/2026-11-14-reports/Round-1 Very Large Model Prompts and Res Uzair.md",
       "bytes": 2805,
       "sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56",
@@ -9710,6 +9704,18 @@
       "bytes": 4584,
       "sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045",
       "lf_sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045"
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/manifest.json",
+      "bytes": 7872,
+      "sha256": "6e0bf98fe2806270e52c35423fdeadfa9f62272f0916e4a891dd7d79043df5bc",
+      "lf_sha256": "22d04e2c7674a2488b3443085ef2232b9806023ed3757853ab9101f724a9a65d"
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/proof_leaks Kartik.md",
+      "bytes": 38064,
+      "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
+      "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
     },
     {
       "path": "logs/teammate-sessions/context-2026-11-14.txt",
@@ -9748,6 +9754,12 @@
       "lf_sha256": "54d12d577edcd8f0dd178de9e12fdef94f578b0fb75fe1dd493bf4efba36a82e"
     },
     {
+      "path": "presentation.html",
+      "bytes": 1023948,
+      "sha256": "4e2665adc72fe63782d91a87565e22cab98f349ef96b5d3cebedc257d900e25d",
+      "lf_sha256": "0f1091742186893c2d6c77f81f6cb14996556c961706c326e3c1347d12508d9d"
+    },
+    {
       "path": "presentation/app.js",
       "bytes": 21438,
       "sha256": "b2067b62da893e68067c952a13684e012a073aff8e1bcaad1d38d55d27ce0d52",
@@ -9755,9 +9767,9 @@
     },
     {
       "path": "presentation/assets/team/crops.json",
-      "bytes": 2354,
-      "sha256": "312f62df9a78ea5153da73c83ce1fea33c8204ed83595dd6816032d558446b26",
-      "lf_sha256": "e805fa835f4131b624e601143b56d40fca3cf6d636732c83c07806b8c9ebfc20"
+      "bytes": 2483,
+      "sha256": "53a3cdab093418231107597e41a8c03c0750bb134b2c7f245a8004868a98c39b",
+      "lf_sha256": "ecaaf4c64a9ed0752575a0c09f0e7da8c1bf2c7fe1b203aefd24a40ed59ba505"
     },
     {
       "path": "presentation/assets/team/ganesh-portrait.jpeg",
@@ -9784,10 +9796,16 @@
       "lf_sha256": "f8c911d6eb5245a31248064f2a31efadd245937754bb86c79e48bc9a40d29758"
     },
     {
+      "path": "presentation/assets/team/kartik-new.jpeg",
+      "bytes": 110922,
+      "sha256": "92a86867638f7bd60c0a37f49ecd483e1671a9af1f19f1ae8271de3416e6903d",
+      "lf_sha256": "e58e76f2073e61deaff6d8d94435598446135d442c659f1e7856020095121068"
+    },
+    {
       "path": "presentation/assets/team/kartik-portrait.jpeg",
-      "bytes": 14787,
-      "sha256": "149ef7251070bc0e9158f3236f94cea792fb5145e7537ae96a068a8e1b4a9f6d",
-      "lf_sha256": "149ef7251070bc0e9158f3236f94cea792fb5145e7537ae96a068a8e1b4a9f6d"
+      "bytes": 119209,
+      "sha256": "ca522bffa36af6926393ab121f5a4da4f2dbc0e9ae731ab21df94d1dd6c253e6",
+      "lf_sha256": "f76b65522ea4f385fa5dc624de0535d14be2a002453411975a207d2b30adb426"
     },
     {
       "path": "presentation/assets/team/kartik.jpeg",
@@ -9946,22 +9964,10 @@
       "lf_sha256": "e36559c4bd67003d125792025b7e7c98098053754487a8496b7ae2dad040bdc4"
     },
     {
-      "path": "presentation.html",
-      "bytes": 884716,
-      "sha256": "d55d26aa96f192d6e003287515bc1099aad17aac86ec299dd12349643c20ca76",
-      "lf_sha256": "dce60ad25ccb638c0a5c63d7a6e39ae3be9a66ba193c72518cd8e4b0780310aa"
-    },
-    {
       "path": "probe.py",
       "bytes": 2023,
       "sha256": "cc507c1d44a7b9a769ef1ebdd824aea86ee95b49cb32347ef9e89fb2e1f52f86",
       "lf_sha256": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb"
-    },
-    {
-      "path": "README.md",
-      "bytes": 7644,
-      "sha256": "59bd8ae605b0d252ca08375375e6b31d27bb7e2b909023b3dc1c8bc852c06e96",
-      "lf_sha256": "3af98e212b370ffdf6eb62a488500a9c4520a7cf2ba2e6965f370be4e224eced"
     },
     {
       "path": "reproduce-cases.json",
