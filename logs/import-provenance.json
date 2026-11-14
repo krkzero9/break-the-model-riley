@@ -1,0 +1,305 @@
+{
+  "submission_repo": "https://github.com/krkzero9/break-the-model-riley.git",
+  "base_commit": "0dc81c9b400b4fa2bebcf22b1aabcf68dac85bd0",
+  "existing_files_sha256": {
+    ".env.example": "d5db0d40d9c328f8de9153ed9d5f5b8fe4689ea296bae62c289e21c40dd4c342",
+    ".gitignore": "0c5f524ba8d3d822c509c85ae9203e793fb48dfbb0654fa94828c8880164d63b",
+    "README.md": "85c1233b7a9202c2956c86810400aef69e5dc9a74400a8662066ba2f818e0d67",
+    "btm.py": "ec51e434458c86b0a28f78b4743e23edd97c04dec9c339d9f04b3d456be286eb",
+    "chat.py": "bbfedc1130784b2f8629564c6b94674b2642b66694781d1a70b00c7ffbae4329",
+    "example_attack.py": "b65344369effcdaaa623df7ea94203218b45604167481a851bef49ec2f5b1103",
+    "logs/FORM_SUBMISSIONS.md": "8c4ed9cc596073a04a5c36ac8094e0dfd945c83316df5c55b6de19ab3f1f9daa",
+    "logs/SUBMISSION.md": "a32e0d341363fe70f98663234d992b4c1fbf1e90ce137e6df8b63895a62bf3df",
+    "logs/model_matrix.json": "47ff86ea76157c6de8e0f6389604b57285609cb553c0644365268df7936c8a49",
+    "logs/my_attempts.jsonl": "e968d3339425dadbeb7a29c325f64377242ea71934afc571e70e81531b3f884e",
+    "logs/proof_leaks.md": "e9a99805db76f90af77b034026153632f8d638aa49c700923ec8f4e8b8059968",
+    "logs/success_rates.json": "765dd3ec1a4838767fb459d4bcf603cb7eec15e89fb561069f650a0493b12b1a",
+    "logs/success_rates2.json": "43fe43bb3a46885fff79a8236a00d12d543eb89aaae8a5620d49e42e29441b59",
+    "presentation/deck/deck.css": "0a4334dafdacf73b096e299066b1c78411822591aaa5035dff3167cc57601265",
+    "presentation/deck/deck.json": "6a05133726a00a8165e4bd8666e6f474fc51992c1106643c89a67b0d107ed075",
+    "presentation/deck/slides/close.html": "eb000bd801edfdc1bae5f9ed6dc98a6aa325e2847bc8fe22be4c6ac9e7f3596a",
+    "presentation/deck/slides/cover.html": "685b4d9f2c5b9dabc7acab33b4f38788c18ffec07c8d797c69719c3ca2990294",
+    "presentation/deck/slides/impact.html": "6572d18a64a9fa8e3793843cad85c5521f417148d24e8132c66648c4d1aa2fde",
+    "presentation/deck/slides/mitigation.html": "c6e0d3ef802e08b9a97a5c9a14c1fae96c27f92fb69fe0044f772c0baaf8c78b",
+    "presentation/deck/slides/models.html": "17d49f2a0dec80299ae608828c08c770bdc765ad6a0d50faaaa58060d7069ec9",
+    "presentation/deck/slides/rawjson.html": "ffe19e12388235fd669bf1a5edd63c26b890db65d819e869f8dc09a3427c00b9",
+    "presentation/deck/slides/reframe.html": "96604d19acbcc6fe367e2b464ba36fc1bfe8499fc5b331ace7f3cac4d662bb52",
+    "presentation/deck/slides/scoreboard.html": "670e33ebe74ad28434482a800db0821e88348e7118ce52148b9077c6a5ae5348",
+    "presentation/deck/slides/ssn.html": "9b8194ed85569d250c6382ea70d9c8cdede28253e4dd5e69527d477bd1cd29ce",
+    "presentation/deck/slides/target.html": "6945c51489f613174650f0bba6f068805b9a11713d94c6d047ccfbad4dce468e",
+    "requirements.txt": "07db669ea622fa13d36366b845ff4ad6dcbce9ebb7c4376f0916d7775221fedc",
+    "setup.py": "d7939557d85512481456e4cd2dec8f48d563e6dddfcfbdc01bfcd31c582c6d1f"
+  },
+  "imports": [
+    {
+      "path": "presentation/app.js",
+      "source": "break-the-model-starter/presentation/app.js",
+      "sha256_at_import": "adeab63b6cfad969cde9a00f3e97d19c4e5be7d40b1c01ee98218a9323b7cb1a",
+      "bytes_at_import": 18588
+    },
+    {
+      "path": "presentation/build.js",
+      "source": "break-the-model-starter/presentation/build.js",
+      "sha256_at_import": "0b30bafd4e7f5b921de54c337e6558d6b2a0c1128d1ae66a7a447ebb4ed48b57",
+      "bytes_at_import": 1346
+    },
+    {
+      "path": "presentation/database-app.js",
+      "source": "break-the-model-starter/presentation/database-app.js",
+      "sha256_at_import": "ce9d152029c4cf1d6105e6ef30373aea13eebba188b384452e5cbcbe75e488a7",
+      "bytes_at_import": 19865
+    },
+    {
+      "path": "presentation/database-data.js",
+      "source": "break-the-model-starter/presentation/database-data.js",
+      "sha256_at_import": "d4a77adab9f78e55f67edadedc9292d0f2e768c75faab7de525f5cb0f648b907",
+      "bytes_at_import": 304203
+    },
+    {
+      "path": "presentation/index.html",
+      "source": "break-the-model-starter/presentation/index.html",
+      "sha256_at_import": "aa078b9ccb34e66933c27aba9068bbb03d3d01271c38e9e11083ff44a57769b4",
+      "bytes_at_import": 18858
+    },
+    {
+      "path": "presentation/presentation-data.js",
+      "source": "break-the-model-starter/presentation/presentation-data.js",
+      "sha256_at_import": "77299191a479ea20482dde9fb0dd0c14fab0735e0e4a419f20c0bc380b6ff5de",
+      "bytes_at_import": 247979
+    },
+    {
+      "path": "presentation/replay-source.js",
+      "source": "break-the-model-starter/presentation/replay-source.js",
+      "sha256_at_import": "b9667bef056ddc83705c99ddf0cc1af29e5dbc335d5154e2bcd68668a79b0fb4",
+      "bytes_at_import": 5604
+    },
+    {
+      "path": "presentation/story-app.js",
+      "source": "break-the-model-starter/presentation/story-app.js",
+      "sha256_at_import": "d27091ae28210d7b633b905a1caece36ce7a83d1693543ad8ec43de5e322243b",
+      "bytes_at_import": 30782
+    },
+    {
+      "path": "presentation/story.css",
+      "source": "break-the-model-starter/presentation/story.css",
+      "sha256_at_import": "0911abed1590e8b51481cf431e0e0dc0a6b9c8f6f74571dea1b27774bdac81fc",
+      "bytes_at_import": 34929
+    },
+    {
+      "path": "presentation/styles.css",
+      "source": "break-the-model-starter/presentation/styles.css",
+      "sha256_at_import": "e36559c4bd67003d125792025b7e7c98098053754487a8496b7ae2dad040bdc4",
+      "bytes_at_import": 48873
+    },
+    {
+      "path": "presentation.html",
+      "source": "break-the-model-starter/presentation.html",
+      "sha256_at_import": "38308f4173d330bc0196d505010c92c73acf3a811fac12c8f275d9cd58173dc3",
+      "bytes_at_import": 729430
+    },
+    {
+      "path": "financial_prompts.txt",
+      "source": "break-the-model-starter/financial_prompts.txt",
+      "sha256_at_import": "2676853607ae5190f80e54012031aa04c1217afc6f2d0d92cbb291b86e30a964",
+      "bytes_at_import": 1072
+    },
+    {
+      "path": "reproduce.py",
+      "source": "break-the-model-starter/reproduce.py",
+      "sha256_at_import": "5fada79202e0e35eeb58c262866146189d9147566a574d80ad3f7423aea9f81d",
+      "bytes_at_import": 4769
+    },
+    {
+      "path": "reproduce-cases.json",
+      "source": "break-the-model-starter/reproduce-cases.json",
+      "sha256_at_import": "49e53e26701a835db0564a8593f81001bd73fbace85796d3351e9b785abd9927",
+      "bytes_at_import": 476
+    },
+    {
+      "path": "logs/user-transcripts-2026-11-14.txt",
+      "source": "break-the-model-starter/logs/user-transcripts-2026-11-14.txt",
+      "sha256_at_import": "f3bdbe5a33492838dda285c24882cbb51014788b267523108f99b978b3f8bcda",
+      "bytes_at_import": 147209
+    },
+    {
+      "path": "logs/user-database-export-2026-11-14.json",
+      "source": "break-the-model-starter/logs/user-database-export-2026-11-14.json",
+      "sha256_at_import": "48c1ccdcdcaf68cb0aaca3682b7791c78794769846ca2429bb7f3a0499c75149",
+      "bytes_at_import": 26365
+    },
+    {
+      "path": "logs/progress-export-2026-11-14.txt",
+      "source": "break-the-model-starter/logs/progress-export-2026-11-14.txt",
+      "sha256_at_import": "37012dc93f9fac6b095591fec95aa0bcabdf997ab98b520bac64efa36af4af2f",
+      "bytes_at_import": 22300
+    },
+    {
+      "path": "logs/teammate-karthikeyan-2026-11-14.txt",
+      "source": "break-the-model-starter/logs/teammate-karthikeyan-2026-11-14.txt",
+      "sha256_at_import": "cff56b6d66143d84a0300ec4905ec8146a4ab135e2ea0ec97b05f3e4d1fa3796",
+      "bytes_at_import": 2809
+    },
+    {
+      "path": "logs/presentation-evidence-audit-2026-11-14.json",
+      "source": "break-the-model-starter/logs/presentation-evidence-audit-2026-11-14.json",
+      "sha256_at_import": "5ebde321a96f2b34e41b73df90c347e1c6662b5601a463fa9fe9c87c4eb95386",
+      "bytes_at_import": 11009
+    },
+    {
+      "path": "logs/Entropy Alignment Security.pdf",
+      "source": "break-the-model-starter/logs/Entropy Alignment Security.pdf",
+      "sha256_at_import": "c49c3f64357e737972a91cb90696dd5c2c601126979053083033af78af5a20b5",
+      "bytes_at_import": 1325877
+    },
+    {
+      "path": "logs/sparsh-2026-11-14/my_attempts.jsonl",
+      "source": "break-the-model-starter/logs/my_attempts.jsonl",
+      "sha256_at_import": "381599b1a8f147393da9f83446fa9b3d4769e166d36de13d38cb0aee092a10c1",
+      "bytes_at_import": 196174
+    },
+    {
+      "path": "logs/teammate-sessions/context-2026-11-14.txt",
+      "source": "break-the-model-starter/logs/teammate-sessions/context-2026-11-14.txt",
+      "sha256_at_import": "e5849b311ad7a89e974268e1b7cdcaa893530d7e3dbc402c9052030f4bd6afe7",
+      "bytes_at_import": 1309
+    },
+    {
+      "path": "logs/teammate-sessions/index.json",
+      "source": "break-the-model-starter/logs/teammate-sessions/index.json",
+      "sha256_at_import": "f5cb961de6d33dc008d7eacdd73c0b8cb5b050aa4b8c1e0c60e968e4dea06c3f",
+      "bytes_at_import": 11129
+    },
+    {
+      "path": "logs/teammate-sessions/reconciliation-2026-11-14.json",
+      "source": "break-the-model-starter/logs/teammate-sessions/reconciliation-2026-11-14.json",
+      "sha256_at_import": "078e9f5f9111bbacdb74429a689abf0432bee014f92131b3f78f22b5d92becab",
+      "bytes_at_import": 354462
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/LEAK_REPORT_Imran.md",
+      "source": "break-the-model-starter/logs/teammate-sessions/2026-11-14-reports/LEAK_REPORT_Imran.md",
+      "sha256_at_import": "beafc1bfc2fb003944446a76c8d4b796eb33567baa8c875b94ded13695c6c507",
+      "bytes_at_import": 32053
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/manifest.json",
+      "source": "break-the-model-starter/logs/teammate-sessions/2026-11-14-reports/manifest.json",
+      "sha256_at_import": "6e0bf98fe2806270e52c35423fdeadfa9f62272f0916e4a891dd7d79043df5bc",
+      "bytes_at_import": 7872
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/proof_leaks Kartik.md",
+      "source": "break-the-model-starter/logs/teammate-sessions/2026-11-14-reports/proof_leaks Kartik.md",
+      "sha256_at_import": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
+      "bytes_at_import": 38064
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/Round-1 Very Large Model Prompts and Res Uzair.md",
+      "source": "break-the-model-starter/logs/teammate-sessions/2026-11-14-reports/Round-1 Very Large Model Prompts and Res Uzair.md",
+      "sha256_at_import": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56",
+      "bytes_at_import": 2805
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/Submission Kartik.md",
+      "source": "break-the-model-starter/logs/teammate-sessions/2026-11-14-reports/Submission Kartik.md",
+      "sha256_at_import": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045",
+      "bytes_at_import": 4584
+    },
+    {
+      "path": "presentation/assets/team/sparsh.jpeg",
+      "source": "Sparsh.jpeg",
+      "sha256_at_import": "93b9130a4ccf5d1885ea9d3f316bc3329c6cf2d75b62e5979d80073b0776a81c",
+      "bytes_at_import": 125362
+    },
+    {
+      "path": "presentation/assets/team/uzair.jpeg",
+      "source": "Uzair.jpeg",
+      "sha256_at_import": "5cd9085f3778616a5c5f841ec18e40780373763796425114ca5bc1d2a7010642",
+      "bytes_at_import": 158360
+    },
+    {
+      "path": "presentation/assets/team/kartik.jpeg",
+      "source": "Kartik.jpeg",
+      "sha256_at_import": "57a4d63b372e1e20ac382cece1c693010164da96ea5242892ceb82b1388ad2a4",
+      "bytes_at_import": 10688
+    },
+    {
+      "path": "presentation/assets/team/imran.jpeg",
+      "source": "Imran.jpeg",
+      "sha256_at_import": "f8c911d6eb5245a31248064f2a31efadd245937754bb86c79e48bc9a40d29758",
+      "bytes_at_import": 11557
+    },
+    {
+      "path": "presentation/assets/team/ganesh.jpeg",
+      "source": "Ganesh.jpeg",
+      "sha256_at_import": "445a8821b21113c43f835d10d2e1ffb85895a77fc136f9726a09baa76f5d58da",
+      "bytes_at_import": 11782
+    }
+  ],
+  "incoming_commit": "683ff108d2b1625bf37c9f6ae596171329edc3a1",
+  "incoming_files_sha256": {
+    "AGENTS.md": "b6ea0c3ede5d74f5a51af05be13922ce92ef67c1a0c8a396e4a940fb11596798",
+    "FINDINGS.md": "c701d8b0e0130fa76cc2f15ab5f7dc71d017f18f63a2c1f1790181ba4a9aef4c",
+    "LEAK_REPORT.md": "aa37eb4a80b0821e3fe92f012ef0449fcbc94d3d38b4221492263428d3aced02",
+    "PROMPTS.md": "ff14f911cb7fa094c077a73bdf330ab6e590bf9ee0201f472ecd69ebd01e2e6a",
+    "attack.py": "8b005b65a830ec19c3daba3922f43ce7b18bddfaecf480918ba6d54de43d3a49",
+    "ganesh-very-large-model-leak-report.md": "df859d208d2a5e85f64af6dd27cd2bf712418c164b9ad6562a32819fec6a9dce",
+    "logs/my_attempts_session2.jsonl": "4e9b0f4008fbb3baf5970d15b93ee662df5f9cfb075147c6600fa1a11795aa99",
+    "probe.py": "cc507c1d44a7b9a769ef1ebdd824aea86ee95b49cb32347ef9e89fb2e1f52f86",
+    "secret_probe.py": "cb3378e485e702bbb31b8586fefae60f42bb8284528e70125223e8c7629f3a01",
+    "umair-very-large-model-leak_report.md": "4ed636986e0ad5cf8561a672687a6c6befd06264ec07d64b54dfb271c28e9ab5"
+  },
+  "incoming_git_bytes_sha256": {
+    "AGENTS.md": "f8bcb23261d73cff2ceb84c4993f579e14cf7137ee8a96452fa7bf4be561bedb",
+    "FINDINGS.md": "1624073a4064bbe165bf079d9c6c1b5a66e39ca2e2b75b81fe2fb86f14d201da",
+    "LEAK_REPORT.md": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1",
+    "PROMPTS.md": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670",
+    "attack.py": "5afd8146756368951ac88d9d0e0ce6c49b46a3e51393f3b033775c7e8511a7a1",
+    "ganesh-very-large-model-leak-report.md": "863d166f79fda6f8fb55a8aa942ba3d75cfb7888b03b7bce192022239d67f223",
+    "logs/my_attempts_session2.jsonl": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3",
+    "probe.py": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb",
+    "secret_probe.py": "26f3aae0ed6ca162c4c59da4ddd5b8711af5ff008ed175674d7be5b0e73dca2a",
+    "umair-very-large-model-leak_report.md": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56"
+  },
+  "incoming_fidelity": "Git committed bytes and exact Windows checkout bytes are both recorded; checkout CRLF endings are retained in copied source reports.",
+  "initial_incoming_commit": "701ce925280737fa1e36a082e8e5bdf14dcc62e3",
+  "latest_incoming_git_bytes_sha256": {
+    ".env.example": "ca6c91d8325abe1840590aa4d60cbdc23b9b674ac040b64ba34d0d0e96c27026",
+    ".gitignore": "1909a254b3e754bc61a6f3f4798fbf1b816cf17e7610156a60c87c772006dced",
+    "AGENTS.md": "f8bcb23261d73cff2ceb84c4993f579e14cf7137ee8a96452fa7bf4be561bedb",
+    "FINDINGS.md": "b6033d5b4d7eca64d259daf589c480c60c7387ab423907249620099196921994",
+    "LEAK_REPORT.md": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1",
+    "PROMPTS.md": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670",
+    "README.md": "5db149a1a87e88e987f6378d095c69fbfe6caaf0e6ccf697e55ef4698b58f6e2",
+    "attack.py": "5afd8146756368951ac88d9d0e0ce6c49b46a3e51393f3b033775c7e8511a7a1",
+    "btm.py": "e34fa72d52c0f004028e31e9513d233ae8c90e2dc6ae76dde5f0c7d798357d58",
+    "chat.py": "c060ab14e5ca276222d38ceeceb0f092cb4d317adb8bdceb102195740cf05f89",
+    "example_attack.py": "b5285b0ea7785f7a9a0baa389ff4ab9c988fc02e4a8512381d42f8702345e913",
+    "ganesh-very-large-model-leak-report.md": "863d166f79fda6f8fb55a8aa942ba3d75cfb7888b03b7bce192022239d67f223",
+    "logs/FORM_SUBMISSIONS.md": "18da924013d0bcf696d2805c59c5e52c4d935ae82258a6687c95f11f18905e21",
+    "logs/SUBMISSION.md": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca",
+    "logs/model_matrix.json": "13b2aee266fabab4b2ef155bcdb0b510d01f0956e30428f4b7cbd04248367fa7",
+    "logs/my_attempts.jsonl": "618d69c9a026b86463230e4a32d0d31065490130baf121865ba40dd0dd983c1b",
+    "logs/my_attempts_session2.jsonl": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3",
+    "logs/proof_leaks.md": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
+    "logs/success_rates.json": "d7cb06b4969386142e9c6ade3e48e25b5bb6c2cbf976884d4b0b3bea410f3b34",
+    "logs/success_rates2.json": "04cef83cb0e9924af6b5c778f497122a47a067b21e8b768e62ff235d35ae4a70",
+    "presentation/deck/deck.css": "5d959c98feefe038987ae308230e28eefc48679ec1903da8171b45ff7700a3cb",
+    "presentation/deck/deck.json": "0d281ec5ae9653b267dfda9b9f6050577d8c9056cab03a9d715a751515a92ef5",
+    "presentation/deck/slides/close.html": "937cede1f48bd99738122f1add176f3b31874ce659c989e7cfe16521a86bd1f9",
+    "presentation/deck/slides/cover.html": "f9cd343156ee41c3ae9d292379bb4e3f4c69b5602c0e19a2c5a6c21063bd11ac",
+    "presentation/deck/slides/impact.html": "ff32cdb01b525f9865c66d9bf3c2f1eaa8d1b38fddb07d0d4d12bad391e74b01",
+    "presentation/deck/slides/mitigation.html": "f1b76b623bd6f7608b90b2a12344f95d631cc7883195d24750845b8640f267fe",
+    "presentation/deck/slides/models.html": "43fb2fce1102cb45c82e8fa1503f4f5ea1f5d9674313f9e76aace6c3c77e7420",
+    "presentation/deck/slides/rawjson.html": "46be767ceadf11f852dccc309b73768087a4e87db4e955e5dcbe555eafda5176",
+    "presentation/deck/slides/reframe.html": "ae738aee0f28bdb125fb184b203663fe61d4d30e5809d5a444f2c65193e84bdd",
+    "presentation/deck/slides/scoreboard.html": "659cef99c5f339dd44d7ac73fa98c26a817e630fecad1c217b4e3f18a65641f1",
+    "presentation/deck/slides/ssn.html": "ced11ae65322888bc1c720f19ad49ce061d05947a378d213b897fc3d5015994f",
+    "presentation/deck/slides/target.html": "63761b60751b409d44aa171e56ddfbfd6a06723ad5cadc736ab65b2f65f1f7ee",
+    "probe.py": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb",
+    "requirements.txt": "440ff9578848b53a0788596112184f6c01c0d6ac39cc042fbae0ce4d549f8c9c",
+    "secret_probe.py": "26f3aae0ed6ca162c4c59da4ddd5b8711af5ff008ed175674d7be5b0e73dca2a",
+    "setup.py": "9a49f75fe348749cef0fc5e84fa377ce812c280005add8433ba9c0678ed4d9d6",
+    "umair-very-large-model-leak_report.md": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56"
+  }
+}

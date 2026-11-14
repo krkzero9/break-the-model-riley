@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-14",
+  "scope": "Final local submission checks after teammate main integration at 683ff10; commit and push authorized by Sparsh. No live model calls.",
+  "checks": [
+    "Three offline replay tests passed: no client access by default, fresh conversations and error accounting, original raw snapshot preserved, unavailable model rejected.",
+    "Source and offline bundle passed all 24 story beats, actor/file ownership, bubble bounds, 30 database nodes and 54 links, nested dialogs and state preservation.",
+    "Source and bundle loaded all five derived portraits. Desktop 1280x720 and mobile 390x844 team layouts were inspected; no external requests or JavaScript errors.",
+    "README local links resolve; imported raw sources and photos are hash-verified. Latest incoming repo files are retained except intended README.md, .gitignore, FINDINGS.md and AGENTS.md documentation edits.",
+    "Text files passed configured-secret comparison and strong provider-token/private-key pattern scanning. No environment files were copied.",
+    "Incoming main changes integrated by fast-forward; all 116 LEAK_REPORT IDs match raw logs. Original incoming consolidated summary preserved; model/count/delivery claims corrected in FINDINGS.md.",
+    "Mapping story now draws five key-based branches in sequence and highlights five unknown schemas; source/bundle motion and laptop/mobile layouts inspected.",
+    "All five badge-free derived portraits use circular masks; original photos and crop coordinates/hashes are preserved.",
+    "Latest incoming provider/team-token client retained; replay model enumeration and auth-context metadata adapted to its tuple interface. No key or team token is used by offline tests.",
+    "Final presentation uses 1,328 logged records and 209 referenced turns; 205 trace matches, corrected email/aggregation/SSN evidence and current submission wording are linked in FINAL_SUBMISSION.md.",
+    "Final result tabs and merged-proof appendix passed on source/bundle at 1280x720, 1440x900 and mobile 390x844. The database inspector includes a logged SSN reference with unverified type, without claiming digit recovery."
+  ],
+  "evidence_index": "logs/evidence-index.json",
+  "limits": "Trace matching locates records without reclassifying reported outcomes. Success-rate trial selection and guard attribution remain unaudited. Proposed defences still need replay."
+}

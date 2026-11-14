@@ -1,0 +1,454 @@
+[
+  {
+    "turn": "a05f95c6163a4857ab94def393327bf4",
+    "originalTier": "small",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "067d16cd92814963915bbc06b5d3b131",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "63af9044dbab4d56beec814d047a92ce",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "0925868c9a9441b18fef753c817e8b4b",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "62926494217b4c11b28669c9e4e8daab",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "2d83829578fb48c082bc0500c13df5ad",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "e98d5150dd8c460092e7f9b5f5f12f5e",
+    "originalTier": "small",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "00ded6a8618345ddaedee5252ef6e6a9",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "2c21f987603e429986231dfd955acdea",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "65ef76be7bd34b6ab1dd960ed9ff92ec",
+    "originalTier": "small",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "811556dbc6ac43d0b82d01a551cc5fa2",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "4738eb280ef2438d8c99063061cc1a81",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "123588617d5e40be927afc37b1e0736b",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "09c8d53773984b1aae31679e761d6e40",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "d755273a6c3e4b208ab7e16c51d72161",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "dda0f9ca6ace414c840666a47607adcc",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "e09042c267e24054b947640510ada17a",
+    "originalTier": "small",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "b34133be6ca74b30bcdf04755c473969",
+    "originalTier": "small",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "d73d6333e3c44460a87eb56bf0973270",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "0c35d666d7ea4ff1bc109e6169bd9f21",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "7dea37b0a70a455388d6c76aef1976b0",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "4f41ff680b2843beb8a8e39776432131",
+    "originalTier": "medium",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "279f182c5f34463392bd820099552681",
+    "originalTier": "medium",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "3913ff61eb804a368f83d238946d2d1d",
+    "originalTier": "medium",
+    "localModel": "openai/gpt-oss-120b",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "openai/gpt-oss-120b",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "39ef58e1651a450e89043f5b374fba62",
+    "originalTier": "medium",
+    "localModel": "groq/openai/gpt-oss-120b",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "groq/openai/gpt-oss-120b",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "0f4ee00467b24391a6ebc96df0fdbcb8",
+    "originalTier": "medium",
+    "localModel": "groq/openai/gpt-oss-120b",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "groq/openai/gpt-oss-120b",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "b953487ba0494d148c562b5987fc6f8a",
+    "originalTier": "medium",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "a10926325d3444cfb2a68e0ca3558b7b",
+    "originalTier": "medium",
+    "localModel": "openai/gpt-oss-120b",
+    "localTools": [
+      "read_inbox"
+    ],
+    "pastedModel": "openai/gpt-oss-120b",
+    "pastedTools": [
+      "read_inbox"
+    ]
+  },
+  {
+    "turn": "a664a0c4cd544c64aad4428d1d63e584",
+    "originalTier": "medium",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "80503bac0bdb4ec19dbb2903fa391d31",
+    "originalTier": "large",
+    "localModel": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "304dd89a6d9742228f904fcbebda863b",
+    "originalTier": "very large",
+    "localModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "912fda5b40db4dbab47d418521d59107",
+    "originalTier": "very large",
+    "localModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "1a9f001c27654f29934bde05a4453e46",
+    "originalTier": "very large",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "b346f2d465ca4586843918b3ce5d6b59",
+    "originalTier": "very large",
+    "localModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "6e0415b061e84c3f9b25f9ddde023872",
+    "originalTier": "very large",
+    "localModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "b69e39008e6d486b8af4c91237bce0b3",
+    "originalTier": "very large",
+    "localModel": null,
+    "localTools": null,
+    "pastedModel": null,
+    "pastedTools": null
+  },
+  {
+    "turn": "9fcbd44336974b3a8dcada02662bc87b",
+    "originalTier": "large",
+    "localModel": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "e06e1773d1d24a4da583dc0e50317d8f",
+    "originalTier": "large",
+    "localModel": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "b533ab6b2d414c5fb3721b43cec85a58",
+    "originalTier": "very large",
+    "localModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "localTools": [
+      "query_db",
+      "query_db",
+      "send_email"
+    ],
+    "pastedModel": "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "pastedTools": [
+      "query_db",
+      "query_db",
+      "send_email"
+    ]
+  },
+  {
+    "turn": "c38a628d12d24209a9bc31757c50be67",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  },
+  {
+    "turn": "84321de77498423da86f34beb23ac90c",
+    "originalTier": "small",
+    "localModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "localTools": [
+      "query_db"
+    ],
+    "pastedModel": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "pastedTools": [
+      "query_db"
+    ]
+  }
+]

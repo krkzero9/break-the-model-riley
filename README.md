@@ -1,21 +1,47 @@
-# Break the Model
+# Break the Model - team submission
 
-> **Team note (private repo):** two red-team runs are merged here. Start at
-> [`FINDINGS.md`](FINDINGS.md) — consolidated index + reconciliation of both runs.
->
-> Session 1 (`krkzero9/break-the-model-riley`, weak Qwen3-30B — the exploit host):
-> - [`logs/SUBMISSION.md`](logs/SUBMISSION.md) — findings summary, techniques, measured success rates, fixes
-> - [`logs/proof_leaks.md`](logs/proof_leaks.md) — full evidence with `turn_id`s
-> - [`logs/FORM_SUBMISSIONS.md`](logs/FORM_SUBMISSIONS.md) — form-ready writeup per `turn_id`
-> - [`logs/success_rates.json`](logs/success_rates.json), [`model_matrix.json`](logs/model_matrix.json) — measured numbers across 4 models
-> - [`presentation/deck/`](presentation/deck/) — 10-slide pitch deck source · [live deck](https://claude.ai/artifact/4WFAyqDPbkxHDz6iLndWg6)
->
-> Session 2 (strong DeepSeek-V4-Pro — guard internals):
-> - [`LEAK_REPORT.md`](LEAK_REPORT.md) — full write-up + verbatim leaked rows
-> - [`PROMPTS.md`](PROMPTS.md) — verified prompt set for both sessions
-> - `logs/my_attempts.jsonl` (Session 1) · `logs/my_attempts_session2.jsonl` (Session 2) — raw request/response logs
->
-> Data here is the challenge's synthetic data. Keep this repo private; `.env` (API key) is git-ignored.
+Sparsh, Uzair, Kartik (Karthikeyan Rajendran), Imran and Ganesh designed, tested and reviewed the attacks together throughout.
+
+Open [presentation.html](presentation.html) in a browser for the complete offline story, clickable database map, evidence, replay protocol, proposed fixes and team photos. Editable sources are in [presentation/](presentation/); the earlier team deck remains in [presentation/deck/](presentation/deck/).
+
+Use [FINAL_SUBMISSION.md](FINAL_SUBMISSION.md) for the current submission description, selected proof, rubric coverage and three-minute narration. The merged archive has 1,328 records; 205 of 209 referenced turns have raw matches. These are inventory counts, not success rates.
+
+## Evidence and database files
+
+| Material | Location |
+|---|---|
+| Repository's original proof and submission writeups | [logs/SUBMISSION.md](logs/SUBMISSION.md), [logs/proof_leaks.md](logs/proof_leaks.md), [logs/FORM_SUBMISSIONS.md](logs/FORM_SUBMISSIONS.md) |
+| Repository's original raw session log | [logs/my_attempts.jsonl](logs/my_attempts.jsonl): 562 records, 486 unique turn IDs |
+| Sparsh's separate raw session snapshot | [logs/sparsh-2026-11-14/my_attempts.jsonl](logs/sparsh-2026-11-14/my_attempts.jsonl): 167 records; the earlier individual review covered 157 |
+| Original transcripts, exports and review corrections | [logs/user-transcripts-2026-11-14.txt](logs/user-transcripts-2026-11-14.txt), [logs/user-database-export-2026-11-14.json](logs/user-database-export-2026-11-14.json), [logs/presentation-evidence-audit-2026-11-14.json](logs/presentation-evidence-audit-2026-11-14.json) |
+| Incoming run, prompts and additional team reports | [FINDINGS.md](FINDINGS.md), [LEAK_REPORT.md](LEAK_REPORT.md), [PROMPTS.md](PROMPTS.md), [Ganesh report](ganesh-very-large-model-leak-report.md), [Uzair report](umair-very-large-model-leak_report.md), [Session 2 raw log](logs/my_attempts_session2.jsonl) |
+| Four supplied teammate reports and reconciliation | [logs/teammate-sessions/](logs/teammate-sessions/) |
+| Current reconstructed database map | [database/schema-map.json](database/schema-map.json): 30 catalog tables, 25 with reported fields, five unprobed schemas and 54 links |
+| Source hashes and turn-ID trace lookup | [logs/evidence-index.json](logs/evidence-index.json); import provenance in [logs/import-provenance.json](logs/import-provenance.json) |
+| Judging rubric | [logs/Entropy Alignment Security.pdf](logs/Entropy%20Alignment%20Security.pdf) |
+
+The database export contains reconstructed schema information and the challenge's fictional reply samples. A backend SQLite copy was not supplied. Raw logs stay separate so model cohorts and test rounds can be traced. Existing success-rate JSON files remain the team's original summaries; their trial selection and guard/version attribution have not been independently audited in this import. Trace matches in the index locate evidence without reclassifying outcomes.
+
+The presentation distinguishes visible disclosure, tool invocation and confirmed delivery. Email-tool use alone does not prove external delivery, and reported SSN properties do not recover SSN digits. Proposed fixes still need an attack-versus-defence replay.
+
+## Rebuild and replay
+
+Build the self-contained presentation, export the current database map and refresh the evidence index:
+
+```bash
+node presentation/build.js
+node database/export.js
+python tools/index-evidence.py
+```
+
+The replay skeleton selects exact models, records the configured key provider and whether team routing is enabled, starts a fresh conversation for every trial and checks required fields plus tool invocation. It defaults to an offline plan and sends no requests:
+
+```bash
+python reproduce.py --model Qwen/Qwen3-30B-A3B-Instruct-2507 --repeat 3
+python -m unittest discover -s tests -v
+```
+
+For an authorized event-funded run, configure the existing Riley client first and add `--live`. Repeat `--model` to select additional available models. There is no provider fallback. New trial records and raw responses go to the ignored `logs/reproductions/` folder, leaving committed evidence snapshots intact. Rate-limit errors are recorded separately from completed trials.
 
 ---
 
@@ -30,7 +56,7 @@ Riley is the AI assistant of a (fictional) hospital. It can read the hospital da
    - **Nebius** key, if you have credits.
 2. Download this kit:
    ```bash
-   git clone https://github.com/natalienma/break-the-model-starter && cd break-the-model-starter
+   git clone https://github.com/krkzero9/break-the-model-riley.git && cd break-the-model-riley
    ```
 3. Set up (asks for your name and key, then tests the connection):
    ```bash

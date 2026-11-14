@@ -1,5 +1,11 @@
 # Memory
 
+## Current submission state — 14 November 2026
+
+Use `FINAL_SUBMISSION.md`, `FINDINGS.md` and `logs/evidence-index.json` for reviewed claims. The merged archive contains 1,328 records and 209 referenced IDs, 205 with raw matches. Session 2 is mixed-model: GPT-OSS 321, DeepSeek 260, Qwen 235B 15 and Qwen 30B 3 records. Raw records do not identify a guard/deployment revision, so a controlled model-only comparison is not established. Email-tool arguments establish invocation, not mailbox delivery; SSN counts do not recover digits.
+
+The working notes below preserve earlier participant observations, candidate probes and reported rates. They contain superseded claims about model availability, reachable tables and guards. Treat them as historical context rather than verified current-server facts. No new live probing is part of submission preparation unless Sparsh requests it.
+
 ## Project Overview
 
 `break-the-model-starter` is a CTF-style prompt-injection / data-exfiltration challenge.
@@ -21,9 +27,9 @@ and preserved alongside it. Consumed together:
 | Session 2 | `deepseek-ai/DeepSeek-V4-Pro-0813` (strong) | `LEAK_REPORT.md`, `PROMPTS.md`, `logs/my_attempts_session2.jsonl` | Guard internals, policy-layer reason codes, quote bypass, `string_agg` row-cap bypass |
 
 `FINDINGS.md` is the consolidated index and reconciles every place the two runs disagree.
-**The single most important fact:** the guard is model-dependent. The same raw-JSON prompt that
-dumps `clinical_notes` on Qwen3-30B is refused with `level3_denied` on DeepSeek-V4-Pro. Session 2
-used only DeepSeek, which is why it reports "walls" where Session 1 reports "leaks". Both are true.
+Recorded outcomes vary by model, prompt and round. Selected raw-JSON requests returned
+`clinical_notes` on Qwen3-30B, while some DeepSeek requests were refused with `level3_denied`.
+Session 2 used multiple models; different server revisions may also affect the results.
 
 **Session 1 playbook (use the weak model — it is the exploit host).** Qwen3-30B was reported dead
 in session 2 (timeouts); it is not — it answers and leaks. If a `/chat` call hangs, retry.

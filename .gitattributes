@@ -1,0 +1,22 @@
+# Keep imported evidence byte-identical across checkouts.
+logs/sparsh-2026-11-14/** -text
+logs/teammate-sessions/** -text
+logs/user-* -text
+logs/progress-export* -text
+logs/teammate-karthikeyan* -text
+logs/presentation-evidence-audit* -text
+logs/evidence-index.json -text
+logs/import-provenance.json -text
+logs/incoming-review.json -text
+logs/submission-verification.json -text
+
+# Use stable line endings for the new build and replay sources.
+presentation/*.js text eol=lf
+presentation/*.css text eol=lf
+presentation/index.html text eol=lf
+presentation.html text eol=lf
+database/** text eol=lf
+reproduce.py text eol=lf
+reproduce-cases.json text eol=lf
+tests/** text eol=lf
+tools/** text eol=lf

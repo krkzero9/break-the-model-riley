@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Sparsh",
+    "source": "presentation/assets/team/sparsh.jpeg",
+    "crop_box": [
+      145,
+      155,
+      610,
+      620
+    ],
+    "output": "presentation/assets/team/sparsh-portrait.jpeg",
+    "source_sha256": "93b9130a4ccf5d1885ea9d3f316bc3329c6cf2d75b62e5979d80073b0776a81c",
+    "output_sha256": "024b56712b31bb77cdd25f4efaf41960bd4bbd7cf8be3a328b454e93d990b603",
+    "display": "Circular CSS mask; crop removes LinkedIn badge."
+  },
+  {
+    "name": "Uzair",
+    "source": "presentation/assets/team/uzair.jpeg",
+    "crop_box": [
+      250,
+      15,
+      580,
+      345
+    ],
+    "output": "presentation/assets/team/uzair-portrait.jpeg",
+    "source_sha256": "5cd9085f3778616a5c5f841ec18e40780373763796425114ca5bc1d2a7010642",
+    "output_sha256": "752ff28ba5cadad8dab778f3ad9433ff3551381acd9d2b7c20c82f9c61274f74",
+    "display": "Circular CSS mask; crop removes LinkedIn badge."
+  },
+  {
+    "name": "Kartik",
+    "source": "presentation/assets/team/kartik.jpeg",
+    "crop_box": [
+      33,
+      0,
+      173,
+      140
+    ],
+    "output": "presentation/assets/team/kartik-portrait.jpeg",
+    "source_sha256": "57a4d63b372e1e20ac382cece1c693010164da96ea5242892ceb82b1388ad2a4",
+    "output_sha256": "149ef7251070bc0e9158f3236f94cea792fb5145e7537ae96a068a8e1b4a9f6d",
+    "display": "Circular CSS mask; crop removes LinkedIn badge."
+  },
+  {
+    "name": "Imran",
+    "source": "presentation/assets/team/imran.jpeg",
+    "crop_box": [
+      20,
+      0,
+      185,
+      165
+    ],
+    "output": "presentation/assets/team/imran-portrait.jpeg",
+    "source_sha256": "f8c911d6eb5245a31248064f2a31efadd245937754bb86c79e48bc9a40d29758",
+    "output_sha256": "733b570efc20a4df35e24562099e2242c63a20a641629662d30cc72f99ffaf12",
+    "display": "Circular CSS mask; crop removes LinkedIn badge."
+  },
+  {
+    "name": "Ganesh",
+    "source": "presentation/assets/team/ganesh.jpeg",
+    "crop_box": [
+      35,
+      0,
+      175,
+      140
+    ],
+    "output": "presentation/assets/team/ganesh-portrait.jpeg",
+    "source_sha256": "445a8821b21113c43f835d10d2e1ffb85895a77fc136f9726a09baa76f5d58da",
+    "output_sha256": "919d17cf558e49a4756e36fadec8c447da0769d2a66405716c5ccda906684ed6",
+    "display": "Circular CSS mask; crop removes LinkedIn badge."
+  }
+]

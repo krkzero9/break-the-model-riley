@@ -1,9 +1,13 @@
-# Secrets — NEVER commit (real API key)
+# Secrets stay local; the example file is safe to track.
 .env
+.env.*
+!.env.example
+*.pem
+*.key
 
-# Python / IDE junk
+# Generated environments and trial logs.
 __pycache__/
 .idea/
-
-# NOTE: logs/ is intentionally NOT ignored — the team's red-team findings
-# (SUBMISSION.md, proof_leaks.md, my_attempts*.jsonl) are committed here.
+.venv/
+node_modules/
+logs/reproductions/

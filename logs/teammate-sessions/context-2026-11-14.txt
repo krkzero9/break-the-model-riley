@@ -1,0 +1,21 @@
+Source: Sparsh, chat, 2026-11-14. User-provided context, not an independently measured server comparison.
+
+Reports supplied:
+Round-1 Very Large Model Prompts and Res Uzair.md
+Submission Kartik.md
+LEAK_REPORT_Imran.md
+proof_leaks Kartik.md
+
+"Apparently if we refresh the server rn it is much harder to pull data and we will have to try with antrhopic models. according to my teammates event eh weakest model is not longer so simply queriable. we also got a claude api key."
+
+Claude funding and timing:
+"its event funded. we'll think about it after we finish the other stuff tho."
+No key was supplied, stored or used during the report-integration task. Routing and exact models remain unconfirmed.
+
+Team:
+"Yes. We have 5 total teammates. Sparsh Uzair Kartik Imran and Ganesh. and yes they are the same."
+The final clause confirms Kartik is Karthikeyan Rajendran.
+
+Teamwork and judging context:
+"All of us worked together for everyhting. teamwork is a big thing. the judges said they didnt want to see speicifc peopel splitting apart and doing seperat ethings and reconcilating at the end. we had teamwork and togetherness throughout."
+This user-reported judging guidance supplements the PDF rubric. The presentation credits shared work throughout; report author attribution exists only for evidence provenance.

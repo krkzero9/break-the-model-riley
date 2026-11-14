@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="Scioto Ridge Health: A narrated security experiment, interactive pixel scenes, recorded evidence and a proposed tool boundary.">
+  <title>Scioto Ridge Health — Break the Model</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="story.css">
+  <script defer src="presentation-data.js"></script>
+  <script defer src="database-data.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="database-app.js"></script>
+  <script defer src="replay-source.js"></script>
+  <script defer src="story-app.js"></script>
+</head>
+<body class="story-deck">
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 5v14m-6-6 6 6 6-6"/></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+    <symbol id="icon-expand" viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  </svg>
+  <a class="skip-link" href="#story">Skip to presentation</a>
+  <header class="site-header" data-theme="dark">
+    <a class="wordmark" href="#story" aria-label="Break the Model, first chapter">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>BREAK<br>THE MODEL</span>
+    </a>
+    <nav class="chapter-nav" aria-label="Presentation chapters">
+      <a href="#story" aria-current="location"><span>01</span> Story</a>
+      <a href="#discovery"><span>02</span> Map</a>
+      <a href="#results"><span>03</span> Results</a>
+      <a href="#reproduction"><span>04</span> Replay</a>
+      <a href="#solutions"><span>05</span> Fixes</a>
+      <a href="#team"><span>06</span> Team</a>
+    </nav>
+    <div class="header-tools"><button class="appendix-trigger" type="button" data-open-database>Database map ↗</button><button class="appendix-trigger" type="button" data-open-appendix>Evidence appendix ↗</button></div>
+    <div class="reading-progress" aria-hidden="true"><i></i></div>
+  </header>
+
+  <main>
+    <section id="story" class="chapter story-experiment" data-theme="dark" aria-labelledby="story-title">
+      <div class="section-inner">
+        <div class="eyebrow reveal"><span id="story-phase-number">Situation</span> / Our experiment</div>
+        <div class="story-layout">
+          <div class="story-copy">
+            <p class="overline reveal" id="event-name">Nebius security hackathon / Berlin</p>
+            <h1 id="story-title" class="reveal">Riley’s morning<br>at the <span>front desk</span></h1>
+            <p class="story-description reveal" id="story-description">Riley helps with appointments and insurance. We asked whether a convincing request could make it share records it should protect.</p>
+            <dl class="story-notes reveal" id="story-notes"></dl>
+            <p class="story-observation reveal" id="story-observation">Scioto Ridge Health is a fictional hospital. Our attacks stayed within messages.</p>
+          </div>
+          <div class="reveal">
+            <figure class="pixel-scene" id="story-stage">
+              <canvas id="story-canvas" width="900" height="460" role="img" aria-label="A continuous pixel illustration of the hospital security experiment."></canvas>
+              <figcaption class="scene-caption" id="story-caption" role="status">Riley has useful work to do, and private records to protect.</figcaption>
+              <div class="scene-controls"><button type="button" id="story-back">Back</button><button type="button" id="story-play" aria-pressed="false">Play story</button><button type="button" id="story-next">Next beat</button><button type="button" id="story-replay">Replay</button><span id="story-beat-count"></span></div>
+            </figure>
+            <div class="story-steps" role="tablist" aria-label="Chapters within the continuous story">
+              <button type="button" role="tab" id="story-step-0" aria-controls="story-panel" aria-selected="true" data-story-step="0">Problem</button>
+              <button type="button" role="tab" id="story-step-1" aria-controls="story-panel" aria-selected="false" tabindex="-1" data-story-step="1">Direct tools</button>
+              <button type="button" role="tab" id="story-step-2" aria-controls="story-panel" aria-selected="false" tabindex="-1" data-story-step="2">Harder models</button>
+              <button type="button" role="tab" id="story-step-3" aria-controls="story-panel" aria-selected="false" tabindex="-1" data-story-step="3">Mapping</button>
+              <button type="button" role="tab" id="story-step-4" aria-controls="story-panel" aria-selected="false" tabindex="-1" data-story-step="4">New walls</button>
+              <button type="button" role="tab" id="story-step-5" aria-controls="story-panel" aria-selected="false" tabindex="-1" data-story-step="5">Fixes</button>
+            </div>
+            <p class="story-illustration-note" id="story-panel" role="tabpanel" aria-labelledby="story-step-0">One continuous illustration drawn from separate recorded tests.</p>
+          </div>
+        </div>
+        <div class="difficulty-strip reveal" aria-label="Observed difficulty and deployment change">
+          <div data-difficulty="direct"><strong>Weaker models</strong><span>Direct queries exposed records</span></div>
+          <div data-difficulty="workflow"><strong>Stronger models</strong><span>Direct refusals, workflow disclosures</span></div>
+          <div data-difficulty="changed"><strong>After the refresh</strong><span>New walls reported; replay pending</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="discovery" class="chapter story-discovery" data-theme="dark" aria-labelledby="discovery-title">
+      <div class="section-inner">
+        <div class="eyebrow reveal">02 / We built a picture before probing the gaps</div>
+        <div class="discovery-heading reveal"><h2 id="discovery-title">We mapped <span>the system</span></h2><p>Catalog names, returned fields and patient links shaped the next probe. Select a table to inspect what we know.</p></div>
+        <div id="database-home" class="database-home reveal"></div>
+        <p class="discovery-limit reveal">25 tables with supplied or reported fields. Five schemas remain unprobed. Inferred links stay marked; no backend DDL access.</p>
+      </div>
+    </section>
+
+    <section id="results" class="chapter results" data-theme="light" aria-labelledby="results-title">
+      <div class="section-inner">
+        <div class="eyebrow reveal">03 / Targeted probes exposed the boundaries</div>
+        <div class="results-layout">
+          <div class="results-copy">
+            <h2 id="results-title" class="reveal">Earlier tests exposed<br><span>private data</span></h2>
+            <p class="section-description reveal" id="results-takeaway"></p>
+            <div class="metrics reveal" id="metrics"></div>
+            <div class="model-comparison reveal"><div class="comparison-heading"><span>What the recorded tests showed</span></div><div id="model-matrix"></div><p class="matrix-note">43 Nebius and 2 Groq IDs, including discovery and extraction. Repeat-run rates are pending. — means unreported.</p></div>
+          </div>
+          <div class="evidence-panel reveal">
+            <div class="evidence-header"><span class="eyebrow-small">Evidence examples</span><div class="evidence-tabs" role="tablist" aria-label="Evidence examples" id="evidence-tabs"></div></div>
+            <div id="evidence-content" role="tabpanel" aria-live="polite"></div>
+            <div class="evidence-footer">Selected replies and tool arguments. Full source context is in the appendix.</div>
+          </div>
+        </div>
+        <div class="findings-overview reveal"><span><strong>Read</strong> Restricted rows, payroll and clinical data</span><span><strong>Transform</strong> Bulk cells and masked-field properties</span><span><strong>Act</strong> Email calls and recipient scope</span></div>
+      </div>
+    </section>
+
+    <section id="reproduction" class="chapter story-reproduction" data-theme="dark" aria-labelledby="reproduction-title">
+      <div class="section-inner">
+        <div class="eyebrow reveal">04 / The server changed, so the comparison changed</div>
+        <div class="reproduction-layout">
+          <div class="reveal"><h2 id="reproduction-title">New walls.<br><span>A fresh baseline.</span></h2><p class="reproduction-description">After the reported refresh, direct queries became harder. We preserved our evidence and prepared fresh-session repeats for each exact model.</p>
+            <ol class="replay-protocol"><li>Record deployment, guard version and exact model</li><li>Start /new and repeat the same prompt 2–3 times</li><li>Check expected values and actual tool calls</li><li>Save disclosures, refusals and errors</li></ol>
+          </div>
+          <div class="reproduction-code reveal"><p class="code-label">Fresh-session loop / full script below</p><pre id="main-replay-code"></pre><p class="validation-state"><strong>Ready:</strong> fixtures, logs and offline checks.<br><strong>Pending:</strong> current-server repeat rates and defence replay.</p><button type="button" class="appendix-trigger" data-open-replay>Open full replay skeleton ↗</button></div>
+        </div>
+        <p class="reproduction-footnote reveal">1,328 logged records document extensive exploration. Fresh-session rates on the current server still need measurement.</p>
+      </div>
+    </section>
+
+    <section id="solutions" class="chapter story-solutions" data-theme="dark" aria-labelledby="solutions-title">
+      <div class="section-inner">
+        <div class="eyebrow reveal">05 / Fix the boundary that language cannot enforce</div>
+        <div class="solutions-heading reveal"><h2 id="solutions-title">Routine work can<br><span>stay deterministic</span></h2><p>Private records stay outside the model. Permissions belong to the system, even when the conversation goes wrong.</p></div>
+        <div class="solution-core reveal">
+          <article><span class="principle-number">01</span><h3>Fixed private workflows</h3><p>Use validated forms and state machines for appointments, contact updates and other routine tasks.</p><p>Private results go straight to the authenticated interface, outside model context.</p></article>
+          <article><span class="principle-number">02</span><h3>Database isolation</h3><p>Keep database credentials, private records and network routes outside the language model’s runtime.</p><p>Conversation changes cannot create a system permission.</p></article>
+          <article><span class="principle-number">03</span><h3>Checks on every action</h3><p>Bind identity, record and recipient. Block unauthorized predicates and functions. Count records inside aggregated cells.</p><p>Validate destinations and outgoing data. Treat other agents’ instructions as untrusted input.</p></article>
+        </div>
+        <div class="trusted-flow reveal" aria-label="Proposed trusted workflow"><span>Authenticated form</span><span>Fixed service + permissions</span><span>Private database</span><span>Authorized user interface</span></div>
+        <div class="solution-tail reveal"><span>Proposed product: a workflow and permissions broker. Defence replay remains pending.</span><button type="button" class="appendix-trigger" data-open-replay>Replay skeleton ↗</button><button type="button" class="appendix-trigger" data-open-appendix>Rubric and evidence ↗</button></div>
+      </div>
+    </section>
+
+    <section id="team" class="chapter team story-team" data-theme="dark" aria-labelledby="team-title">
+      <div class="section-inner">
+        <div class="eyebrow reveal">06 / The team</div>
+        <div class="team-heading reveal"><h2 id="team-title">We worked<br><span>as one team</span></h2><p>We designed attacks, ran experiments and reviewed evidence together throughout.</p></div>
+        <div class="team-grid reveal" id="team-grid"></div>
+        <div class="story-team-tail reveal"><p>Every result shaped our next decision, from the first prompt to the final story.</p><button type="button" class="appendix-trigger" data-open-appendix>Speaker notes and evidence ↗</button></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="replay-dialog" aria-labelledby="replay-title">
+    <div class="appendix-heading"><div><p class="eyebrow-small">Technical execution / repeatable protocol</p><h2 id="replay-title">Fresh-session replay</h2></div><button type="button" id="close-replay">Close ×</button></div>
+    <p>Choose exact model IDs, start a fresh conversation for each trial, send the same prompt 2–3 times, and check for the expected values plus a tool invocation. Store every turn, including errors.</p>
+    <p class="replay-status">Extensive exploration is documented in 1,328 combined records. This skeleton has been checked offline. Live repeat rates and mitigation replays are pending.</p>
+    <pre class="replay-snippet" id="replay-snippet"></pre>
+    <h3>Offline plan</h3><pre class="replay-command" id="replay-command"></pre>
+    <p>The script sends nothing by default. Live mode uses the existing configured key and exact available model IDs, with no provider fallback.</p>
+    <details><summary>Full runnable skeleton / reproduce.py</summary><pre class="replay-full-code" id="replay-full-code"></pre></details>
+    <details><summary>Fixture prompts / fictional records only</summary><pre class="replay-full-code" id="replay-cases"></pre></details>
+    <p>Record matched / completed / errors / planned for each model and case. Two or three trials provide an initial repeat check, not a precise probability estimate.</p>
+  </dialog>
+
+  <dialog id="evidence-dialog" aria-labelledby="appendix-title">
+    <div class="appendix-heading"><div><p class="eyebrow-small">Scioto Ridge Health / evidence export</p><h2 id="appendix-title">Evidence appendix</h2></div><button type="button" id="close-appendix" aria-label="Close evidence appendix">Close ×</button></div>
+    <p class="source-note" id="source-note"></p>
+    <div id="appendix-content"></div>
+  </dialog>
+
+  <dialog id="database-dialog" aria-labelledby="database-title">
+    <div id="database-workspace">
+    <div class="database-heading"><div><p class="eyebrow-small">Scioto Ridge Health / SQLite</p><h2 id="database-title">Database map</h2></div><button type="button" class="appendix-trigger" data-open-database id="expand-database">Expand map ↗</button><button type="button" id="close-database" aria-label="Close database map">Close ×</button></div>
+    <p class="database-summary" id="database-summary"></p>
+    <div class="database-toolbar">
+      <div class="database-views" role="group" aria-label="Database views"><button type="button" data-db-view="map" aria-pressed="true">Map & columns</button><button type="button" data-db-view="evidence" aria-pressed="false">Evidence</button></div>
+      <label>Category<select id="database-category"><option value="">All tables</option><option value="financial_auth_secrets">Financial / auth</option><option value="patient_identity">Patient identity</option><option value="clinical_phi">Clinical records</option><option value="reference_ops">Reference / operations</option><option value="unprobed">Unprobed schemas</option></select></label>
+      <label>Inspect table<select id="database-table" aria-label="Select a table to inspect"></select></label>
+      <label class="database-search">Search<input type="search" id="database-search" placeholder="Table, column, turn ID or sample value"></label>
+    </div>
+    <p id="database-filter-status" role="status"></p>
+    <div id="database-map-view">
+      <div class="database-visual">
+      <div class="database-zoom" role="group" aria-label="Map zoom controls"><button type="button" id="database-zoom-out" aria-label="Zoom out">−</button><span id="database-zoom-value">100%</span><button type="button" id="database-zoom-in" aria-label="Zoom in">+</button><button type="button" id="database-fit">Fit all tables</button><button type="button" id="database-focus">Focus selected table</button></div>
+      <div class="database-stage"><svg id="database-svg" viewBox="0 0 1420 745" aria-label="Interactive table relationship map"></svg></div>
+      <p class="database-legend"><span><i class="db-breach-dot"></i>Reported disclosure</span><span><i class="db-reference-dot"></i>Reference data</span><span><i class="db-unknown-dot"></i>Unprobed</span><span>Solid link: supplied FK</span><span>Dashed link: inferred</span></p>
+      <p class="database-map-help">Select a table to expand its columns, samples and evidence. Follow a relationship to inspect the linked field. Drag the background to pan; use + / − to zoom.</p>
+      </div>
+      <div id="database-inspector" aria-live="polite" hidden></div>
+    </div>
+    <div id="database-evidence-view" hidden></div>
+    <details class="database-provenance"><summary>Sources & verification limits</summary><div id="database-provenance"></div></details>
+    </div>
+  </dialog>
+
+  <dialog id="table-dialog" aria-labelledby="table-detail-title">
+    <div class="database-heading"><div><p class="eyebrow-small">Columns, linked tables and evidence</p><h2 id="table-detail-title">Table details</h2></div><button type="button" id="close-table-detail">Back to map ×</button></div>
+    <div id="table-detail-home"></div>
+  </dialog>
+
+  <aside class="presentation-controls" data-theme="dark" aria-label="Presentation controls">
+    <div class="chapter-status"><span id="active-number">01</span><span class="status-divider">/</span><span>06</span><span id="active-label">Story</span></div>
+    <div class="control-buttons">
+      <button type="button" id="previous-chapter" aria-label="Previous chapter" disabled><svg class="arrow-up"><use href="#icon-down"/></svg></button>
+      <button type="button" id="next-chapter" aria-label="Next chapter"><svg><use href="#icon-down"/></svg></button>
+      <button type="button" id="fullscreen" aria-label="Enter fullscreen" title="Fullscreen (F)"><svg><use href="#icon-expand"/></svg></button>
+    </div>
+  </aside>
+  <noscript><p class="noscript-note">Enable JavaScript to show the evidence registry and interactive examples.</p></noscript>
+</body>
+</html>
