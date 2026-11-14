@@ -1,9 +1,11 @@
-from btm import chat, list_models, new_conversation
+from btm import chat, list_models, new_conversation, LAST_TURN_ID
+import btm
 
-print("Models:", list_models())
+models = list_models()                 # models that work with your key, weakest first
+print("Your models:", [m for m, _ in models])
 
 conv = new_conversation()
 print(chat("Hi! What are your visiting hours?",
-           model="Qwen/Qwen3-30B-A3B-Instruct-2507",   # weakest model - start here
+           model=models[0][0],         # weakest model - start here
            conversation_id=conv))
-import btm; print("turn_id:", btm.LAST_TURN_ID)
+print("turn_id:", btm.LAST_TURN_ID)

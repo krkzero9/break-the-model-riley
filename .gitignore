@@ -4,3 +4,6 @@
 # Python / IDE junk
 __pycache__/
 .idea/
+
+# NOTE: logs/ is intentionally NOT ignored — the team's red-team findings
+# (SUBMISSION.md, proof_leaks.md, my_attempts*.jsonl) are committed here.
