@@ -15,7 +15,7 @@ def relative(path):
 snapshot = json.loads((ROOT / "logs/import-provenance.json").read_text(encoding="utf-8"))
 trace_index = {}
 sessions = []
-for name in ["logs/my_attempts.jsonl", "logs/my_attempts_session2.jsonl", "logs/sparsh-2026-11-14/my_attempts.jsonl"]:
+for name in ["logs/my_attempts.jsonl", "logs/my_attempts_session2.jsonl", "logs/sparsh-2026-11-14/my_attempts.jsonl", "logs/stage3/sparsh-haiku-5-5.jsonl"]:
     path = ROOT / name
     rows = [json.loads(line) for line in path.read_text(encoding="utf-8-sig").splitlines() if line.strip()]
     ids = set()
@@ -40,19 +40,23 @@ for record in data["reports"]["records"]:
     reference = references.setdefault(record["turn"], {"turn_id": record["turn"]})
     reference["teammate_report"] = {"status_as_reviewed": record["status"], "cohort": record["cohort"], "sources": record["sources"]}
 incoming_ids = set()
-for name in ["docs/LEAK_REPORT.md", "docs/very-large-model-leaks.md", "logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md"]:
+for name in ["docs/LEAK_REPORT.md", "docs/very-large-model-leaks.md", "logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md", "docs/OBSERVATIONS.md", "leaks/umair-claude-haiku-5-leak.md"]:
     for line,text in enumerate((ROOT/name).read_text(encoding="utf-8").splitlines(),1):
         for turn in set(re.findall(r"\b[0-9a-f]{32}\b",text)):
             incoming_ids.add(turn)
             reference = references.setdefault(turn, {"turn_id": turn})
             reference.setdefault("incoming_report_locations", []).append({"path": name, "line": line})
+for line,row in enumerate(rows,1):
+    turn = row.get("response", {}).get("turn_id")
+    if turn:
+        references.setdefault(turn,{"turn_id":turn})["stage3_control"] = {"source":"logs/stage3/sparsh-haiku-5-5.jsonl","line":line,"classification":"greeting or non-disclosing scope refusal"}
 for turn, reference in references.items():
     reference["raw_trace_locations"] = trace_index.get(turn, [])
 
 files = []
-for name in ["README.md", "docs/FINAL_SUBMISSION.md", ".gitignore", ".gitattributes", "AGENTS.md", "docs/FINDINGS.md", "docs/LEAK_REPORT.md", "docs/PROMPTS.md", "docs/OBSERVATIONS.md", "docs/very-large-model-leaks.md", "attack.py", "probe.py", "secret_probe.py", "btm.py", "chat.py", "setup.py", "example_attack.py", "requirements.txt", "presentation.html", "financial_prompts.txt", "reproduce.py", "reproduce-cases.json"]:
+for name in ["README.md", "docs/FINAL_SUBMISSION.md", ".gitignore", ".gitattributes", "AGENTS.md", "docs/FINDINGS.md", "docs/LEAK_REPORT.md", "docs/PROMPTS.md", "docs/OBSERVATIONS.md", "injection_probe.py", "attack.py", "probe.py", "secret_probe.py", "docs/very-large-model-leaks.md", "btm.py", "chat.py", "setup.py", "example_attack.py", "requirements.txt", "presentation.html", "financial_prompts.txt", "reproduce.py", "reproduce-cases.json"]:
     files.append(ROOT / name)
-for directory in ["presentation", "database", "tests", "tools", "logs"]:
+for directory in ["presentation", "database", "tests", "tools", "logs", "leaks", "docs"]:
     files.extend(path for path in (ROOT / directory).rglob("*") if path.is_file() and path.suffix in {".js", ".html", ".css", ".json", ".jsonl", ".txt", ".md", ".pdf", ".jpeg", ".py"} and "reproductions" not in path.parts and "__pycache__" not in path.parts and path.name != "evidence-index.json")
 
 index = {

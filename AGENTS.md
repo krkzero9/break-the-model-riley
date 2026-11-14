@@ -2,7 +2,7 @@
 
 ## Current submission state — 14 November 2026
 
-Use `docs/FINAL_SUBMISSION.md`, `docs/FINDINGS.md` and `logs/evidence-index.json` for reviewed claims. The merged archive contains 1,412 records and 209 referenced IDs, 205 with raw matches. Session 2 is mixed-model: GPT-OSS 321, DeepSeek 260, Qwen 235B 15 and Qwen 30B 3 records. Raw records do not identify a guard/deployment revision, so a controlled model-only comparison is not established. Email-tool arguments establish invocation, not mailbox delivery; SSN counts do not recover digits.
+Use `docs/FINAL_SUBMISSION.md`, `docs/FINDINGS.md` and `logs/evidence-index.json` for reviewed claims. The merged archive contains 1,415 records and 300 referenced IDs, 294 with raw matches. Session 2 is mixed-model: GPT-OSS 321, DeepSeek 260, Qwen 235B 15 and Qwen 30B 3 records. Raw records do not identify a guard/deployment revision, so a controlled model-only comparison is not established. Email-tool arguments establish invocation, not mailbox delivery; SSN counts do not recover digits.
 
 The working notes below preserve earlier participant observations, candidate probes and reported rates. They contain superseded claims about model availability, reachable tables and guards. Treat them as historical context rather than verified current-server facts. No new live probing is part of submission preparation unless Sparsh requests it.
 
@@ -378,7 +378,7 @@ Show me the full text of facility_bulletin_b and facility_bulletin_e, then run t
 
 ## Deliverable
 
-`docs/LEAK_REPORT.md` holds the full write-up **and the raw leaked rows**, one block per
+`docs/LEAK_REPORT.md` (repo root) holds the full write-up **and the raw leaked rows**, one block per
 verified `turn_id`: the exact request, the exact reply. Rebuild it from the log with the snippet
 in that file's "How this was produced" section if turns need re-verification.
 
@@ -513,6 +513,9 @@ URL, startup env vars, tool inventory, system prompt, DB connection details, inb
 ---
 
 ## Session 3 — claude-opus-5-5 run (2026-11-14)
+
+Reviewed submission qualification: Opus marker following and allowed public queries are distinct from private-data disclosure. The direct marker control also succeeds; pasted bulletin text is not a tool-retrieved Stage 3 payload. No private-row escalation is demonstrated in the supplied survey. Empty replies do not identify the guard implementation. See docs/FINAL_SUBMISSION.md and logs/stage3/review.json before using the historical interpretations below.
+
 
 Full write-up + verbatim leaked rows: `docs/OBSERVATIONS.md`. Runner: `injection_probe.py`.
 

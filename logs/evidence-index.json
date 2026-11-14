@@ -1,7 +1,7 @@
 {
   "submission_repository": "https://github.com/krkzero9/break-the-model-riley.git",
   "base_commit": "0dc81c9b400b4fa2bebcf22b1aabcf68dac85bd0",
-  "incoming_commit": "683ff108d2b1625bf37c9f6ae596171329edc3a1",
+  "incoming_commit": "f4212793912f96cab439138feecc456b9efeea81",
   "purpose": "Source inventory and trace lookup; matching a turn ID does not classify an attack outcome.",
   "limits": [
     "The database export reconstructs reported schemas and fictional reply samples; it is not a backend SQLite copy.",
@@ -14,7 +14,7 @@
       "path": "logs/my_attempts.jsonl",
       "records": 646,
       "unique_turn_ids": 570,
-      "sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1",
+      "sha256": "941e7a1b20189a945097fc30a25067470277c679ba83fe3be64d84619d47ebb8",
       "models": {
         "Qwen/Qwen3-30B-A3B-Instruct-2507": 507,
         "deepseek-ai/DeepSeek-V4-Pro-0813": 35,
@@ -27,7 +27,7 @@
       "path": "logs/my_attempts_session2.jsonl",
       "records": 599,
       "unique_turn_ids": 418,
-      "sha256": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3",
+      "sha256": "4e9b0f4008fbb3baf5970d15b93ee662df5f9cfb075147c6600fa1a11795aa99",
       "models": {
         "openai/gpt-oss-120b": 321,
         "Qwen/Qwen3-30B-A3B-Instruct-2507": 3,
@@ -48,14 +48,23 @@
         "Qwen/Qwen3-235B-A22B-Instruct-2507": 16,
         "deepseek-ai/DeepSeek-V4-Pro-0813": 12
       }
+    },
+    {
+      "path": "logs/stage3/sparsh-haiku-5-5.jsonl",
+      "records": 3,
+      "unique_turn_ids": 3,
+      "sha256": "19de2aae19cca3516568015ef77b1bb9c2d269da853b73581ae56bebed6fd559",
+      "models": {
+        "claude-haiku-5-5": 3
+      }
     }
   ],
   "reference_counts": {
     "earlier_registry": 45,
     "teammate_references": 88,
-    "incoming_report_references": 151,
-    "unique_combined": 209,
-    "with_raw_trace": 205
+    "incoming_report_references": 239,
+    "unique_combined": 300,
+    "with_raw_trace": 294
   },
   "references": [
     {
@@ -4433,6 +4442,27 @@
       ]
     },
     {
+      "turn_id": "01366aed03aa498b97ebbe97116441d9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 940
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 506,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_83ee9e281bee",
+          "timestamp_as_recorded": "15:21:02",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
       "turn_id": "747f45cfc11742f0880391be48f37ffe",
       "incoming_report_locations": [
         {
@@ -4454,20 +4484,20 @@
       ]
     },
     {
-      "turn_id": "01366aed03aa498b97ebbe97116441d9",
+      "turn_id": "d11080ad6fa64446b6814fe757cdd547",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 940
+          "line": 941
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 506,
+          "line": 475,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_83ee9e281bee",
-          "timestamp_as_recorded": "15:21:02",
+          "conversation_id": "conv_a758827f953c",
+          "timestamp_as_recorded": "15:15:15",
           "tool_names": [
             "query_db"
           ]
@@ -4493,27 +4523,6 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_02aad0a5cb2c",
           "timestamp_as_recorded": "15:20:33",
-          "tool_names": [
-            "query_db"
-          ]
-        }
-      ]
-    },
-    {
-      "turn_id": "d11080ad6fa64446b6814fe757cdd547",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 941
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 475,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_a758827f953c",
-          "timestamp_as_recorded": "15:15:15",
           "tool_names": [
             "query_db"
           ]
@@ -4850,6 +4859,25 @@
       ]
     },
     {
+      "turn_id": "49471e6851d74e82a2547b0f521479de",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1011
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 572,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_54e5af0931d2",
+          "timestamp_as_recorded": "15:38:27",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "306d7aa90fc241fe98918e703cfed0e2",
       "incoming_report_locations": [
         {
@@ -4867,25 +4895,6 @@
           "tool_names": [
             "query_db"
           ]
-        }
-      ]
-    },
-    {
-      "turn_id": "49471e6851d74e82a2547b0f521479de",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1011
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 572,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_54e5af0931d2",
-          "timestamp_as_recorded": "15:38:27",
-          "tool_names": []
         }
       ]
     },
@@ -4987,25 +4996,6 @@
       ]
     },
     {
-      "turn_id": "6b47cc47acae4259b777853a185f18e2",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1025
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 569,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_ca1067cc028b",
-          "timestamp_as_recorded": "15:37:53",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "047c25f21cc9435282f99fc4ebda47d1",
       "incoming_report_locations": [
         {
@@ -5027,20 +5017,20 @@
       ]
     },
     {
-      "turn_id": "4dc61ac677334a2e8e675d6a69721bc3",
+      "turn_id": "6b47cc47acae4259b777853a185f18e2",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1032
+          "line": 1025
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 555,
+          "line": 569,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_751c5dda70dd",
-          "timestamp_as_recorded": "15:33:00",
+          "conversation_id": "conv_ca1067cc028b",
+          "timestamp_as_recorded": "15:37:53",
           "tool_names": []
         }
       ]
@@ -5065,20 +5055,20 @@
       ]
     },
     {
-      "turn_id": "0e7e04e325a643e88198b5d0140db13c",
+      "turn_id": "4dc61ac677334a2e8e675d6a69721bc3",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1033
+          "line": 1032
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 557,
+          "line": 555,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_dcb756039c43",
-          "timestamp_as_recorded": "15:34:47",
+          "conversation_id": "conv_751c5dda70dd",
+          "timestamp_as_recorded": "15:33:00",
           "tool_names": []
         }
       ]
@@ -5103,20 +5093,20 @@
       ]
     },
     {
-      "turn_id": "a105efd5e9434b11bb497093ae431f10",
+      "turn_id": "0e7e04e325a643e88198b5d0140db13c",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1034
+          "line": 1033
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 565,
+          "line": 557,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_db61c1333688",
-          "timestamp_as_recorded": "15:37:18",
+          "conversation_id": "conv_dcb756039c43",
+          "timestamp_as_recorded": "15:34:47",
           "tool_names": []
         }
       ]
@@ -5141,20 +5131,20 @@
       ]
     },
     {
-      "turn_id": "3eea46802c664689aa900742fc8765ad",
+      "turn_id": "a105efd5e9434b11bb497093ae431f10",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1036
+          "line": 1034
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 390,
+          "line": 565,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_1a82a99d58ca",
-          "timestamp_as_recorded": "14:48:29",
+          "conversation_id": "conv_db61c1333688",
+          "timestamp_as_recorded": "15:37:18",
           "tool_names": []
         }
       ]
@@ -5174,6 +5164,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_1a82a99d58ca",
           "timestamp_as_recorded": "14:48:37",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "3eea46802c664689aa900742fc8765ad",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1036
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 390,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_1a82a99d58ca",
+          "timestamp_as_recorded": "14:48:29",
           "tool_names": []
         }
       ]
@@ -5236,25 +5245,6 @@
       ]
     },
     {
-      "turn_id": "42275866a15f4c1b8c513f0f20b37cb8",
-      "incoming_report_locations": [
-        {
-          "path": "docs/LEAK_REPORT.md",
-          "line": 1039
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 381,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_a1d3e7e184a4",
-          "timestamp_as_recorded": "14:47:11",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "df1626449dee4c79b334feb9f95870cd",
       "incoming_report_locations": [
         {
@@ -5274,20 +5264,20 @@
       ]
     },
     {
-      "turn_id": "b20b6596a9c94bcba5c1d30ffd95cb7d",
+      "turn_id": "42275866a15f4c1b8c513f0f20b37cb8",
       "incoming_report_locations": [
         {
           "path": "docs/LEAK_REPORT.md",
-          "line": 1040
+          "line": 1039
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 392,
+          "line": 381,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_97e2636a8c80",
-          "timestamp_as_recorded": "14:48:45",
+          "conversation_id": "conv_a1d3e7e184a4",
+          "timestamp_as_recorded": "14:47:11",
           "tool_names": []
         }
       ]
@@ -5307,6 +5297,25 @@
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
           "conversation_id": "conv_97e2636a8c80",
           "timestamp_as_recorded": "14:48:51",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b20b6596a9c94bcba5c1d30ffd95cb7d",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1040
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 392,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_97e2636a8c80",
+          "timestamp_as_recorded": "14:48:45",
           "tool_names": []
         }
       ]
@@ -5465,14 +5474,2069 @@
           ]
         }
       ]
+    },
+    {
+      "turn_id": "e803fd95bd964448929cae539651c3fc",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 20
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 155
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1444
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 621,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_5241911e1d29",
+          "timestamp_as_recorded": "17:13:11",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "6509881155e042b8a3e769f00c623cdd",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 24
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 55
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 160
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 176
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1603
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 625,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e58ac6c3f507",
+          "timestamp_as_recorded": "17:14:35",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "95b05734175f4ba1822e3c43c2206c25",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 42
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 730
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 582,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_497c27156cc5",
+          "timestamp_as_recorded": "17:06:17",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "82ee4665fc484fe5ac2e0a3153b6cc48",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 43
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 746
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 583,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_464a57e90b35",
+          "timestamp_as_recorded": "17:06:26",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "272827bd4a8e40b5a33a31cb62e3bc5f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 44
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 977
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 594,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4c754c323da3",
+          "timestamp_as_recorded": "17:08:01",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "70ef06f7467d4ccaaf542fe75fc8c066",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 45
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 252
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1017
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 596,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_5b5e558d209b",
+          "timestamp_as_recorded": "17:08:30",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "cb1a1f174eb6436180631a643069e96c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 46
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1130
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 602,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c1d38047e2e6",
+          "timestamp_as_recorded": "17:09:25",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "181574aee5f74fe59f6ce5fa4b7ce5a5",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 47
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 263
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1724
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 629,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_bbc2fbcae3b3",
+          "timestamp_as_recorded": "17:15:20",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "365faaec2a214aa0b7cd60593beec6b5",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 48
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 312
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1749
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 630,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e2539f427ba8",
+          "timestamp_as_recorded": "17:15:31",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "013042eb350f4dae8508efe20a062bdc",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 49
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 325
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1778
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 631,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_f6a03ddbf454",
+          "timestamp_as_recorded": "17:15:43",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "52f34613d33d469bbeec1d76f9186952",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 50
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 277
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1929
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 636,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_0ca64be2e5aa",
+          "timestamp_as_recorded": "17:16:47",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "00ec3688685b46eea02d0ef0be9bc581",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 51
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 277
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1965
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 637,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_43432466e9b6",
+          "timestamp_as_recorded": "17:16:57",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "6f00f838b21844169c8f44612c5f7911",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 52
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 221
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1840
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 633,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_625d2df233f3",
+          "timestamp_as_recorded": "17:16:16",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "2c06a2b0db8446db9e71cc50a3d9efaa",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 52
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 206
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1809
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 632,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_2d9585feb0b8",
+          "timestamp_as_recorded": "17:16:05",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "8f43fff06680450785ec71a55967acb0",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 52
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 236
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1873
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 634,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_454a257cd221",
+          "timestamp_as_recorded": "17:16:26",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "e16cbb66f7bd4d788162686ace7b4a43",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 57
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1696
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 627,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_08740743957a",
+          "timestamp_as_recorded": "17:15:01",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "d1b1138cf86948efa8ddfc622bdde2fe",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 66
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 869
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 588,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d594efb37407",
+          "timestamp_as_recorded": "17:07:18",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "55fed89195fc405890099642200f9dd0",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 67
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 883
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 589,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_41883984ae67",
+          "timestamp_as_recorded": "17:07:24",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "5ae7a98ef8a94d22bac6fecf9ae01d69",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 68
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 897
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 590,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_187afa7e841e",
+          "timestamp_as_recorded": "17:07:30",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "739b48a2da594011856d53d1d5267f37",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 69
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1185
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 604,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_69efdbb9b65e",
+          "timestamp_as_recorded": "17:09:57",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "fd228a4938974461a14920be8886f556",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 70
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1199
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 605,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_31f154a44b88",
+          "timestamp_as_recorded": "17:10:03",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e5d683122b5a482eb88ff2ea411da22f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 71
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1213
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 606,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_14c7dbd977f0",
+          "timestamp_as_recorded": "17:10:08",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "16360ae2b59d41c4b2c25b596d8b4573",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 72
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1227
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 607,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_fd3d199d7ffd",
+          "timestamp_as_recorded": "17:10:13",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9870db4604974ef1ae3b05f7f995c5d9",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 73
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1241
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 608,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_7c28adcf02e4",
+          "timestamp_as_recorded": "17:10:19",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "0755dcb7cb1d4b29b5b90c666604d357",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 74
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1255
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 609,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_66a2d0693a15",
+          "timestamp_as_recorded": "17:10:24",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1d132593b00345c4b7ac6a917f870561",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 75
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1269
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 610,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_2153868068e9",
+          "timestamp_as_recorded": "17:10:29",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "eb0bae469eb34e57be7d8c9cb7754ac4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 76
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1046
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 597,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_051717ab7e87",
+          "timestamp_as_recorded": "17:08:36",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "85960a49f05b467c8c91b13331cb1e98",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 77
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1402
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 618,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e001e6d52b35",
+          "timestamp_as_recorded": "17:11:54",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "23262261dd2f41bf818704352329f67c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 78
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1283
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 611,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_6fdc07765b34",
+          "timestamp_as_recorded": "17:10:35",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "24a1b38262b74481b4071462dc3f3fb1",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 79
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1116
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 601,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_37d2a6b83083",
+          "timestamp_as_recorded": "17:09:14",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "22a4f190807546a9aeaa4f680ad34718",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 80
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1003
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 595,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_7aa83fce3d36",
+          "timestamp_as_recorded": "17:08:07",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1aa838de487146779280ab4b8b94e210",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 81
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 939
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 592,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_96971f04300a",
+          "timestamp_as_recorded": "17:07:44",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "026453fe4c1f41c7953f94384a59e316",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 82
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1416
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 619,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c55d3a0e7188",
+          "timestamp_as_recorded": "17:12:53",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9a5b622156f1415ba97774f6fc312f1f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 83
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1430
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 620,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c8bcd72942e1",
+          "timestamp_as_recorded": "17:12:58",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "875981652479485b80a7b9b01ea759f0",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 84
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1060
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 598,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_91ba1e36fc44",
+          "timestamp_as_recorded": "17:08:45",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "17cd45ebd2cb4158b38794a010cd20e2",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 94
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1297
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 612,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e2feb16ab5e5",
+          "timestamp_as_recorded": "17:11:14",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "94224d914e68474e88ad83c014c983ac",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 95
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 797
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 586,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_012b32f9931e",
+          "timestamp_as_recorded": "17:06:46",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "aa0c2565161f4b60a56d34825d44b01b",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 96
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 911
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 591,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_24ed5afc2c8c",
+          "timestamp_as_recorded": "17:07:39",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "009b03cf0ffb4745a982b88d86eed4c2",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 97
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1384
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 617,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_3be75bf1ef63",
+          "timestamp_as_recorded": "17:11:46",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1b53b78016bd4595a0cb915ed0718f1d",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 98
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 953
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 593,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_dd8959932d10",
+          "timestamp_as_recorded": "17:07:52",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9478d539f74b4f1192ecf046cbff0780",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 99
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 491
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 568,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c9498becd466",
+          "timestamp_as_recorded": "17:04:28",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1e6c9a93a6dc45cfbf91d9f906af6cde",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 105
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 191,
+          "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "conversation_id": "conv_a041449c8530",
+          "timestamp_as_recorded": "13:53:39",
+          "tool_names": [
+            "read_inbox"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "f3dfbb53d08243faabc105592f417920",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 105
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 194,
+          "model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+          "conversation_id": "conv_6ca9959fb3f6",
+          "timestamp_as_recorded": "13:53:49",
+          "tool_names": [
+            "read_inbox"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "d45b5bf9c81c444081e753586e041033",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 156
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1656
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 626,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_414a1897888e",
+          "timestamp_as_recorded": "17:14:49",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "35165c7fc8c146399c415553a3bf6431",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 157
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1495
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 622,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_d912f6f99832",
+          "timestamp_as_recorded": "17:13:17",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2ae3ddcba803469a8956635602b270f7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 158
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1517
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 623,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_dacb850bf023",
+          "timestamp_as_recorded": "17:13:29",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1a9904e70f2645ecb90c35c8a297842e",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 159
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1536
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 624,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_6acd7395f5aa",
+          "timestamp_as_recorded": "17:14:18",
+          "tool_names": [
+            "query_db",
+            "query_db",
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "9683dd816b8541778cb82668daf10278",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 263
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1904
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 635,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_0dd84332c560",
+          "timestamp_as_recorded": "17:16:36",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "ccc6b1317c404eee9a2d2341fa0a634c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 277
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1158
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 603,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c55b2698819a",
+          "timestamp_as_recorded": "17:09:35",
+          "tool_names": [
+            "query_db"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "7e607a8b26b048c28798b230600b5c12",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 351
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1074
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 599,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_7986941d10d7",
+          "timestamp_as_recorded": "17:08:57",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "56b52318f8ce41fc99d8bdfa28517766",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 351
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1095
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 600,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_abf321fa4e89",
+          "timestamp_as_recorded": "17:09:09",
+          "tool_names": [
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "ad7792a3e7b1414585a519a052ca4b0f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 365
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2121
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 641,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c678243b6c76",
+          "timestamp_as_recorded": "17:20:17",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "846258d85f064c5ba615676f5df1e6e1",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 366
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2135
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 642,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_8b93b47883b7",
+          "timestamp_as_recorded": "17:20:23",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "bdf32b6bc260474992c54122a8ce3d53",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 367
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2149
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 643,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_13db5c96525c",
+          "timestamp_as_recorded": "17:20:29",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "09e15d24c5c540ea9bd80386c18beb33",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 368
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2163
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 644,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_07a1984dc1c7",
+          "timestamp_as_recorded": "17:20:34",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "1f969ca2174f4596b0aacd7773880f1c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 369
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2177
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 645,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_8bcd85dc61ef",
+          "timestamp_as_recorded": "17:20:40",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "081c7dbd184543bfb8a109a6a235f377",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 370
+        },
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2191
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 646,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_5920528aea43",
+          "timestamp_as_recorded": "17:20:45",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "a7e82c3eaeab4ce18984d09cadf388f4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 421
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 563,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_0ce8fc66202a",
+          "timestamp_as_recorded": "17:03:14",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "98aab4edd02c4afc8d8c1124b7cf57cd",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 435
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 564,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_248e13fb155e",
+          "timestamp_as_recorded": "17:03:59",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "43a24e731e9f45f68e3b6c83f1c2c445",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 449
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 565,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_248e13fb155e",
+          "timestamp_as_recorded": "17:04:05",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e308e6fadf9a41748c1913043c7501e6",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 463
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 566,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_fe11ef956a12",
+          "timestamp_as_recorded": "17:04:11",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "c11147311b694fbd89d618c2517cf097",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 477
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 567,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_fe11ef956a12",
+          "timestamp_as_recorded": "17:04:18",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "8bae3d5e803847d0ac4666785b5527d4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 518
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 569,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c9498becd466",
+          "timestamp_as_recorded": "17:04:35",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b2513b591dc24b6d922f701c9bc965e1",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 532
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 570,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_f620aa1a948d",
+          "timestamp_as_recorded": "17:04:56",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "bf43e79e94cd44218098ce45beadec62",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 552
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 571,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_f620aa1a948d",
+          "timestamp_as_recorded": "17:05:01",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "54d363855f934e448ac48022cb675fa4",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 566
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 572,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_096e82c87e8a",
+          "timestamp_as_recorded": "17:05:07",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "de34083bb7c747cc839ff5bb36973247",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 580
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 573,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_096e82c87e8a",
+          "timestamp_as_recorded": "17:05:12",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "0f6167c07d0f4ef9b93c114dfcb01e7a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 594
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 574,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4e6947832993",
+          "timestamp_as_recorded": "17:05:18",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "811e1e4372074be5a0d82a74ef0dab93",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 608
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 575,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4e6947832993",
+          "timestamp_as_recorded": "17:05:23",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "939c4b0f40c344e595277fae62a0bf41",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 622
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 576,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4e6947832993",
+          "timestamp_as_recorded": "17:05:29",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "140a2dd0fa3f432d87df52d216cd2cb1",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 636
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 577,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_27bf39250432",
+          "timestamp_as_recorded": "17:05:34",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "e136bfcf113b4c37bc3b5a14f07cb46b",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 650
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 578,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_111d63ebfcdd",
+          "timestamp_as_recorded": "17:05:39",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "b7c8809410ad495b84f701f541f00dbb",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 664
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 579,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_111d63ebfcdd",
+          "timestamp_as_recorded": "17:05:45",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "84c6fd30848c46a1b7ded68045b1ba8c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 678
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 580,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_5459a12a3713",
+          "timestamp_as_recorded": "17:05:50",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "343c00a5606449888070dea6fca60dc8",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 692
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 581,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_c9bbd34c86f1",
+          "timestamp_as_recorded": "17:06:09",
+          "tool_names": [
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "5e5e6eddee5e4d0bbff6668390f7a66a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 769
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 584,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_5688626cefb4",
+          "timestamp_as_recorded": "17:06:31",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2bf9d93d0ccb46ecba3e6cef0254deae",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 783
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 585,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_2a2e2ca951c3",
+          "timestamp_as_recorded": "17:06:37",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "71e1371334d245d1af0ed101e819f88c",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 829
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 587,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_db156f57e8d8",
+          "timestamp_as_recorded": "17:06:57",
+          "tool_names": [
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "f8a1e4418ac44960aeda9387a9bcb7d7",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1319
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 613,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_85674b29150c",
+          "timestamp_as_recorded": "17:11:19",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "2e6001a68af048cda34dfb499f0ca40f",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1333
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 614,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_4810d1e61919",
+          "timestamp_as_recorded": "17:11:27",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "f61fb63005cb4a6887ce1a9ba8f3dc63",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1356
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 615,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_e38902c545b9",
+          "timestamp_as_recorded": "17:11:33",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "50b171c962cb4e148ccf3f714ea7df62",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1370
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 616,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_b17fc743f87c",
+          "timestamp_as_recorded": "17:11:38",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "0bfbb65da45141e489093b866099635a",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1710
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 628,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_26118223104f",
+          "timestamp_as_recorded": "17:15:07",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "a725a037891c444088cb01531f398631",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 1997
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 638,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_77fd4a736ab3",
+          "timestamp_as_recorded": "17:17:25",
+          "tool_names": [
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "e32995e2d4c54315b7a8620a08d5d489",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2032
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 639,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_3f5ca4d6abad",
+          "timestamp_as_recorded": "17:17:35",
+          "tool_names": [
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "4bc31b07fa234d8eafdeaa9f96f66b34",
+      "incoming_report_locations": [
+        {
+          "path": "docs/OBSERVATIONS.md",
+          "line": 2073
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts.jsonl",
+          "line": 640,
+          "model": "claude-opus-5-5",
+          "conversation_id": "conv_10eb1e3e6e8b",
+          "timestamp_as_recorded": "17:17:48",
+          "tool_names": [
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file",
+            "read_file"
+          ]
+        }
+      ]
+    },
+    {
+      "turn_id": "677f54349c7d40b1bdfe9cbedddc317f",
+      "incoming_report_locations": [
+        {
+          "path": "leaks/umair-claude-haiku-5-leak.md",
+          "line": 16
+        }
+      ],
+      "raw_trace_locations": []
+    },
+    {
+      "turn_id": "5d153cda1d4b48d5bdee06b9f0524a6c",
+      "incoming_report_locations": [
+        {
+          "path": "leaks/umair-claude-haiku-5-leak.md",
+          "line": 39
+        }
+      ],
+      "raw_trace_locations": []
+    },
+    {
+      "turn_id": "d74f16de8adc499d9be7f0af1b12121a",
+      "stage3_control": {
+        "source": "logs/stage3/sparsh-haiku-5-5.jsonl",
+        "line": 1,
+        "classification": "greeting or non-disclosing scope refusal"
+      },
+      "raw_trace_locations": [
+        {
+          "path": "logs/stage3/sparsh-haiku-5-5.jsonl",
+          "line": 1,
+          "model": "claude-haiku-5-5",
+          "conversation_id": "conv_50f6b6efc8ca",
+          "timestamp_as_recorded": "16:53:45",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "8e78e82bda0740e9a9c6c4c5fe6dee9c",
+      "stage3_control": {
+        "source": "logs/stage3/sparsh-haiku-5-5.jsonl",
+        "line": 2,
+        "classification": "greeting or non-disclosing scope refusal"
+      },
+      "raw_trace_locations": [
+        {
+          "path": "logs/stage3/sparsh-haiku-5-5.jsonl",
+          "line": 2,
+          "model": "claude-haiku-5-5",
+          "conversation_id": "conv_50f6b6efc8ca",
+          "timestamp_as_recorded": "16:54:06",
+          "tool_names": []
+        }
+      ]
+    },
+    {
+      "turn_id": "9c77c23fe2b244e390a4850971f53cf8",
+      "stage3_control": {
+        "source": "logs/stage3/sparsh-haiku-5-5.jsonl",
+        "line": 3,
+        "classification": "greeting or non-disclosing scope refusal"
+      },
+      "raw_trace_locations": [
+        {
+          "path": "logs/stage3/sparsh-haiku-5-5.jsonl",
+          "line": 3,
+          "model": "claude-haiku-5-5",
+          "conversation_id": "conv_50f6b6efc8ca",
+          "timestamp_as_recorded": "16:54:30",
+          "tool_names": []
+        }
+      ]
     }
   ],
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 694,
-      "sha256": "d346d8a27153a6bc90cb2e081f86937de7159a48fcff58df354c278678f58660",
-      "lf_sha256": "d346d8a27153a6bc90cb2e081f86937de7159a48fcff58df354c278678f58660"
+      "bytes": 738,
+      "sha256": "1c2bbf50ce917fa899382eda3ea85fc2d905547190d9a0e5adff46c648162435",
+      "lf_sha256": "042854f8c06244c2cc511bc269f17e1d9f143f3239a7f221dbb1b1eb32027eb6"
     },
     {
       "path": ".gitignore",
@@ -5482,32 +7546,26 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 34835,
-      "sha256": "b6164f0d7f803d97e7263d1e05c5f33002c048aefb8d8cff218383023adbd6a4",
-      "lf_sha256": "b6164f0d7f803d97e7263d1e05c5f33002c048aefb8d8cff218383023adbd6a4"
-    },
-    {
-      "path": "README.md",
-      "bytes": 6274,
-      "sha256": "205e5579ed79691f863bd4a0919d07e1e65c2d891b1a9181262359c08d613038",
-      "lf_sha256": "205e5579ed79691f863bd4a0919d07e1e65c2d891b1a9181262359c08d613038"
+      "bytes": 35309,
+      "sha256": "d3d3bb98c00c8f95aa7f0221bd21afdbb97904d919041078bc450a0cc1042805",
+      "lf_sha256": "d3d3bb98c00c8f95aa7f0221bd21afdbb97904d919041078bc450a0cc1042805"
     },
     {
       "path": "attack.py",
-      "bytes": 4433,
-      "sha256": "5afd8146756368951ac88d9d0e0ce6c49b46a3e51393f3b033775c7e8511a7a1",
+      "bytes": 4531,
+      "sha256": "8b005b65a830ec19c3daba3922f43ce7b18bddfaecf480918ba6d54de43d3a49",
       "lf_sha256": "5afd8146756368951ac88d9d0e0ce6c49b46a3e51393f3b033775c7e8511a7a1"
     },
     {
       "path": "btm.py",
-      "bytes": 2115,
-      "sha256": "e34fa72d52c0f004028e31e9513d233ae8c90e2dc6ae76dde5f0c7d798357d58",
+      "bytes": 2165,
+      "sha256": "51f565d11e5708cc027a281e93f983db75fdbe3f54876f00139e8abb9e4f8250",
       "lf_sha256": "e34fa72d52c0f004028e31e9513d233ae8c90e2dc6ae76dde5f0c7d798357d58"
     },
     {
       "path": "chat.py",
-      "bytes": 1860,
-      "sha256": "c060ab14e5ca276222d38ceeceb0f092cb4d317adb8bdceb102195740cf05f89",
+      "bytes": 1914,
+      "sha256": "d081b0aed2f933d010cf0b28b40a1f12882d05489eb0b96dc0417e986850af19",
       "lf_sha256": "c060ab14e5ca276222d38ceeceb0f092cb4d317adb8bdceb102195740cf05f89"
     },
     {
@@ -5518,57 +7576,69 @@
     },
     {
       "path": "database/schema-map.json",
-      "bytes": 304333,
-      "sha256": "1862d5ee907a96c1eb80dffe796b928e12d05424998f5c407b00e964f9afbfea",
-      "lf_sha256": "1862d5ee907a96c1eb80dffe796b928e12d05424998f5c407b00e964f9afbfea"
+      "bytes": 304452,
+      "sha256": "b62b1cf60f785bbdf8e51ee3f1cdb4db9deb7a94c829624f3d969de48ea53487",
+      "lf_sha256": "b62b1cf60f785bbdf8e51ee3f1cdb4db9deb7a94c829624f3d969de48ea53487"
     },
     {
       "path": "docs/FINAL_SUBMISSION.md",
-      "bytes": 9212,
-      "sha256": "dca968d0d62801ee94ea4b7cf274a29d63b8762d9527cf7cae5d828d97f58a48",
-      "lf_sha256": "dca968d0d62801ee94ea4b7cf274a29d63b8762d9527cf7cae5d828d97f58a48"
+      "bytes": 11851,
+      "sha256": "4c60b774292699841b57958a58c89882dceaa25833c79043cde79656afda956b",
+      "lf_sha256": "4c60b774292699841b57958a58c89882dceaa25833c79043cde79656afda956b"
     },
     {
       "path": "docs/FINDINGS.md",
-      "bytes": 6178,
-      "sha256": "9175843ca4bf6a408d824af42501ab3e346cd0c29d565c7a44543ca2138f1b7e",
-      "lf_sha256": "9175843ca4bf6a408d824af42501ab3e346cd0c29d565c7a44543ca2138f1b7e"
+      "bytes": 7538,
+      "sha256": "a8d0215d25c6902d1b81f94c2aa2343872a3847981548b2f73bc6bc3b6835efd",
+      "lf_sha256": "a8d0215d25c6902d1b81f94c2aa2343872a3847981548b2f73bc6bc3b6835efd"
     },
     {
       "path": "docs/LEAK_REPORT.md",
-      "bytes": 46991,
-      "sha256": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1",
+      "bytes": 48087,
+      "sha256": "aa37eb4a80b0821e3fe92f012ef0449fcbc94d3d38b4221492263428d3aced02",
       "lf_sha256": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1"
     },
     {
       "path": "docs/OBSERVATIONS.md",
-      "bytes": 82545,
-      "sha256": "2660a61233f2bad32dbd7c13d499a1822f268a068bf2ba9843d7af82dcd35614",
+      "bytes": 84749,
+      "sha256": "22095123bed9a176ad34c949668e553df54686d809b459a09077b81a0412a158",
       "lf_sha256": "2660a61233f2bad32dbd7c13d499a1822f268a068bf2ba9843d7af82dcd35614"
     },
     {
       "path": "docs/PROMPTS.md",
-      "bytes": 12415,
-      "sha256": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670",
+      "bytes": 12676,
+      "sha256": "ff14f911cb7fa094c077a73bdf330ab6e590bf9ee0201f472ecd69ebd01e2e6a",
       "lf_sha256": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670"
     },
     {
       "path": "docs/very-large-model-leaks.md",
-      "bytes": 7074,
-      "sha256": "d09b8060d0358a5f77b031983bc83ccfc3ae6e698f7f01ab7c45cdc16328c664",
+      "bytes": 7218,
+      "sha256": "946ae5f76da5f369dde4c87fed4f2ad0fa63ffeb92bf3ffc7f14442646bea304",
       "lf_sha256": "d09b8060d0358a5f77b031983bc83ccfc3ae6e698f7f01ab7c45cdc16328c664"
     },
     {
       "path": "example_attack.py",
-      "bytes": 424,
-      "sha256": "b5285b0ea7785f7a9a0baa389ff4ab9c988fc02e4a8512381d42f8702345e913",
+      "bytes": 435,
+      "sha256": "3b0190166927ded40f8805efeac7e887070c052fb2e4209104e8917c7c89690d",
       "lf_sha256": "b5285b0ea7785f7a9a0baa389ff4ab9c988fc02e4a8512381d42f8702345e913"
     },
     {
       "path": "financial_prompts.txt",
-      "bytes": 1071,
-      "sha256": "ea35d3b145549a85c48e7dc9000a91c2f2996e054cc759a40a6acd4727673619",
+      "bytes": 1090,
+      "sha256": "3f2fe6acdc1c2e20a2fa0d21555a53a178ffe48ce0228f2f16217adbaa28164b",
       "lf_sha256": "ea35d3b145549a85c48e7dc9000a91c2f2996e054cc759a40a6acd4727673619"
+    },
+    {
+      "path": "injection_probe.py",
+      "bytes": 9861,
+      "sha256": "3a130cc5667bf130b188774a6db52464aefe04e83a11ca71c7281789756f8a56",
+      "lf_sha256": "35084c58a1e7367221cb91c4d846be75407469091a1468e070951a866734425f"
+    },
+    {
+      "path": "leaks/umair-claude-haiku-5-leak.md",
+      "bytes": 2295,
+      "sha256": "3f0623be2ac3db93f18169d54376ec3ecfe1335799b2547ede650ccec4d42a21",
+      "lf_sha256": "554c221f5b023e7b841a1d2c727cb81d55c7525e4d34b1fc2ff87ef8428a0a14"
     },
     {
       "path": "logs/Entropy Alignment Security.pdf",
@@ -5578,21 +7648,15 @@
     },
     {
       "path": "logs/FORM_SUBMISSIONS.md",
-      "bytes": 6275,
-      "sha256": "18da924013d0bcf696d2805c59c5e52c4d935ae82258a6687c95f11f18905e21",
+      "bytes": 6359,
+      "sha256": "8c4ed9cc596073a04a5c36ac8094e0dfd945c83316df5c55b6de19ab3f1f9daa",
       "lf_sha256": "18da924013d0bcf696d2805c59c5e52c4d935ae82258a6687c95f11f18905e21"
     },
     {
-      "path": "logs/SUBMISSION.md",
-      "bytes": 5710,
-      "sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca",
-      "lf_sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca"
-    },
-    {
       "path": "logs/import-provenance.json",
-      "bytes": 17859,
-      "sha256": "2259e79c93824becb47d0695d2c8638f739e20f9464c1ac4a433ab84b9916633",
-      "lf_sha256": "2259e79c93824becb47d0695d2c8638f739e20f9464c1ac4a433ab84b9916633"
+      "bytes": 27949,
+      "sha256": "88401702874050c9b001fb9c22eb21f3bcfe2ac76a13ad80d633722259e17e72",
+      "lf_sha256": "88401702874050c9b001fb9c22eb21f3bcfe2ac76a13ad80d633722259e17e72"
     },
     {
       "path": "logs/incoming-review.json",
@@ -5602,20 +7666,20 @@
     },
     {
       "path": "logs/model_matrix.json",
-      "bytes": 95,
-      "sha256": "13b2aee266fabab4b2ef155bcdb0b510d01f0956e30428f4b7cbd04248367fa7",
+      "bytes": 104,
+      "sha256": "47ff86ea76157c6de8e0f6389604b57285609cb553c0644365268df7936c8a49",
       "lf_sha256": "13b2aee266fabab4b2ef155bcdb0b510d01f0956e30428f4b7cbd04248367fa7"
     },
     {
       "path": "logs/my_attempts.jsonl",
-      "bytes": 612008,
-      "sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1",
+      "bytes": 612654,
+      "sha256": "941e7a1b20189a945097fc30a25067470277c679ba83fe3be64d84619d47ebb8",
       "lf_sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1"
     },
     {
       "path": "logs/my_attempts_session2.jsonl",
-      "bytes": 427817,
-      "sha256": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3",
+      "bytes": 428416,
+      "sha256": "4e9b0f4008fbb3baf5970d15b93ee662df5f9cfb075147c6600fa1a11795aa99",
       "lf_sha256": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3"
     },
     {
@@ -5632,8 +7696,8 @@
     },
     {
       "path": "logs/proof_leaks.md",
-      "bytes": 38064,
-      "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
+      "bytes": 38337,
+      "sha256": "e9a99805db76f90af77b034026153632f8d638aa49c700923ec8f4e8b8059968",
       "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
     },
     {
@@ -5643,21 +7707,39 @@
       "lf_sha256": "09cab05f2543e0de5ef957835418e90581db48fcf1cde659a08e234a07b4cddc"
     },
     {
+      "path": "logs/stage3/review.json",
+      "bytes": 2080,
+      "sha256": "c510cc9165073a71a1b9a83f773fb7402d9d40e08eed6c29b93ac4b47142aa29",
+      "lf_sha256": "c510cc9165073a71a1b9a83f773fb7402d9d40e08eed6c29b93ac4b47142aa29"
+    },
+    {
+      "path": "logs/stage3/sparsh-haiku-5-5.jsonl",
+      "bytes": 2326,
+      "sha256": "19de2aae19cca3516568015ef77b1bb9c2d269da853b73581ae56bebed6fd559",
+      "lf_sha256": "cb4024c1ccb12bbf0016a4cb34b01ff604dee3b541092af5f77d1606390f331e"
+    },
+    {
       "path": "logs/submission-verification.json",
-      "bytes": 2407,
-      "sha256": "ee40c5dc310cc0639785ec8cad224804c0515d23a5c65557e6e9e6b41b061318",
-      "lf_sha256": "ee40c5dc310cc0639785ec8cad224804c0515d23a5c65557e6e9e6b41b061318"
+      "bytes": 3348,
+      "sha256": "270f59d653b6172e7f00defc0cfff54c0d4c47a4ca57c8ebe2876e9254c66ae9",
+      "lf_sha256": "270f59d653b6172e7f00defc0cfff54c0d4c47a4ca57c8ebe2876e9254c66ae9"
+    },
+    {
+      "path": "logs/SUBMISSION.md",
+      "bytes": 5785,
+      "sha256": "a32e0d341363fe70f98663234d992b4c1fbf1e90ce137e6df8b63895a62bf3df",
+      "lf_sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca"
     },
     {
       "path": "logs/success_rates.json",
-      "bytes": 393,
-      "sha256": "d7cb06b4969386142e9c6ade3e48e25b5bb6c2cbf976884d4b0b3bea410f3b34",
+      "bytes": 414,
+      "sha256": "765dd3ec1a4838767fb459d4bcf603cb7eec15e89fb561069f650a0493b12b1a",
       "lf_sha256": "d7cb06b4969386142e9c6ade3e48e25b5bb6c2cbf976884d4b0b3bea410f3b34"
     },
     {
       "path": "logs/success_rates2.json",
-      "bytes": 193,
-      "sha256": "04cef83cb0e9924af6b5c778f497122a47a067b21e8b768e62ff235d35ae4a70",
+      "bytes": 206,
+      "sha256": "43fe43bb3a46885fff79a8236a00d12d543eb89aaae8a5620d49e42e29441b59",
       "lf_sha256": "04cef83cb0e9924af6b5c778f497122a47a067b21e8b768e62ff235d35ae4a70"
     },
     {
@@ -5679,18 +7761,6 @@
       "lf_sha256": "beafc1bfc2fb003944446a76c8d4b796eb33567baa8c875b94ded13695c6c507"
     },
     {
-      "path": "logs/teammate-sessions/2026-11-14-reports/Round-1 Very Large Model Prompts and Res Uzair.md",
-      "bytes": 2805,
-      "sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56",
-      "lf_sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56"
-    },
-    {
-      "path": "logs/teammate-sessions/2026-11-14-reports/Submission Kartik.md",
-      "bytes": 4584,
-      "sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045",
-      "lf_sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045"
-    },
-    {
       "path": "logs/teammate-sessions/2026-11-14-reports/manifest.json",
       "bytes": 7872,
       "sha256": "6e0bf98fe2806270e52c35423fdeadfa9f62272f0916e4a891dd7d79043df5bc",
@@ -5701,6 +7771,18 @@
       "bytes": 38064,
       "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
       "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/Round-1 Very Large Model Prompts and Res Uzair.md",
+      "bytes": 2805,
+      "sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56",
+      "lf_sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56"
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/Submission Kartik.md",
+      "bytes": 4584,
+      "sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045",
+      "lf_sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045"
     },
     {
       "path": "logs/teammate-sessions/context-2026-11-14.txt",
@@ -5734,14 +7816,14 @@
     },
     {
       "path": "presentation/app.js",
-      "bytes": 19651,
-      "sha256": "38fee6ed57bcdbe8315d9770904795512ae432c293e7dc64a1d83caa789c2ecd",
-      "lf_sha256": "38fee6ed57bcdbe8315d9770904795512ae432c293e7dc64a1d83caa789c2ecd"
+      "bytes": 21276,
+      "sha256": "40291ce7f1ee6b71f30b3924997ff20debb94041c269c34c0df256901afadb31",
+      "lf_sha256": "40291ce7f1ee6b71f30b3924997ff20debb94041c269c34c0df256901afadb31"
     },
     {
       "path": "presentation/assets/team/crops.json",
-      "bytes": 2282,
-      "sha256": "e805fa835f4131b624e601143b56d40fca3cf6d636732c83c07806b8c9ebfc20",
+      "bytes": 2354,
+      "sha256": "312f62df9a78ea5153da73c83ce1fea33c8204ed83595dd6816032d558446b26",
       "lf_sha256": "e805fa835f4131b624e601143b56d40fca3cf6d636732c83c07806b8c9ebfc20"
     },
     {
@@ -5818,93 +7900,93 @@
     },
     {
       "path": "presentation/database-data.js",
-      "bytes": 304411,
-      "sha256": "fef2238be2e826073c9bb1c481e3c502f4b39c4bb482ddc0205157bfce7df51e",
-      "lf_sha256": "fef2238be2e826073c9bb1c481e3c502f4b39c4bb482ddc0205157bfce7df51e"
+      "bytes": 304530,
+      "sha256": "6579e306332bf828bf6293bb46a9663428a8b6332a4c10bbe6b5c0ad48d91cd7",
+      "lf_sha256": "6579e306332bf828bf6293bb46a9663428a8b6332a4c10bbe6b5c0ad48d91cd7"
     },
     {
       "path": "presentation/deck/deck.css",
-      "bytes": 3297,
-      "sha256": "5d959c98feefe038987ae308230e28eefc48679ec1903da8171b45ff7700a3cb",
+      "bytes": 3382,
+      "sha256": "0a4334dafdacf73b096e299066b1c78411822591aaa5035dff3167cc57601265",
       "lf_sha256": "5d959c98feefe038987ae308230e28eefc48679ec1903da8171b45ff7700a3cb"
     },
     {
       "path": "presentation/deck/deck.json",
-      "bytes": 994,
-      "sha256": "0d281ec5ae9653b267dfda9b9f6050577d8c9056cab03a9d715a751515a92ef5",
+      "bytes": 1012,
+      "sha256": "6a05133726a00a8165e4bd8666e6f474fc51992c1106643c89a67b0d107ed075",
       "lf_sha256": "0d281ec5ae9653b267dfda9b9f6050577d8c9056cab03a9d715a751515a92ef5"
     },
     {
       "path": "presentation/deck/slides/close.html",
-      "bytes": 1636,
-      "sha256": "937cede1f48bd99738122f1add176f3b31874ce659c989e7cfe16521a86bd1f9",
+      "bytes": 1658,
+      "sha256": "eb000bd801edfdc1bae5f9ed6dc98a6aa325e2847bc8fe22be4c6ac9e7f3596a",
       "lf_sha256": "937cede1f48bd99738122f1add176f3b31874ce659c989e7cfe16521a86bd1f9"
     },
     {
       "path": "presentation/deck/slides/cover.html",
-      "bytes": 1147,
-      "sha256": "f9cd343156ee41c3ae9d292379bb4e3f4c69b5602c0e19a2c5a6c21063bd11ac",
+      "bytes": 1158,
+      "sha256": "685b4d9f2c5b9dabc7acab33b4f38788c18ffec07c8d797c69719c3ca2990294",
       "lf_sha256": "f9cd343156ee41c3ae9d292379bb4e3f4c69b5602c0e19a2c5a6c21063bd11ac"
     },
     {
       "path": "presentation/deck/slides/impact.html",
-      "bytes": 1713,
-      "sha256": "ff32cdb01b525f9865c66d9bf3c2f1eaa8d1b38fddb07d0d4d12bad391e74b01",
+      "bytes": 1736,
+      "sha256": "6572d18a64a9fa8e3793843cad85c5521f417148d24e8132c66648c4d1aa2fde",
       "lf_sha256": "ff32cdb01b525f9865c66d9bf3c2f1eaa8d1b38fddb07d0d4d12bad391e74b01"
     },
     {
       "path": "presentation/deck/slides/mitigation.html",
-      "bytes": 1588,
-      "sha256": "f1b76b623bd6f7608b90b2a12344f95d631cc7883195d24750845b8640f267fe",
+      "bytes": 1602,
+      "sha256": "c6e0d3ef802e08b9a97a5c9a14c1fae96c27f92fb69fe0044f772c0baaf8c78b",
       "lf_sha256": "f1b76b623bd6f7608b90b2a12344f95d631cc7883195d24750845b8640f267fe"
     },
     {
       "path": "presentation/deck/slides/models.html",
-      "bytes": 2528,
-      "sha256": "43fb2fce1102cb45c82e8fa1503f4f5ea1f5d9674313f9e76aace6c3c77e7420",
+      "bytes": 2566,
+      "sha256": "17d49f2a0dec80299ae608828c08c770bdc765ad6a0d50faaaa58060d7069ec9",
       "lf_sha256": "43fb2fce1102cb45c82e8fa1503f4f5ea1f5d9674313f9e76aace6c3c77e7420"
     },
     {
       "path": "presentation/deck/slides/rawjson.html",
-      "bytes": 1846,
-      "sha256": "46be767ceadf11f852dccc309b73768087a4e87db4e955e5dcbe555eafda5176",
+      "bytes": 1867,
+      "sha256": "ffe19e12388235fd669bf1a5edd63c26b890db65d819e869f8dc09a3427c00b9",
       "lf_sha256": "46be767ceadf11f852dccc309b73768087a4e87db4e955e5dcbe555eafda5176"
     },
     {
       "path": "presentation/deck/slides/reframe.html",
-      "bytes": 2081,
-      "sha256": "ae738aee0f28bdb125fb184b203663fe61d4d30e5809d5a444f2c65193e84bdd",
+      "bytes": 2104,
+      "sha256": "96604d19acbcc6fe367e2b464ba36fc1bfe8499fc5b331ace7f3cac4d662bb52",
       "lf_sha256": "ae738aee0f28bdb125fb184b203663fe61d4d30e5809d5a444f2c65193e84bdd"
     },
     {
       "path": "presentation/deck/slides/scoreboard.html",
-      "bytes": 1748,
-      "sha256": "659cef99c5f339dd44d7ac73fa98c26a817e630fecad1c217b4e3f18a65641f1",
+      "bytes": 1780,
+      "sha256": "670e33ebe74ad28434482a800db0821e88348e7118ce52148b9077c6a5ae5348",
       "lf_sha256": "659cef99c5f339dd44d7ac73fa98c26a817e630fecad1c217b4e3f18a65641f1"
     },
     {
       "path": "presentation/deck/slides/ssn.html",
-      "bytes": 1933,
-      "sha256": "ced11ae65322888bc1c720f19ad49ce061d05947a378d213b897fc3d5015994f",
+      "bytes": 1956,
+      "sha256": "9b8194ed85569d250c6382ea70d9c8cdede28253e4dd5e69527d477bd1cd29ce",
       "lf_sha256": "ced11ae65322888bc1c720f19ad49ce061d05947a378d213b897fc3d5015994f"
     },
     {
       "path": "presentation/deck/slides/target.html",
-      "bytes": 1743,
-      "sha256": "63761b60751b409d44aa171e56ddfbfd6a06723ad5cadc736ab65b2f65f1f7ee",
+      "bytes": 1774,
+      "sha256": "6945c51489f613174650f0bba6f068805b9a11713d94c6d047ccfbad4dce468e",
       "lf_sha256": "63761b60751b409d44aa171e56ddfbfd6a06723ad5cadc736ab65b2f65f1f7ee"
     },
     {
       "path": "presentation/index.html",
-      "bytes": 18652,
-      "sha256": "c5ba5a4a59d1bdc7ba45fd667c7c97d66f4d6e332fd05bfd912b30cdf6fce2bb",
-      "lf_sha256": "c5ba5a4a59d1bdc7ba45fd667c7c97d66f4d6e332fd05bfd912b30cdf6fce2bb"
+      "bytes": 18795,
+      "sha256": "741902b627a8b181cb9796a1e31dce1720f1bbcaab049e26dbe7b517bedb1025",
+      "lf_sha256": "741902b627a8b181cb9796a1e31dce1720f1bbcaab049e26dbe7b517bedb1025"
     },
     {
       "path": "presentation/presentation-data.js",
-      "bytes": 247702,
-      "sha256": "397c362a604004b04bd8b8e833ed2335d269fe78d6b6e2ba851b33c3cf8ad468",
-      "lf_sha256": "397c362a604004b04bd8b8e833ed2335d269fe78d6b6e2ba851b33c3cf8ad468"
+      "bytes": 253727,
+      "sha256": "9fb53cb57f8f80049915db1704c6c0d9525fde69ba18e8b5ef3f7c658d95023d",
+      "lf_sha256": "9fb53cb57f8f80049915db1704c6c0d9525fde69ba18e8b5ef3f7c658d95023d"
     },
     {
       "path": "presentation/replay-source.js",
@@ -5914,15 +7996,15 @@
     },
     {
       "path": "presentation/story-app.js",
-      "bytes": 32612,
-      "sha256": "dab4ef8ccfda06fcf47c3c7daf4b15e5b2fb8f4ea4772e620c63b0f036914096",
-      "lf_sha256": "dab4ef8ccfda06fcf47c3c7daf4b15e5b2fb8f4ea4772e620c63b0f036914096"
+      "bytes": 32743,
+      "sha256": "5e72fbcd1de9bd3118996c114371dfd362e9df00543a141515657ba2bde82ceb",
+      "lf_sha256": "5e72fbcd1de9bd3118996c114371dfd362e9df00543a141515657ba2bde82ceb"
     },
     {
       "path": "presentation/story.css",
-      "bytes": 35210,
-      "sha256": "051bb3dc1c8b2d78182cf6c02c546095df08d31a49c6a39a609369ad59ba66b6",
-      "lf_sha256": "051bb3dc1c8b2d78182cf6c02c546095df08d31a49c6a39a609369ad59ba66b6"
+      "bytes": 35815,
+      "sha256": "aaa34fe266900aee7276509a8a9fa7177965107ed53c1b99f669084d8e0d5bd4",
+      "lf_sha256": "aaa34fe266900aee7276509a8a9fa7177965107ed53c1b99f669084d8e0d5bd4"
     },
     {
       "path": "presentation/styles.css",
@@ -5932,15 +8014,21 @@
     },
     {
       "path": "presentation.html",
-      "bytes": 867959,
-      "sha256": "f01991689d6b559938b801ba97f6589a660c6f404acd6f939efe76a09b57c9a1",
-      "lf_sha256": "f01991689d6b559938b801ba97f6589a660c6f404acd6f939efe76a09b57c9a1"
+      "bytes": 876607,
+      "sha256": "1b8f1c8a5eef5aad61d9087a6edf1a6842ca404a7c3411a643096e35dcfd7ba7",
+      "lf_sha256": "1b8f1c8a5eef5aad61d9087a6edf1a6842ca404a7c3411a643096e35dcfd7ba7"
     },
     {
       "path": "probe.py",
-      "bytes": 1970,
-      "sha256": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb",
+      "bytes": 2023,
+      "sha256": "cc507c1d44a7b9a769ef1ebdd824aea86ee95b49cb32347ef9e89fb2e1f52f86",
       "lf_sha256": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6512,
+      "sha256": "393c1eb432e9a07198ff9bbe4976384e68c7e7e37fe1be64796c1b81ada261df",
+      "lf_sha256": "393c1eb432e9a07198ff9bbe4976384e68c7e7e37fe1be64796c1b81ada261df"
     },
     {
       "path": "reproduce-cases.json",
@@ -5956,20 +8044,20 @@
     },
     {
       "path": "requirements.txt",
-      "bytes": 34,
-      "sha256": "440ff9578848b53a0788596112184f6c01c0d6ac39cc042fbae0ce4d549f8c9c",
+      "bytes": 36,
+      "sha256": "07db669ea622fa13d36366b845ff4ad6dcbce9ebb7c4376f0916d7775221fedc",
       "lf_sha256": "440ff9578848b53a0788596112184f6c01c0d6ac39cc042fbae0ce4d549f8c9c"
     },
     {
       "path": "secret_probe.py",
-      "bytes": 17872,
-      "sha256": "26f3aae0ed6ca162c4c59da4ddd5b8711af5ff008ed175674d7be5b0e73dca2a",
+      "bytes": 18266,
+      "sha256": "cb3378e485e702bbb31b8586fefae60f42bb8284528e70125223e8c7629f3a01",
       "lf_sha256": "26f3aae0ed6ca162c4c59da4ddd5b8711af5ff008ed175674d7be5b0e73dca2a"
     },
     {
       "path": "setup.py",
-      "bytes": 3025,
-      "sha256": "9a49f75fe348749cef0fc5e84fa377ce812c280005add8433ba9c0678ed4d9d6",
+      "bytes": 3094,
+      "sha256": "59dc537479eff05bd4b6cedec35b85314ef21c77d039d86d5e34e46153d81320",
       "lf_sha256": "9a49f75fe348749cef0fc5e84fa377ce812c280005add8433ba9c0678ed4d9d6"
     },
     {
@@ -5980,9 +8068,9 @@
     },
     {
       "path": "tools/index-evidence.py",
-      "bytes": 5782,
-      "sha256": "d757d90e57d6860f7b3d561ac7395aa1abc55dc878be1ce83daf7c0af1ac885a",
-      "lf_sha256": "d757d90e57d6860f7b3d561ac7395aa1abc55dc878be1ce83daf7c0af1ac885a"
+      "bytes": 6212,
+      "sha256": "e4ad468176920f866cfb5f02d7bc0a5074570ef6195a6795aee3a77092b04c86",
+      "lf_sha256": "e4ad468176920f866cfb5f02d7bc0a5074570ef6195a6795aee3a77092b04c86"
     }
   ],
   "hash_note": "sha256 records exact source bytes. lf_sha256 also permits checking existing Git text files after platform line-ending conversion; imported raw evidence has -text attributes."

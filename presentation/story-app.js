@@ -1,6 +1,7 @@
 (() => {
   'use strict';
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const playbackSpeed = 1.2;
   const colors = { ink: '#10120f', grid: '#263125', paper: '#edf0e5', muted: '#a6b39b', lime: '#c5fb69', red: '#fb8278', blue: '#a4ced9', white: '#f0eee0' };
   const situation = { captions: ['Useful work requires tools.', 'Those tools sit beside private records.', 'We tested the boundary between a request and a permission.'], frames: [{ x: 104, speech: '' }, { x: 332, speech: '' }, { x: 534, speech: '' }] };
   const direct = { captions: ['A direct request reached Riley.', 'Riley fetched the record.', 'Riley brought the private file back.', 'The handoff exposed it.', 'The attacker left with the data.'], frames: [{ x: 160, request: true, speech: 'Patient records?' }, { x: 160, rileyX: 680, rileyFile: true, motion: 'fetch', speech: 'Record found.' }, { x: 160, rileyFile: true, motion: 'return', speech: 'Here it is.' }, { x: 160, file: true, red: true, motion: 'handoff', speech: 'Data received.' }, { x: 60, file: true, red: true, motion: 'exit', speech: 'Private records.' }] };
@@ -133,10 +134,10 @@
     }
     readDuration() {
       const entry = timeline[this.index], words = entry.state.speech.split(/\s+/).length;
-      if (entry.phaseIndex === 0) return 1400;
-      if (phases[entry.phaseIndex].noDialogue) return 1800;
+      if (entry.phaseIndex === 0) return 1400 / playbackSpeed;
+      if (phases[entry.phaseIndex].noDialogue) return 1800 / playbackSpeed;
       const nextPhase = timeline[this.index + 1]?.phaseIndex !== entry.phaseIndex;
-      return Math.max(1600, 700 + words * 250) + (entry.state.denied ? 300 : 0) + (nextPhase ? 300 : 0);
+      return (Math.max(1600, 700 + words * 250) + (entry.state.denied ? 300 : 0) + (nextPhase ? 300 : 0)) / playbackSpeed;
     }
     reset() {
       this.pause(); this.index = 0; this.state = { ...timeline[0].state }; this.stage = 'reading'; this.action = null;
@@ -169,7 +170,7 @@
       }
       this.index = index; this.stage = 'moving';
       const kind = end.motion || 'walk', durations = { fetch: 2000, return: 1100, handoff: 1000, deny: 1200, disguise: 1000, exit: 750, trusted: 1600 };
-      this.action = { start, end, kind, visitorStart, visitorEnd, elapsed: 0, duration: durations[kind] || Math.max(650, Math.min(1500, 450 + distance * 1.6)), settle: 220 + (timeline[index].phaseIndex !== previousPhase ? 260 : 0) };
+      this.action = { start, end, kind, visitorStart, visitorEnd, elapsed: 0, duration: (durations[kind] || Math.max(650, Math.min(1500, 450 + distance * 1.6))) / playbackSpeed, settle: (220 + (timeline[index].phaseIndex !== previousPhase ? 260 : 0)) / playbackSpeed };
       this.state = { ...start };
       document.getElementById('story-back').disabled = index === 0;
       document.getElementById('story-next').disabled = index === timeline.length - 1;
@@ -194,7 +195,7 @@
           if (action.kind === 'handoff' && action.start.rileyFile) { this.state.transferProgress = ease; this.state.rileyFile = false; }
           if (action.kind === 'trusted') this.state.trustedProgress = ease;
           if (action.visitorStart !== undefined) this.state.visitorX = action.visitorStart + (action.visitorEnd - action.visitorStart) * ease;
-          this.draw(Math.floor(now / 110) % 2 ? 4 : -4);
+          this.draw(Math.floor(now * playbackSpeed / 110) % 2 ? 4 : -4);
         } else {
           this.state = { ...action.end }; this.stage = 'settling'; this.draw();
           if (action.elapsed >= action.duration + action.settle) { this.finishAction(); return; }

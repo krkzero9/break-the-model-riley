@@ -9,6 +9,7 @@ logs/evidence-index.json -text
 logs/import-provenance.json -text
 logs/incoming-review.json -text
 logs/submission-verification.json -text
+logs/stage3/** -text
 
 # Use stable line endings for the new build and replay sources.
 presentation/*.js text eol=lf

@@ -5,7 +5,7 @@
     "tablesWithColumns": 25,
     "unprobedTables": 5,
     "relationshipCount": 54,
-    "source": "Earlier JSON/transcripts and preserved team raw sessions / 14 November 2026. 25 tables have supplied or reported fields; 5 remain unprobed. The logged patients.ssn count query adds a referenced field with unverified type. Types and links are supplied or explicitly inferred; no backend DDL or current-server replay."
+    "source": "Earlier JSON/transcripts and preserved team raw sessions / 14 November 2026. Stage 3 Opus returns public reference data; Haiku public relationships remain model-inferred, with no new backend DDL. 25 tables have supplied or reported fields; 5 remain unprobed. The logged patients.ssn count query adds a referenced field with unverified type. Types and links are supplied or explicitly inferred; no backend DDL or current-server replay."
   },
   "tables": [
     {
