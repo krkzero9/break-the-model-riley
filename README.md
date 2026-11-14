@@ -6,7 +6,7 @@ Open [presentation.html](presentation.html) in a browser for the complete offlin
 
 Use [docs/FINAL_SUBMISSION.md](docs/FINAL_SUBMISSION.md) for the current submission description, selected proof, rubric coverage and three-minute narration. The merged archive has 1,415 records; 294 of 300 referenced turns have raw matches. These are inventory counts, not success rates. The presentation opens Results on **Stage 3 / Claude 5.5**; switch to Earlier models for the private-disclosure evidence.
 
-All written reports live in [docs/](docs/); the root retains the README, agent notes and code.
+All written reports live in [docs/](docs/); the root retains the README, agent notes and code. The Opus 5.5 observations are in [docs/OBSERVATIONS.md](docs/OBSERVATIONS.md) and the system-prompt disclosure in [docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md](docs/OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md).
 
 ## Evidence and database files
 
