@@ -8,6 +8,8 @@ The working notes below preserve earlier participant observations, candidate pro
 
 Latest continuation: use the corrected packet for Opus scope/rules disclosure. Raw text is established; complete backend-prompt recovery is not verified. Kartik reference-output IDs remain report-only.
 
+Current team display names: Sparsh Tyagi, Umair Azam (previous label Uzair), Karthikeyan Rajendran (previous label Kartik), Imran Ali and Ganesh Chandrasekar. Original source filenames and raw transcripts retain their recorded labels.
+
 ## Project Overview
 
 `break-the-model-starter` is a CTF-style prompt-injection / data-exfiltration challenge.

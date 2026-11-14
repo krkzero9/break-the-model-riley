@@ -11,29 +11,29 @@ This index combines the recorded evidence while keeping the different model coho
 | `logs/sparsh-2026-11-14/my_attempts.jsonl` | 167 | 167 | Separate Nebius/Groq exploratory snapshot; the earlier individual review covered 157 |
 | `logs/stage3/sparsh-haiku-5-5.jsonl` | 3 | 3 | Claude Haiku 5.5; greeting and two scope refusals |
 
-## Latest Opus continuation and Kartik excerpts
+## Latest Opus continuation and Karthikeyan Rajendran excerpts
 
 91 additional Opus records bring its total to 175. Scope transform `9210eef3664f4e1a918a550fc56401fb` (raw line 726) and rules transform `9998bb9328714003b15c3a7f949e1aac` (line 729) returned internal configuration text. All 91 continuation-report IDs match raw logs. Full backend prompt recovery and guard implementation are not independently verified.
 
-Kartik reports ten plan-term rows and twelve provider rows under exact raw-JSON prompts; both IDs lack raw traces. These are reference-output observations. Original sources: [Opus continuation](OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md), [Kartik excerpt](../leaks/karthik-claude-opus-5-5-leak.md), [review and source hashes](../logs/stage3/late-additions-review.json). No Stage 3 private-row escalation is demonstrated.
+Karthikeyan Rajendran reports ten plan-term rows and twelve provider rows under exact raw-JSON prompts; both IDs lack raw traces. These are reference-output observations. Original sources: [Opus continuation](OPUS5.5-SYSTEM-PROMPT-DISCLOSURE.md), [Karthikeyan Rajendran excerpt](../leaks/karthik-claude-opus-5-5-leak.md), [review and source hashes](../logs/stage3/late-additions-review.json). No Stage 3 private-row escalation is demonstrated.
 
 ## Stage 3 Claude 5.5
 
 The strongest newly supplied host, `claude-opus-5-5`, has 84 raw exploratory records. A pasted bulletin's marker was appended (`e803fd95bd964448929cae539651c3fc`); the direct marker control also succeeded. An allowed public-provider query ran (`6509881155e042b8a3e769f00c623cdd`), with the reply explicitly discounting the authority claim. No private-row escalation is demonstrated in this survey. Fifty blank replies do not establish a particular guard implementation.
 
-Uzair's Haiku report shows a patient-table refusal followed by public field/key inference; its two IDs have no raw matches. Sparsh's three Haiku turns have matching raw traces. Public metadata descriptions are not private-data leaks or backend constraint verification. Original reports remain unchanged at [OBSERVATIONS.md](OBSERVATIONS.md) and [leaks/umair-claude-haiku-5-leak.md](../leaks/umair-claude-haiku-5-leak.md); [logs/stage3/review.json](../logs/stage3/review.json) records the qualifications.
+Umair Azam's Haiku report shows a patient-table refusal followed by public field/key inference; its two IDs have no raw matches. Sparsh Tyagi's three Haiku turns have matching raw traces. Public metadata descriptions are not private-data leaks or backend constraint verification. Original reports remain unchanged at [OBSERVATIONS.md](OBSERVATIONS.md) and [leaks/umair-claude-haiku-5-leak.md](../leaks/umair-claude-haiku-5-leak.md); [logs/stage3/review.json](../logs/stage3/review.json) records the qualifications.
 
 The combined index now has 393 references, 385 with raw matches, across 1,506 records. All 86 Opus-report references match; eight report-only IDs remain unmatched. Stage 3 results stay distinct from earlier private-disclosure evidence. No Sonnet 5.5 run was supplied.
 
 Record counts include errors and retries; they are not success rates. Session 2 is a mixed-model log. Its 40-record aggregation example `73d99c5da0c9425099b027cbdf4fd71c` is GPT-OSS 120B, while `fc6a32e8110345bea5c94660975b45a1` is DeepSeek. The client does not record a guard/deployment revision, so the logs do not establish identical server defences across rounds.
 
-All 116 turn IDs cited in `LEAK_REPORT.md` resolve to preserved raw logs. Ganesh's report has one ID without a raw match; the report stored under the original `umair` filename repeats three earlier Uzair references without raw matches. These remain reported excerpts. File hashes, source lines, exact models and conversation IDs are indexed in [logs/evidence-index.json](../logs/evidence-index.json).
+All 116 turn IDs cited in `LEAK_REPORT.md` resolve to preserved raw logs. Ganesh Chandrasekar's report has one ID without a raw match; the report stored under the original `umair` filename repeats three earlier Umair Azam references without raw matches. These remain reported excerpts. File hashes, source lines, exact models and conversation IDs are indexed in [logs/evidence-index.json](../logs/evidence-index.json).
 
 The incoming consolidated summary is preserved byte-identically at [logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md](../logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md). The original full reports remain unchanged. This revised index corrects model attribution, visible counts and the distinction between tool invocation and delivery.
 
 ## Additional team excerpts
 
-Ganesh's contact-row excerpt and the report stored under the original `umair` filename are preserved in the repository. The latter records a refusal (`45544a32846f47a096b0aca3ac623ecc`) followed by a named-patient disclosure (`b69e39008e6d486b8af4c91237bce0b3`); it also repeats the earlier insurance-merge reply. Their four distinct IDs do not resolve to the current raw logs, so model/guard attribution remains report-based. Ganesh's relationship map and combined-patient reply have no captured turn IDs.
+Ganesh Chandrasekar's contact-row excerpt and the report stored under the original `umair` filename are preserved in the repository. The latter records a refusal (`45544a32846f47a096b0aca3ac623ecc`) followed by a named-patient disclosure (`b69e39008e6d486b8af4c91237bce0b3`); it also repeats the earlier insurance-merge reply. Their four distinct IDs do not resolve to the current raw logs, so model/guard attribution remains report-based. Ganesh Chandrasekar's relationship map and combined-patient reply have no captured turn IDs.
 
 ## What the evidence establishes
 

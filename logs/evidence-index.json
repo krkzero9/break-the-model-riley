@@ -9449,15 +9449,15 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 40690,
-      "sha256": "6978ea53867ea5a6d1f1a51a4423165f4ca1c2b19460a874e29d0fecc939b4d9",
-      "lf_sha256": "84d26ae4950aa80aa3458ee4ccf6850f69c3f0415c7d7931920ae7d08be78870"
+      "bytes": 40928,
+      "sha256": "c3de4d78091967faf1c737d695003272c3d93e6f097bbc78f6abc81c8cef32bb",
+      "lf_sha256": "37bd1787c9727c59843f9315fdc6eaf8fa4451155ffed973304c8b469940ae96"
     },
     {
       "path": "README.md",
-      "bytes": 7644,
-      "sha256": "59bd8ae605b0d252ca08375375e6b31d27bb7e2b909023b3dc1c8bc852c06e96",
-      "lf_sha256": "3af98e212b370ffdf6eb62a488500a9c4520a7cf2ba2e6965f370be4e224eced"
+      "bytes": 7723,
+      "sha256": "d640ea2ef812d469bfdf45a85d30cb1d1cb9419607cacdab3e7d0ce8c57ccacd",
+      "lf_sha256": "85a732e7d848f54e4b1f9361c0b40b5061051e8172a78d4b1d9eee2729ab9cbf"
     },
     {
       "path": "attack.py",
@@ -9491,15 +9491,15 @@
     },
     {
       "path": "docs/FINAL_SUBMISSION.md",
-      "bytes": 14372,
-      "sha256": "aff280220c0ca6dae3e70a8eabe83dfec7b63c1980e5d2f7d98ec03f8bbe477d",
-      "lf_sha256": "1fb2a30784d59edab454eb2bebc9e9c4e2a93782e82545bf98e6c50e546c9c4e"
+      "bytes": 14441,
+      "sha256": "1386936ea80ee0be495726929c69954ddc1006b072bde87dd5e19f82e1e13fdf",
+      "lf_sha256": "f432202ba957f088fb7783cce038d45acc8c5a3fb9ba8d28571c4d03398ce68e"
     },
     {
       "path": "docs/FINDINGS.md",
-      "bytes": 8862,
-      "sha256": "795fe2c8f129f27aec0e9d5ee628dcb149e99ab51bf175798d8cc767b91938eb",
-      "lf_sha256": "9369a31a5d50882202c644e1b8681169321058327aedec314d96256c7beba0bc"
+      "bytes": 8962,
+      "sha256": "326c9d5005a868b013e48c951f16dd277ba8b643dfa9cea53864ce4caa13b344",
+      "lf_sha256": "6968e0f7f7340e826fa961121ff51605f6f398cb031ef4dba4a46e5966daaee7"
     },
     {
       "path": "docs/LEAK_REPORT.md",
@@ -9659,9 +9659,9 @@
     },
     {
       "path": "logs/submission-verification.json",
-      "bytes": 4279,
-      "sha256": "fed65452208598b974d7a697048646a7abf1e8037704b3f0740444ba879e067a",
-      "lf_sha256": "05cf4985801e7a1130e2911fb5dd2905201e4941a90979a681c62d86dd82eba4"
+      "bytes": 4606,
+      "sha256": "c2e8d5039d78085cad7cf1fce77b78df90aabb689e89486726be036da38f37c4",
+      "lf_sha256": "7cc507a6496a3b690cd8628b4b3f058878a6b8ebf5507ae485163069a44e9f0b"
     },
     {
       "path": "logs/success_rates.json",
@@ -9755,9 +9755,9 @@
     },
     {
       "path": "presentation.html",
-      "bytes": 1023948,
-      "sha256": "4e2665adc72fe63782d91a87565e22cab98f349ef96b5d3cebedc257d900e25d",
-      "lf_sha256": "0f1091742186893c2d6c77f81f6cb14996556c961706c326e3c1347d12508d9d"
+      "bytes": 1025062,
+      "sha256": "f0cf8249ea7c53b70351f451fd6c1434960c89895c5f03e4694e064b0e1e522b",
+      "lf_sha256": "7f21736d0ce8c2b16593364db52b2512616df9460abe3cb5ab8c10bef711e7c4"
     },
     {
       "path": "presentation/app.js",
@@ -9767,9 +9767,9 @@
     },
     {
       "path": "presentation/assets/team/crops.json",
-      "bytes": 2483,
-      "sha256": "53a3cdab093418231107597e41a8c03c0750bb134b2c7f245a8004868a98c39b",
-      "lf_sha256": "ecaaf4c64a9ed0752575a0c09f0e7da8c1bf2c7fe1b203aefd24a40ed59ba505"
+      "bytes": 2526,
+      "sha256": "97eaf0c7bfdff7c8baf614b9955a00f10a51895b859f91ee72d166fde5fb6fa3",
+      "lf_sha256": "24b69b8f5bea3b7d6c5fb56201673eb04bc951d1d733b77c741ec7e90e8a9d07"
     },
     {
       "path": "presentation/assets/team/ganesh-portrait.jpeg",
@@ -9935,9 +9935,9 @@
     },
     {
       "path": "presentation/presentation-data.js",
-      "bytes": 260734,
-      "sha256": "752412a9ae2a9536c804ff6fcf54e58a62fefa02e7a4b10723a5ea8009187491",
-      "lf_sha256": "752412a9ae2a9536c804ff6fcf54e58a62fefa02e7a4b10723a5ea8009187491"
+      "bytes": 261848,
+      "sha256": "bf289b373eec6b2b43a43ac0dd8aac1273928406bb676d8bcae02865bacc0d00",
+      "lf_sha256": "bf289b373eec6b2b43a43ac0dd8aac1273928406bb676d8bcae02865bacc0d00"
     },
     {
       "path": "presentation/replay-source.js",

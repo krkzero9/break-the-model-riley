@@ -1,6 +1,6 @@
 [
   {
-    "name": "Sparsh",
+    "name": "Sparsh Tyagi",
     "source": "presentation/assets/team/sparsh.jpeg",
     "crop_box": [
       145,
@@ -14,7 +14,7 @@
     "display": "Circular CSS mask; crop removes LinkedIn badge."
   },
   {
-    "name": "Uzair",
+    "name": "Umair Azam",
     "source": "presentation/assets/team/uzair.jpeg",
     "crop_box": [
       250,
@@ -28,7 +28,7 @@
     "display": "Circular CSS mask; crop removes LinkedIn badge."
   },
   {
-    "name": "Kartik",
+    "name": "Karthikeyan Rajendran",
     "source": "presentation/assets/team/kartik-new.jpeg",
     "crop_box": [
       0,
@@ -43,7 +43,7 @@
     "source_note": "Kartik 2.jpeg supplied by Sparsh; previous original retained as kartik.jpeg."
   },
   {
-    "name": "Imran",
+    "name": "Imran Ali",
     "source": "presentation/assets/team/imran.jpeg",
     "crop_box": [
       20,
@@ -57,7 +57,7 @@
     "display": "Circular CSS mask; crop removes LinkedIn badge."
   },
   {
-    "name": "Ganesh",
+    "name": "Ganesh Chandrasekar",
     "source": "presentation/assets/team/ganesh.jpeg",
     "crop_box": [
       35,
