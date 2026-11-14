@@ -3,7 +3,7 @@ window.PRESENTATION_DATA = {
   "project": "Scioto Ridge Health / Break the Model",
   "event": "Nebius security hackathon / Berlin",
   "demo": false,
-  "source": "Preserved raw sessions, supplied transcripts and original team reports / 14 November 2026. Fictional challenge data. The combined archive has 1,328 records; 205 of 209 referenced turns resolve to raw traces. Counts include controls, refusals and retries. The earlier 45-ID registry remains separately attributed. No current-server or Anthropic replay was run; external email delivery is not verified.",
+  "source": "Preserved raw sessions, supplied transcripts and original team reports / 14 November 2026. Fictional challenge data. The combined archive has 1,412 records; 205 of 209 referenced turns resolve to raw traces. Counts include controls, refusals and retries. The earlier 45-ID registry remains separately attributed. No current-server or Anthropic replay was run; external email delivery is not verified.",
   "methods": [
     {
       "title": "Raw JSON & schema audit",
@@ -890,7 +890,7 @@ window.PRESENTATION_DATA = {
       [
         "Technical execution",
         15,
-        "1,328 logged records document extensive exploration across mixed rounds. A checked fresh-session 2 or 3 trial skeleton records fields, tools and errors. Participant repeat summaries are preserved; current-server repeat measurements remain pending."
+        "1,412 logged records document extensive exploration across mixed rounds. A checked fresh-session 2 or 3 trial skeleton records fields, tools and errors. Participant repeat summaries are preserved; current-server repeat measurements remain pending."
       ],
       [
         "Commercializability",

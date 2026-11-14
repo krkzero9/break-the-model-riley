@@ -12,21 +12,22 @@
   "sessions": [
     {
       "path": "logs/my_attempts.jsonl",
-      "records": 562,
-      "unique_turn_ids": 486,
-      "sha256": "e968d3339425dadbeb7a29c325f64377242ea71934afc571e70e81531b3f884e",
+      "records": 646,
+      "unique_turn_ids": 570,
+      "sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1",
       "models": {
         "Qwen/Qwen3-30B-A3B-Instruct-2507": 507,
         "deepseek-ai/DeepSeek-V4-Pro-0813": 35,
         "openai/gpt-oss-120b": 10,
-        "Qwen/Qwen3-235B-A22B-Instruct-2507": 10
+        "Qwen/Qwen3-235B-A22B-Instruct-2507": 10,
+        "claude-opus-5-5": 84
       }
     },
     {
       "path": "logs/my_attempts_session2.jsonl",
       "records": 599,
       "unique_turn_ids": 418,
-      "sha256": "4e9b0f4008fbb3baf5970d15b93ee662df5f9cfb075147c6600fa1a11795aa99",
+      "sha256": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3",
       "models": {
         "openai/gpt-oss-120b": 321,
         "Qwen/Qwen3-30B-A3B-Instruct-2507": 3,
@@ -763,8 +764,8 @@
       },
       "incoming_report_locations": [
         {
-          "path": "umair-very-large-model-leak_report.md",
-          "line": 18
+          "path": "docs/very-large-model-leaks.md",
+          "line": 125
         }
       ],
       "raw_trace_locations": []
@@ -828,8 +829,8 @@
       },
       "incoming_report_locations": [
         {
-          "path": "umair-very-large-model-leak_report.md",
-          "line": 37
+          "path": "docs/very-large-model-leaks.md",
+          "line": 144
         }
       ],
       "raw_trace_locations": []
@@ -1032,7 +1033,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 78
         }
       ],
@@ -1065,11 +1066,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 76
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 808
         },
         {
@@ -1199,7 +1200,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 72
         }
       ],
@@ -1228,7 +1229,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 62
         }
       ],
@@ -1257,7 +1258,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 653
         }
       ],
@@ -1292,11 +1293,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 440
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 804
         },
         {
@@ -1371,11 +1372,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 628
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 807
         }
       ],
@@ -1406,7 +1407,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 71
         }
       ],
@@ -1505,7 +1506,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 14
         }
       ],
@@ -1614,7 +1615,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 72
         }
       ],
@@ -1651,15 +1652,15 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 61
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 558
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 806
         }
       ],
@@ -1691,8 +1692,8 @@
       },
       "incoming_report_locations": [
         {
-          "path": "umair-very-large-model-leak_report.md",
-          "line": 31
+          "path": "docs/very-large-model-leaks.md",
+          "line": 138
         }
       ],
       "raw_trace_locations": []
@@ -1771,7 +1772,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 16
         }
       ],
@@ -1874,7 +1875,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 78
         }
       ],
@@ -1903,7 +1904,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 13
         }
       ],
@@ -1936,11 +1937,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 589
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 802
         }
       ],
@@ -1996,7 +1997,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 13
         }
       ],
@@ -2180,11 +2181,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 499
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 801
         }
       ],
@@ -2258,11 +2259,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 381
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 799
         },
         {
@@ -2400,11 +2401,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 70
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 871
         }
       ],
@@ -2472,7 +2473,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 13
         }
       ],
@@ -2501,7 +2502,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 15
         }
       ],
@@ -2534,11 +2535,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 76
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 809
         },
         {
@@ -2571,7 +2572,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 13
         }
       ],
@@ -2660,7 +2661,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 60
         }
       ],
@@ -2695,11 +2696,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 30
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 772
         }
       ],
@@ -2730,7 +2731,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 294
         }
       ],
@@ -2792,7 +2793,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 58
         }
       ],
@@ -2937,11 +2938,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 335
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 800
         }
       ],
@@ -2973,7 +2974,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 14
         }
       ],
@@ -3077,15 +3078,15 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 199
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 798
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 816
         },
         {
@@ -3236,7 +3237,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 78
         }
       ],
@@ -3442,15 +3443,15 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 86
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 797
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 816
         },
         {
@@ -3485,7 +3486,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 156
         }
       ],
@@ -3541,7 +3542,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 73
         }
       ],
@@ -3624,11 +3625,11 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 679
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 805
         }
       ],
@@ -3703,15 +3704,15 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 41
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 725
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 803
         }
       ],
@@ -3742,7 +3743,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 13
         }
       ],
@@ -3771,7 +3772,7 @@
       },
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 13
         }
       ],
@@ -3790,7 +3791,7 @@
       "turn_id": "80ca20b91d23497dbee7ccb0055e6ecf",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 865
         }
       ],
@@ -3811,7 +3812,7 @@
       "turn_id": "c9ba116443f54b178c145d20f9d90723",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 866
         }
       ],
@@ -3832,7 +3833,7 @@
       "turn_id": "bdd010be05f347d39b8c797abf2277eb",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 867
         }
       ],
@@ -3853,11 +3854,11 @@
       "turn_id": "92c16e12642c412fa859570092bac9a4",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 868
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1074
         }
       ],
@@ -3878,11 +3879,11 @@
       "turn_id": "80d7e59f824f489d98bf60911059a417",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 885
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1070
         }
       ],
@@ -3903,11 +3904,11 @@
       "turn_id": "697b3d1fe33146f7817005c4bc6ff025",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 886
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1069
         }
       ],
@@ -3928,15 +3929,15 @@
       "turn_id": "16147d4a2d4a4a45961093a1706b4e02",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 887
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 904
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1068
         }
       ],
@@ -3957,7 +3958,7 @@
       "turn_id": "6e8af90707854fc8adff7b5dd8a3ccd1",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 888
         }
       ],
@@ -3978,7 +3979,7 @@
       "turn_id": "7d4c0056a00345b0ad6540e70004a164",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 890
         }
       ],
@@ -3996,29 +3997,10 @@
       ]
     },
     {
-      "turn_id": "fab5edc295774483a18ba92fae20ccd3",
-      "incoming_report_locations": [
-        {
-          "path": "LEAK_REPORT.md",
-          "line": 891
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 406,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_7f2d442348f1",
-          "timestamp_as_recorded": "14:51:18",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "d9572fd2e42646d3bd3fe3f963c9a0f4",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 891
         }
       ],
@@ -4036,14 +4018,33 @@
       ]
     },
     {
+      "turn_id": "fab5edc295774483a18ba92fae20ccd3",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 891
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 406,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_7f2d442348f1",
+          "timestamp_as_recorded": "14:51:18",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "4bf82c919ea3478b846a096dae9c5143",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 905
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1067
         },
         {
@@ -4072,7 +4073,7 @@
       "turn_id": "7ae9334b8be340c19a8bf0b90362ce1e",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 906
         }
       ],
@@ -4091,7 +4092,7 @@
       "turn_id": "96bb939405fb43c6bcbdd9b166ae7816",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 907
         }
       ],
@@ -4112,7 +4113,7 @@
       "turn_id": "4dde8c529d1244c69f2138fcf2c41a34",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 910
         }
       ],
@@ -4133,7 +4134,7 @@
       "turn_id": "4c750cbcee324eac8156c0e9ca8bdaf9",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 911
         }
       ],
@@ -4152,7 +4153,7 @@
       "turn_id": "a4fd9536316d4817b76d7b8f3826a4bd",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 911
         }
       ],
@@ -4171,11 +4172,11 @@
       "turn_id": "c65f5c70ae3a4a6988b6546b82cd15fa",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 918
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1075
         }
       ],
@@ -4196,7 +4197,7 @@
       "turn_id": "2aa92bf6e8af4bdf94ab83da6ebc0cf3",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 919
         }
       ],
@@ -4217,7 +4218,7 @@
       "turn_id": "b611d431868a41369e5ee4b43474bd15",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 920
         }
       ],
@@ -4238,11 +4239,11 @@
       "turn_id": "98c891715c55448b8f9dd44e4c12593a",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 926
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1077
         }
       ],
@@ -4263,11 +4264,11 @@
       "turn_id": "7d7ffc1c61af40f683fa7753fab0c838",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 927
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1076
         }
       ],
@@ -4288,7 +4289,7 @@
       "turn_id": "34aa460655924791bbcff808df3433a7",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 928
         }
       ],
@@ -4309,7 +4310,7 @@
       "turn_id": "4f2446fac3ba48e7b011d5a276a4f62a",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 929
         }
       ],
@@ -4330,7 +4331,7 @@
       "turn_id": "a01b90d95f0d43aa9076232bf06dfaea",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 930
         }
       ],
@@ -4351,7 +4352,7 @@
       "turn_id": "53e42521e2594e9288f7f58d035d5716",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 931
         }
       ],
@@ -4372,7 +4373,7 @@
       "turn_id": "5c8019c1b68d427c94062362dfb418c8",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 932
         }
       ],
@@ -4393,7 +4394,7 @@
       "turn_id": "d702891a3dcf49899da1f95a6da03e59",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 933
         }
       ],
@@ -4414,7 +4415,7 @@
       "turn_id": "fc271107b6914984bf46fa76b12b3be3",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 939
         }
       ],
@@ -4435,7 +4436,7 @@
       "turn_id": "747f45cfc11742f0880391be48f37ffe",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 940
         }
       ],
@@ -4456,7 +4457,7 @@
       "turn_id": "01366aed03aa498b97ebbe97116441d9",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 940
         }
       ],
@@ -4477,11 +4478,11 @@
       "turn_id": "755c83d78a5e44a19cb3bcdbed14b71f",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 941
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1078
         }
       ],
@@ -4502,7 +4503,7 @@
       "turn_id": "d11080ad6fa64446b6814fe757cdd547",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 941
         }
       ],
@@ -4523,7 +4524,7 @@
       "turn_id": "df263e5384ad4c5d9e09f396da2f5f5f",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 942
         }
       ],
@@ -4544,7 +4545,7 @@
       "turn_id": "45eff2bd23034cd0a0b0d0ce9faa23d3",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 943
         }
       ],
@@ -4565,7 +4566,7 @@
       "turn_id": "2209f9fc417540ada8f1b8b395140dbb",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 944
         }
       ],
@@ -4586,7 +4587,7 @@
       "turn_id": "931aa4eb40004c9b915a1580281c05f6",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 945
         }
       ],
@@ -4607,7 +4608,7 @@
       "turn_id": "5736050218624cc6bbf4fad611b6947a",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 946
         }
       ],
@@ -4628,7 +4629,7 @@
       "turn_id": "393ae386f8cd46bdbbfc9cd104b8fbad",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 947
         }
       ],
@@ -4649,7 +4650,7 @@
       "turn_id": "80197efd7b1a4af28a28cc2d01df6d24",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 948
         }
       ],
@@ -4670,7 +4671,7 @@
       "turn_id": "7d680cfa04e443b88d57f1f1b4e5d39b",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 949
         }
       ],
@@ -4691,7 +4692,7 @@
       "turn_id": "8763ed184e434b8d9d1d851aa01acae7",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 950
         }
       ],
@@ -4712,7 +4713,7 @@
       "turn_id": "bedddbc4a7654e759d2b58aa2d82c898",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 951
         }
       ],
@@ -4733,7 +4734,7 @@
       "turn_id": "8d91189b3d3d4f7fb2a806d7e17afdb2",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 952
         }
       ],
@@ -4754,7 +4755,7 @@
       "turn_id": "cc415b11c80d43a7a771f8998b607ea5",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 957
         }
       ],
@@ -4773,11 +4774,11 @@
       "turn_id": "b592254f348647c598f0065a7f6e0d1f",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 972
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1071
         },
         {
@@ -4804,11 +4805,11 @@
       "turn_id": "581f44c0baff44a6a7c179ea60a85290",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 973
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1072
         }
       ],
@@ -4827,11 +4828,11 @@
       "turn_id": "7356339b759245a79bc433ba1eac1a6a",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 994
         },
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1073
         }
       ],
@@ -4849,29 +4850,10 @@
       ]
     },
     {
-      "turn_id": "49471e6851d74e82a2547b0f521479de",
-      "incoming_report_locations": [
-        {
-          "path": "LEAK_REPORT.md",
-          "line": 1011
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 572,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_54e5af0931d2",
-          "timestamp_as_recorded": "15:38:27",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "306d7aa90fc241fe98918e703cfed0e2",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1011
         }
       ],
@@ -4889,10 +4871,29 @@
       ]
     },
     {
+      "turn_id": "49471e6851d74e82a2547b0f521479de",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1011
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 572,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_54e5af0931d2",
+          "timestamp_as_recorded": "15:38:27",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "6e81d0c11bb642f58ac0ab96f2aa0278",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1018
         }
       ],
@@ -4911,7 +4912,7 @@
       "turn_id": "f6537dde424b45beb2d0c90d55e7fe79",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1019
         }
       ],
@@ -4930,7 +4931,7 @@
       "turn_id": "be27009ca24442aa8572643443407279",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1020
         }
       ],
@@ -4949,7 +4950,7 @@
       "turn_id": "5e7f467ec13c4aa7b80896e6c7e0c4ed",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1021
         }
       ],
@@ -4968,7 +4969,7 @@
       "turn_id": "85f4256664c54e66998cb9812af9bb82",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1024
         }
       ],
@@ -4989,7 +4990,7 @@
       "turn_id": "6b47cc47acae4259b777853a185f18e2",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1025
         }
       ],
@@ -5008,7 +5009,7 @@
       "turn_id": "047c25f21cc9435282f99fc4ebda47d1",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1025
         }
       ],
@@ -5029,7 +5030,7 @@
       "turn_id": "4dc61ac677334a2e8e675d6a69721bc3",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1032
         }
       ],
@@ -5048,7 +5049,7 @@
       "turn_id": "94b2a0715cf94774a3dcd315584565cc",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1032
         }
       ],
@@ -5067,7 +5068,7 @@
       "turn_id": "0e7e04e325a643e88198b5d0140db13c",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1033
         }
       ],
@@ -5086,7 +5087,7 @@
       "turn_id": "532e67cff6f5493dafae92d4f33b0099",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1033
         }
       ],
@@ -5105,7 +5106,7 @@
       "turn_id": "a105efd5e9434b11bb497093ae431f10",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1034
         }
       ],
@@ -5124,7 +5125,7 @@
       "turn_id": "84a27364703d4f2cad50a9986f27260a",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1034
         }
       ],
@@ -5140,29 +5141,10 @@
       ]
     },
     {
-      "turn_id": "c1a866f47fd54628a28bbe4978dffadb",
-      "incoming_report_locations": [
-        {
-          "path": "LEAK_REPORT.md",
-          "line": 1036
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 391,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_1a82a99d58ca",
-          "timestamp_as_recorded": "14:48:37",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "3eea46802c664689aa900742fc8765ad",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1036
         }
       ],
@@ -5178,20 +5160,20 @@
       ]
     },
     {
-      "turn_id": "8a3094093d3f438e9fdd62affa1a9268",
+      "turn_id": "c1a866f47fd54628a28bbe4978dffadb",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
-          "line": 1037
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1036
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 375,
+          "line": 391,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_249d6b1ff866",
-          "timestamp_as_recorded": "14:46:23",
+          "conversation_id": "conv_1a82a99d58ca",
+          "timestamp_as_recorded": "14:48:37",
           "tool_names": []
         }
       ]
@@ -5200,7 +5182,7 @@
       "turn_id": "89106e0b094a4f6fbbab756077163893",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1037
         }
       ],
@@ -5216,10 +5198,29 @@
       ]
     },
     {
+      "turn_id": "8a3094093d3f438e9fdd62affa1a9268",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1037
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 375,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_249d6b1ff866",
+          "timestamp_as_recorded": "14:46:23",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "5f6787f561a7450d93c868e1215c44ab",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1038
         }
       ],
@@ -5235,29 +5236,10 @@
       ]
     },
     {
-      "turn_id": "df1626449dee4c79b334feb9f95870cd",
-      "incoming_report_locations": [
-        {
-          "path": "LEAK_REPORT.md",
-          "line": 1039
-        }
-      ],
-      "raw_trace_locations": [
-        {
-          "path": "logs/my_attempts_session2.jsonl",
-          "line": 380,
-          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_a1d3e7e184a4",
-          "timestamp_as_recorded": "14:47:04",
-          "tool_names": []
-        }
-      ]
-    },
-    {
       "turn_id": "42275866a15f4c1b8c513f0f20b37cb8",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1039
         }
       ],
@@ -5273,20 +5255,20 @@
       ]
     },
     {
-      "turn_id": "f4a99e5935ad4283a9b2843b7d65dfda",
+      "turn_id": "df1626449dee4c79b334feb9f95870cd",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
-          "line": 1040
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1039
         }
       ],
       "raw_trace_locations": [
         {
           "path": "logs/my_attempts_session2.jsonl",
-          "line": 393,
+          "line": 380,
           "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
-          "conversation_id": "conv_97e2636a8c80",
-          "timestamp_as_recorded": "14:48:51",
+          "conversation_id": "conv_a1d3e7e184a4",
+          "timestamp_as_recorded": "14:47:04",
           "tool_names": []
         }
       ]
@@ -5295,7 +5277,7 @@
       "turn_id": "b20b6596a9c94bcba5c1d30ffd95cb7d",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1040
         }
       ],
@@ -5311,10 +5293,29 @@
       ]
     },
     {
+      "turn_id": "f4a99e5935ad4283a9b2843b7d65dfda",
+      "incoming_report_locations": [
+        {
+          "path": "docs/LEAK_REPORT.md",
+          "line": 1040
+        }
+      ],
+      "raw_trace_locations": [
+        {
+          "path": "logs/my_attempts_session2.jsonl",
+          "line": 393,
+          "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+          "conversation_id": "conv_97e2636a8c80",
+          "timestamp_as_recorded": "14:48:51",
+          "tool_names": []
+        }
+      ]
+    },
+    {
       "turn_id": "6a96a776dc8f4ef7b2ef28a5e7372a63",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1041
         }
       ],
@@ -5333,7 +5334,7 @@
       "turn_id": "d5bb3c1f227a4b6ba329338fc1dfaf76",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1041
         }
       ],
@@ -5352,7 +5353,7 @@
       "turn_id": "596add6354e64dd38e9dc036d7e71e49",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1042
         }
       ],
@@ -5371,7 +5372,7 @@
       "turn_id": "20d5783183be4d24b179b1113fcdc1db",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1042
         }
       ],
@@ -5390,7 +5391,7 @@
       "turn_id": "bbb39bb202bb473790cef0fc1ce1de81",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1051
         }
       ],
@@ -5416,7 +5417,7 @@
       "turn_id": "bb45c21af6e94ea09097634d61a926f3",
       "incoming_report_locations": [
         {
-          "path": "LEAK_REPORT.md",
+          "path": "docs/LEAK_REPORT.md",
           "line": 1052
         }
       ],
@@ -5438,8 +5439,8 @@
       "turn_id": "d7d2153d5e594d7d88ccf1a4543f63f5",
       "incoming_report_locations": [
         {
-          "path": "ganesh-very-large-model-leak-report.md",
-          "line": 11
+          "path": "docs/very-large-model-leaks.md",
+          "line": 19
         }
       ],
       "raw_trace_locations": []
@@ -5469,8 +5470,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 716,
-      "sha256": "cf86d5db75992e07bb04388fcd0dcf654b6a512925bf0aed2e85b755cef823eb",
+      "bytes": 694,
+      "sha256": "d346d8a27153a6bc90cb2e081f86937de7159a48fcff58df354c278678f58660",
       "lf_sha256": "d346d8a27153a6bc90cb2e081f86937de7159a48fcff58df354c278678f58660"
     },
     {
@@ -5481,26 +5482,32 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 32442,
-      "sha256": "7ebe444ccc5b50acfd33a942cff40b06ebdd606ae8e1da082e136edfe944bb9b",
-      "lf_sha256": "b6874f21df6b029d1c5d834629debb0ddf7acb95114b05ab0266242600e2a208"
+      "bytes": 34835,
+      "sha256": "b6164f0d7f803d97e7263d1e05c5f33002c048aefb8d8cff218383023adbd6a4",
+      "lf_sha256": "b6164f0d7f803d97e7263d1e05c5f33002c048aefb8d8cff218383023adbd6a4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6274,
+      "sha256": "205e5579ed79691f863bd4a0919d07e1e65c2d891b1a9181262359c08d613038",
+      "lf_sha256": "205e5579ed79691f863bd4a0919d07e1e65c2d891b1a9181262359c08d613038"
     },
     {
       "path": "attack.py",
-      "bytes": 4531,
-      "sha256": "8b005b65a830ec19c3daba3922f43ce7b18bddfaecf480918ba6d54de43d3a49",
+      "bytes": 4433,
+      "sha256": "5afd8146756368951ac88d9d0e0ce6c49b46a3e51393f3b033775c7e8511a7a1",
       "lf_sha256": "5afd8146756368951ac88d9d0e0ce6c49b46a3e51393f3b033775c7e8511a7a1"
     },
     {
       "path": "btm.py",
-      "bytes": 2165,
-      "sha256": "51f565d11e5708cc027a281e93f983db75fdbe3f54876f00139e8abb9e4f8250",
+      "bytes": 2115,
+      "sha256": "e34fa72d52c0f004028e31e9513d233ae8c90e2dc6ae76dde5f0c7d798357d58",
       "lf_sha256": "e34fa72d52c0f004028e31e9513d233ae8c90e2dc6ae76dde5f0c7d798357d58"
     },
     {
       "path": "chat.py",
-      "bytes": 1914,
-      "sha256": "d081b0aed2f933d010cf0b28b40a1f12882d05489eb0b96dc0417e986850af19",
+      "bytes": 1860,
+      "sha256": "c060ab14e5ca276222d38ceeceb0f092cb4d317adb8bdceb102195740cf05f89",
       "lf_sha256": "c060ab14e5ca276222d38ceeceb0f092cb4d317adb8bdceb102195740cf05f89"
     },
     {
@@ -5516,40 +5523,52 @@
       "lf_sha256": "1862d5ee907a96c1eb80dffe796b928e12d05424998f5c407b00e964f9afbfea"
     },
     {
+      "path": "docs/FINAL_SUBMISSION.md",
+      "bytes": 9212,
+      "sha256": "dca968d0d62801ee94ea4b7cf274a29d63b8762d9527cf7cae5d828d97f58a48",
+      "lf_sha256": "dca968d0d62801ee94ea4b7cf274a29d63b8762d9527cf7cae5d828d97f58a48"
+    },
+    {
+      "path": "docs/FINDINGS.md",
+      "bytes": 6178,
+      "sha256": "9175843ca4bf6a408d824af42501ab3e346cd0c29d565c7a44543ca2138f1b7e",
+      "lf_sha256": "9175843ca4bf6a408d824af42501ab3e346cd0c29d565c7a44543ca2138f1b7e"
+    },
+    {
+      "path": "docs/LEAK_REPORT.md",
+      "bytes": 46991,
+      "sha256": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1",
+      "lf_sha256": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1"
+    },
+    {
+      "path": "docs/OBSERVATIONS.md",
+      "bytes": 82545,
+      "sha256": "2660a61233f2bad32dbd7c13d499a1822f268a068bf2ba9843d7af82dcd35614",
+      "lf_sha256": "2660a61233f2bad32dbd7c13d499a1822f268a068bf2ba9843d7af82dcd35614"
+    },
+    {
+      "path": "docs/PROMPTS.md",
+      "bytes": 12415,
+      "sha256": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670",
+      "lf_sha256": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670"
+    },
+    {
+      "path": "docs/very-large-model-leaks.md",
+      "bytes": 7074,
+      "sha256": "d09b8060d0358a5f77b031983bc83ccfc3ae6e698f7f01ab7c45cdc16328c664",
+      "lf_sha256": "d09b8060d0358a5f77b031983bc83ccfc3ae6e698f7f01ab7c45cdc16328c664"
+    },
+    {
       "path": "example_attack.py",
-      "bytes": 435,
-      "sha256": "3b0190166927ded40f8805efeac7e887070c052fb2e4209104e8917c7c89690d",
+      "bytes": 424,
+      "sha256": "b5285b0ea7785f7a9a0baa389ff4ab9c988fc02e4a8512381d42f8702345e913",
       "lf_sha256": "b5285b0ea7785f7a9a0baa389ff4ab9c988fc02e4a8512381d42f8702345e913"
     },
     {
-      "path": "FINAL_SUBMISSION.md",
-      "bytes": 9173,
-      "sha256": "cdf54b7b668b4f412e8bbf9b740a0fc37fcada35f7dced9bd85945a21773b08d",
-      "lf_sha256": "cdf54b7b668b4f412e8bbf9b740a0fc37fcada35f7dced9bd85945a21773b08d"
-    },
-    {
       "path": "financial_prompts.txt",
-      "bytes": 1090,
-      "sha256": "3f2fe6acdc1c2e20a2fa0d21555a53a178ffe48ce0228f2f16217adbaa28164b",
+      "bytes": 1071,
+      "sha256": "ea35d3b145549a85c48e7dc9000a91c2f2996e054cc759a40a6acd4727673619",
       "lf_sha256": "ea35d3b145549a85c48e7dc9000a91c2f2996e054cc759a40a6acd4727673619"
-    },
-    {
-      "path": "FINDINGS.md",
-      "bytes": 6148,
-      "sha256": "3f0a0cf35788a7d72eb779b2a4ca3195896d064f7e3d7acbd2a9e25d89cfcb61",
-      "lf_sha256": "3f0a0cf35788a7d72eb779b2a4ca3195896d064f7e3d7acbd2a9e25d89cfcb61"
-    },
-    {
-      "path": "ganesh-very-large-model-leak-report.md",
-      "bytes": 3902,
-      "sha256": "df859d208d2a5e85f64af6dd27cd2bf712418c164b9ad6562a32819fec6a9dce",
-      "lf_sha256": "863d166f79fda6f8fb55a8aa942ba3d75cfb7888b03b7bce192022239d67f223"
-    },
-    {
-      "path": "LEAK_REPORT.md",
-      "bytes": 48087,
-      "sha256": "aa37eb4a80b0821e3fe92f012ef0449fcbc94d3d38b4221492263428d3aced02",
-      "lf_sha256": "aca4788d5cc403b400dff1e3c2ed587f35697d287526429bb2ccf042111ecfd1"
     },
     {
       "path": "logs/Entropy Alignment Security.pdf",
@@ -5559,9 +5578,15 @@
     },
     {
       "path": "logs/FORM_SUBMISSIONS.md",
-      "bytes": 6359,
-      "sha256": "8c4ed9cc596073a04a5c36ac8094e0dfd945c83316df5c55b6de19ab3f1f9daa",
+      "bytes": 6275,
+      "sha256": "18da924013d0bcf696d2805c59c5e52c4d935ae82258a6687c95f11f18905e21",
       "lf_sha256": "18da924013d0bcf696d2805c59c5e52c4d935ae82258a6687c95f11f18905e21"
+    },
+    {
+      "path": "logs/SUBMISSION.md",
+      "bytes": 5710,
+      "sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca",
+      "lf_sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca"
     },
     {
       "path": "logs/import-provenance.json",
@@ -5577,20 +5602,20 @@
     },
     {
       "path": "logs/model_matrix.json",
-      "bytes": 104,
-      "sha256": "47ff86ea76157c6de8e0f6389604b57285609cb553c0644365268df7936c8a49",
+      "bytes": 95,
+      "sha256": "13b2aee266fabab4b2ef155bcdb0b510d01f0956e30428f4b7cbd04248367fa7",
       "lf_sha256": "13b2aee266fabab4b2ef155bcdb0b510d01f0956e30428f4b7cbd04248367fa7"
     },
     {
       "path": "logs/my_attempts.jsonl",
-      "bytes": 536862,
-      "sha256": "e968d3339425dadbeb7a29c325f64377242ea71934afc571e70e81531b3f884e",
-      "lf_sha256": "618d69c9a026b86463230e4a32d0d31065490130baf121865ba40dd0dd983c1b"
+      "bytes": 612008,
+      "sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1",
+      "lf_sha256": "a932f8c4c907d6271a45a43568360a52c977d4ba2044631f561ac71b419dc5f1"
     },
     {
       "path": "logs/my_attempts_session2.jsonl",
-      "bytes": 428416,
-      "sha256": "4e9b0f4008fbb3baf5970d15b93ee662df5f9cfb075147c6600fa1a11795aa99",
+      "bytes": 427817,
+      "sha256": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3",
       "lf_sha256": "6809da0999e33836bb751363285d212415971d3b8c8cb3216d9c31373b0ad1a3"
     },
     {
@@ -5607,8 +5632,8 @@
     },
     {
       "path": "logs/proof_leaks.md",
-      "bytes": 38337,
-      "sha256": "e9a99805db76f90af77b034026153632f8d638aa49c700923ec8f4e8b8059968",
+      "bytes": 38064,
+      "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
       "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
     },
     {
@@ -5624,21 +5649,15 @@
       "lf_sha256": "ee40c5dc310cc0639785ec8cad224804c0515d23a5c65557e6e9e6b41b061318"
     },
     {
-      "path": "logs/SUBMISSION.md",
-      "bytes": 5785,
-      "sha256": "a32e0d341363fe70f98663234d992b4c1fbf1e90ce137e6df8b63895a62bf3df",
-      "lf_sha256": "1a934bc9ba3d1612462039f6cd1daa9a3865df00ae77c42acf2ea8776db293ca"
-    },
-    {
       "path": "logs/success_rates.json",
-      "bytes": 414,
-      "sha256": "765dd3ec1a4838767fb459d4bcf603cb7eec15e89fb561069f650a0493b12b1a",
+      "bytes": 393,
+      "sha256": "d7cb06b4969386142e9c6ade3e48e25b5bb6c2cbf976884d4b0b3bea410f3b34",
       "lf_sha256": "d7cb06b4969386142e9c6ade3e48e25b5bb6c2cbf976884d4b0b3bea410f3b34"
     },
     {
       "path": "logs/success_rates2.json",
-      "bytes": 206,
-      "sha256": "43fe43bb3a46885fff79a8236a00d12d543eb89aaae8a5620d49e42e29441b59",
+      "bytes": 193,
+      "sha256": "04cef83cb0e9924af6b5c778f497122a47a067b21e8b768e62ff235d35ae4a70",
       "lf_sha256": "04cef83cb0e9924af6b5c778f497122a47a067b21e8b768e62ff235d35ae4a70"
     },
     {
@@ -5660,18 +5679,6 @@
       "lf_sha256": "beafc1bfc2fb003944446a76c8d4b796eb33567baa8c875b94ded13695c6c507"
     },
     {
-      "path": "logs/teammate-sessions/2026-11-14-reports/manifest.json",
-      "bytes": 7872,
-      "sha256": "6e0bf98fe2806270e52c35423fdeadfa9f62272f0916e4a891dd7d79043df5bc",
-      "lf_sha256": "22d04e2c7674a2488b3443085ef2232b9806023ed3757853ab9101f724a9a65d"
-    },
-    {
-      "path": "logs/teammate-sessions/2026-11-14-reports/proof_leaks Kartik.md",
-      "bytes": 38064,
-      "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
-      "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
-    },
-    {
       "path": "logs/teammate-sessions/2026-11-14-reports/Round-1 Very Large Model Prompts and Res Uzair.md",
       "bytes": 2805,
       "sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56",
@@ -5682,6 +5689,18 @@
       "bytes": 4584,
       "sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045",
       "lf_sha256": "efcb8c1198466e2557464e56c6236842bf71ad6f529e3838b0a5d8cee0345045"
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/manifest.json",
+      "bytes": 7872,
+      "sha256": "6e0bf98fe2806270e52c35423fdeadfa9f62272f0916e4a891dd7d79043df5bc",
+      "lf_sha256": "22d04e2c7674a2488b3443085ef2232b9806023ed3757853ab9101f724a9a65d"
+    },
+    {
+      "path": "logs/teammate-sessions/2026-11-14-reports/proof_leaks Kartik.md",
+      "bytes": 38064,
+      "sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793",
+      "lf_sha256": "92bc965f0bec8b4010f4f0ef0f7d73ccf479a30f598f0d792ef28c98206e0793"
     },
     {
       "path": "logs/teammate-sessions/context-2026-11-14.txt",
@@ -5715,14 +5734,14 @@
     },
     {
       "path": "presentation/app.js",
-      "bytes": 19832,
-      "sha256": "f79d50689d029abe857c9a730c1d392b1cc6fb3d5fc081d85f1ab22bec2552d0",
+      "bytes": 19651,
+      "sha256": "38fee6ed57bcdbe8315d9770904795512ae432c293e7dc64a1d83caa789c2ecd",
       "lf_sha256": "38fee6ed57bcdbe8315d9770904795512ae432c293e7dc64a1d83caa789c2ecd"
     },
     {
       "path": "presentation/assets/team/crops.json",
-      "bytes": 2354,
-      "sha256": "312f62df9a78ea5153da73c83ce1fea33c8204ed83595dd6816032d558446b26",
+      "bytes": 2282,
+      "sha256": "e805fa835f4131b624e601143b56d40fca3cf6d636732c83c07806b8c9ebfc20",
       "lf_sha256": "e805fa835f4131b624e601143b56d40fca3cf6d636732c83c07806b8c9ebfc20"
     },
     {
@@ -5805,87 +5824,87 @@
     },
     {
       "path": "presentation/deck/deck.css",
-      "bytes": 3382,
-      "sha256": "0a4334dafdacf73b096e299066b1c78411822591aaa5035dff3167cc57601265",
+      "bytes": 3297,
+      "sha256": "5d959c98feefe038987ae308230e28eefc48679ec1903da8171b45ff7700a3cb",
       "lf_sha256": "5d959c98feefe038987ae308230e28eefc48679ec1903da8171b45ff7700a3cb"
     },
     {
       "path": "presentation/deck/deck.json",
-      "bytes": 1012,
-      "sha256": "6a05133726a00a8165e4bd8666e6f474fc51992c1106643c89a67b0d107ed075",
+      "bytes": 994,
+      "sha256": "0d281ec5ae9653b267dfda9b9f6050577d8c9056cab03a9d715a751515a92ef5",
       "lf_sha256": "0d281ec5ae9653b267dfda9b9f6050577d8c9056cab03a9d715a751515a92ef5"
     },
     {
       "path": "presentation/deck/slides/close.html",
-      "bytes": 1658,
-      "sha256": "eb000bd801edfdc1bae5f9ed6dc98a6aa325e2847bc8fe22be4c6ac9e7f3596a",
+      "bytes": 1636,
+      "sha256": "937cede1f48bd99738122f1add176f3b31874ce659c989e7cfe16521a86bd1f9",
       "lf_sha256": "937cede1f48bd99738122f1add176f3b31874ce659c989e7cfe16521a86bd1f9"
     },
     {
       "path": "presentation/deck/slides/cover.html",
-      "bytes": 1158,
-      "sha256": "685b4d9f2c5b9dabc7acab33b4f38788c18ffec07c8d797c69719c3ca2990294",
+      "bytes": 1147,
+      "sha256": "f9cd343156ee41c3ae9d292379bb4e3f4c69b5602c0e19a2c5a6c21063bd11ac",
       "lf_sha256": "f9cd343156ee41c3ae9d292379bb4e3f4c69b5602c0e19a2c5a6c21063bd11ac"
     },
     {
       "path": "presentation/deck/slides/impact.html",
-      "bytes": 1736,
-      "sha256": "6572d18a64a9fa8e3793843cad85c5521f417148d24e8132c66648c4d1aa2fde",
+      "bytes": 1713,
+      "sha256": "ff32cdb01b525f9865c66d9bf3c2f1eaa8d1b38fddb07d0d4d12bad391e74b01",
       "lf_sha256": "ff32cdb01b525f9865c66d9bf3c2f1eaa8d1b38fddb07d0d4d12bad391e74b01"
     },
     {
       "path": "presentation/deck/slides/mitigation.html",
-      "bytes": 1602,
-      "sha256": "c6e0d3ef802e08b9a97a5c9a14c1fae96c27f92fb69fe0044f772c0baaf8c78b",
+      "bytes": 1588,
+      "sha256": "f1b76b623bd6f7608b90b2a12344f95d631cc7883195d24750845b8640f267fe",
       "lf_sha256": "f1b76b623bd6f7608b90b2a12344f95d631cc7883195d24750845b8640f267fe"
     },
     {
       "path": "presentation/deck/slides/models.html",
-      "bytes": 2566,
-      "sha256": "17d49f2a0dec80299ae608828c08c770bdc765ad6a0d50faaaa58060d7069ec9",
+      "bytes": 2528,
+      "sha256": "43fb2fce1102cb45c82e8fa1503f4f5ea1f5d9674313f9e76aace6c3c77e7420",
       "lf_sha256": "43fb2fce1102cb45c82e8fa1503f4f5ea1f5d9674313f9e76aace6c3c77e7420"
     },
     {
       "path": "presentation/deck/slides/rawjson.html",
-      "bytes": 1867,
-      "sha256": "ffe19e12388235fd669bf1a5edd63c26b890db65d819e869f8dc09a3427c00b9",
+      "bytes": 1846,
+      "sha256": "46be767ceadf11f852dccc309b73768087a4e87db4e955e5dcbe555eafda5176",
       "lf_sha256": "46be767ceadf11f852dccc309b73768087a4e87db4e955e5dcbe555eafda5176"
     },
     {
       "path": "presentation/deck/slides/reframe.html",
-      "bytes": 2104,
-      "sha256": "96604d19acbcc6fe367e2b464ba36fc1bfe8499fc5b331ace7f3cac4d662bb52",
+      "bytes": 2081,
+      "sha256": "ae738aee0f28bdb125fb184b203663fe61d4d30e5809d5a444f2c65193e84bdd",
       "lf_sha256": "ae738aee0f28bdb125fb184b203663fe61d4d30e5809d5a444f2c65193e84bdd"
     },
     {
       "path": "presentation/deck/slides/scoreboard.html",
-      "bytes": 1780,
-      "sha256": "670e33ebe74ad28434482a800db0821e88348e7118ce52148b9077c6a5ae5348",
+      "bytes": 1748,
+      "sha256": "659cef99c5f339dd44d7ac73fa98c26a817e630fecad1c217b4e3f18a65641f1",
       "lf_sha256": "659cef99c5f339dd44d7ac73fa98c26a817e630fecad1c217b4e3f18a65641f1"
     },
     {
       "path": "presentation/deck/slides/ssn.html",
-      "bytes": 1956,
-      "sha256": "9b8194ed85569d250c6382ea70d9c8cdede28253e4dd5e69527d477bd1cd29ce",
+      "bytes": 1933,
+      "sha256": "ced11ae65322888bc1c720f19ad49ce061d05947a378d213b897fc3d5015994f",
       "lf_sha256": "ced11ae65322888bc1c720f19ad49ce061d05947a378d213b897fc3d5015994f"
     },
     {
       "path": "presentation/deck/slides/target.html",
-      "bytes": 1774,
-      "sha256": "6945c51489f613174650f0bba6f068805b9a11713d94c6d047ccfbad4dce468e",
+      "bytes": 1743,
+      "sha256": "63761b60751b409d44aa171e56ddfbfd6a06723ad5cadc736ab65b2f65f1f7ee",
       "lf_sha256": "63761b60751b409d44aa171e56ddfbfd6a06723ad5cadc736ab65b2f65f1f7ee"
     },
     {
       "path": "presentation/index.html",
-      "bytes": 18857,
-      "sha256": "cf93bfe8c586d8e0c7b047101225d8ed1dc599a6067d0a9f717773e16d6e7c3e",
-      "lf_sha256": "1db37d000ce42f78bfc5fe3c79fea8a3867986204132744d88e78359cfb88deb"
+      "bytes": 18652,
+      "sha256": "c5ba5a4a59d1bdc7ba45fd667c7c97d66f4d6e332fd05bfd912b30cdf6fce2bb",
+      "lf_sha256": "c5ba5a4a59d1bdc7ba45fd667c7c97d66f4d6e332fd05bfd912b30cdf6fce2bb"
     },
     {
       "path": "presentation/presentation-data.js",
       "bytes": 247702,
-      "sha256": "9d0b9aed315e9c4631ff14fd35faa1ee5c025308be5006f317b083794e51d346",
-      "lf_sha256": "9d0b9aed315e9c4631ff14fd35faa1ee5c025308be5006f317b083794e51d346"
+      "sha256": "397c362a604004b04bd8b8e833ed2335d269fe78d6b6e2ba851b33c3cf8ad468",
+      "lf_sha256": "397c362a604004b04bd8b8e833ed2335d269fe78d6b6e2ba851b33c3cf8ad468"
     },
     {
       "path": "presentation/replay-source.js",
@@ -5913,27 +5932,15 @@
     },
     {
       "path": "presentation.html",
-      "bytes": 868338,
-      "sha256": "5428d72bcec1d8ac50eeb2ab9a00f0e8933c7c8c6b85524f888efafb75a8f5ba",
-      "lf_sha256": "6d204d0294a325703c9295fcc5fd4a73e6b0b31d8af86a457dbafc54e936a957"
+      "bytes": 867959,
+      "sha256": "f01991689d6b559938b801ba97f6589a660c6f404acd6f939efe76a09b57c9a1",
+      "lf_sha256": "f01991689d6b559938b801ba97f6589a660c6f404acd6f939efe76a09b57c9a1"
     },
     {
       "path": "probe.py",
-      "bytes": 2023,
-      "sha256": "cc507c1d44a7b9a769ef1ebdd824aea86ee95b49cb32347ef9e89fb2e1f52f86",
+      "bytes": 1970,
+      "sha256": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb",
       "lf_sha256": "d736aa3a84584e4863771c88aa277313c2a0007a809f0f312ec36ffb2e9783fb"
-    },
-    {
-      "path": "PROMPTS.md",
-      "bytes": 12676,
-      "sha256": "ff14f911cb7fa094c077a73bdf330ab6e590bf9ee0201f472ecd69ebd01e2e6a",
-      "lf_sha256": "107581c66da5abe54b02976140c682bc1cda9ac42d5bd94efa62f2dc08906670"
-    },
-    {
-      "path": "README.md",
-      "bytes": 5996,
-      "sha256": "e6f054307c74637a90fe2b77e6fde525b001c527ca38c6b58a3d499f7d0ba990",
-      "lf_sha256": "e6f054307c74637a90fe2b77e6fde525b001c527ca38c6b58a3d499f7d0ba990"
     },
     {
       "path": "reproduce-cases.json",
@@ -5949,20 +5956,20 @@
     },
     {
       "path": "requirements.txt",
-      "bytes": 36,
-      "sha256": "07db669ea622fa13d36366b845ff4ad6dcbce9ebb7c4376f0916d7775221fedc",
+      "bytes": 34,
+      "sha256": "440ff9578848b53a0788596112184f6c01c0d6ac39cc042fbae0ce4d549f8c9c",
       "lf_sha256": "440ff9578848b53a0788596112184f6c01c0d6ac39cc042fbae0ce4d549f8c9c"
     },
     {
       "path": "secret_probe.py",
-      "bytes": 18266,
-      "sha256": "cb3378e485e702bbb31b8586fefae60f42bb8284528e70125223e8c7629f3a01",
+      "bytes": 17872,
+      "sha256": "26f3aae0ed6ca162c4c59da4ddd5b8711af5ff008ed175674d7be5b0e73dca2a",
       "lf_sha256": "26f3aae0ed6ca162c4c59da4ddd5b8711af5ff008ed175674d7be5b0e73dca2a"
     },
     {
       "path": "setup.py",
-      "bytes": 3094,
-      "sha256": "59dc537479eff05bd4b6cedec35b85314ef21c77d039d86d5e34e46153d81320",
+      "bytes": 3025,
+      "sha256": "9a49f75fe348749cef0fc5e84fa377ce812c280005add8433ba9c0678ed4d9d6",
       "lf_sha256": "9a49f75fe348749cef0fc5e84fa377ce812c280005add8433ba9c0678ed4d9d6"
     },
     {
@@ -5973,15 +5980,9 @@
     },
     {
       "path": "tools/index-evidence.py",
-      "bytes": 5905,
-      "sha256": "1d448a47f401abdf584d67dc72b5295c62921ecfb687905f4bb998f09b5362f3",
-      "lf_sha256": "f33619a705d6a680d283775435d820e6f7fd7ed3df4fda05ed12503b09652f86"
-    },
-    {
-      "path": "umair-very-large-model-leak_report.md",
-      "bytes": 2842,
-      "sha256": "4ed636986e0ad5cf8561a672687a6c6befd06264ec07d64b54dfb271c28e9ab5",
-      "lf_sha256": "47b0d10faeb22cde9d129ee8c2e5ecf510dbd57098aa6a86ee9067db8612be56"
+      "bytes": 5782,
+      "sha256": "d757d90e57d6860f7b3d561ac7395aa1abc55dc878be1ce83daf7c0af1ac885a",
+      "lf_sha256": "d757d90e57d6860f7b3d561ac7395aa1abc55dc878be1ce83daf7c0af1ac885a"
     }
   ],
   "hash_note": "sha256 records exact source bytes. lf_sha256 also permits checking existing Git text files after platform line-ending conversion; imported raw evidence has -text attributes."

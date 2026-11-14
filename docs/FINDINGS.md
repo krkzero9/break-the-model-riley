@@ -6,15 +6,15 @@ This index combines the recorded evidence while keeping the different model coho
 
 | Source | Records | Unique turn IDs | Models recorded |
 |---|---:|---:|---|
-| `logs/my_attempts.jsonl` | 562 | 486 | Qwen 30B: 507; DeepSeek: 35; GPT-OSS: 10; Qwen 235B: 10 |
+| `logs/my_attempts.jsonl` | 646 | 570 | Qwen 30B: 507; Claude Opus 5.5: 84; DeepSeek: 35; GPT-OSS: 10; Qwen 235B: 10 |
 | `logs/my_attempts_session2.jsonl` | 599 | 418 | GPT-OSS: 321; DeepSeek: 260; Qwen 235B: 15; Qwen 30B: 3 |
 | `logs/sparsh-2026-11-14/my_attempts.jsonl` | 167 | 167 | Separate Nebius/Groq exploratory snapshot; the earlier individual review covered 157 |
 
 Record counts include errors and retries; they are not success rates. Session 2 is a mixed-model log. Its 40-record aggregation example `73d99c5da0c9425099b027cbdf4fd71c` is GPT-OSS 120B, while `fc6a32e8110345bea5c94660975b45a1` is DeepSeek. The client does not record a guard/deployment revision, so the logs do not establish identical server defences across rounds.
 
-All 116 turn IDs cited in `LEAK_REPORT.md` resolve to preserved raw logs. Ganesh's report has one ID without a raw match; the report stored under the original `umair` filename repeats three earlier Uzair references without raw matches. These remain reported excerpts. File hashes, source lines, exact models and conversation IDs are indexed in [logs/evidence-index.json](logs/evidence-index.json).
+All 116 turn IDs cited in `LEAK_REPORT.md` resolve to preserved raw logs. Ganesh's report has one ID without a raw match; the report stored under the original `umair` filename repeats three earlier Uzair references without raw matches. These remain reported excerpts. File hashes, source lines, exact models and conversation IDs are indexed in [logs/evidence-index.json](../logs/evidence-index.json).
 
-The incoming consolidated summary is preserved byte-identically at [logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md](logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md). The original full reports remain unchanged. This revised index corrects model attribution, visible counts and the distinction between tool invocation and delivery.
+The incoming consolidated summary is preserved byte-identically at [logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md](../logs/teammate-sessions/2026-11-14-incoming/FINDINGS-original.md). The original full reports remain unchanged. This revised index corrects model attribution, visible counts and the distinction between tool invocation and delivery.
 
 ## Additional team excerpts
 
@@ -61,4 +61,4 @@ An authorized event-funded run can add `--live`; it records each fresh conversat
 - Bind the requested record to the authenticated user and approved recipient before sending.
 - Replay the same attacks against the defence while checking that permitted workflows still work.
 
-The five-person team designed, tested and reviewed together throughout. Open [presentation.html](presentation.html) for the complete story, interactive database map, evidence and team.
+The five-person team designed, tested and reviewed together throughout. Open [presentation.html](../presentation.html) for the complete story, interactive database map, evidence and team.
